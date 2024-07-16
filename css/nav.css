@@ -29,6 +29,7 @@ body{
     width: 20vw;
     font-size: 2vw;
     font-weight: 900;
+    margin-left: 4vw;
 }
 
 #left img{
@@ -37,7 +38,7 @@ body{
 
 #nav #right{
     height: 100%;
-    width: 20vw;
+    width: 40vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -67,9 +68,131 @@ body{
 
 #menu-bar{
     height: 100vh;
-    width: 20vw;
+    width: 25vw;
     position: absolute;
     top: 0;
-    right: 0;
-    background-color: red;
+    right:0;
+    background-color:#ffffffad;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    transition: all .4s linear;
 }
+
+#menu-bar ul{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    width: 100%;
+
+}
+
+#menu-bar ul li{
+    list-style: none;
+    width: 100%;
+    margin-left: 1vw;
+}
+
+#menu-bar ul li a {
+    width: 15vw;
+    display: block;
+    text-decoration: none;
+    font-family: gilyroy;
+    padding: 2vh 4vw;
+    background-color: #5caf9c1a;
+    color: black;
+    font-size: 1.5vw;
+    font-weight: 900;
+}
+
+#menu-bar ul li a:hover{
+ background-color: #366b5f1a;
+}
+
+#close-menu{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 4%;
+    right: 10%;
+}
+
+#close-menu img{
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* 
+ 
+ theam button css ....
+ 
+*/
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+  }
+  
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s;
+    background: linear-gradient(to left,rgba(215, 178, 59, 0.842),rgb(103, 196, 233));
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: url(../images/sun.svg);
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background: linear-gradient(to right,rgb(3, 142, 248),rgb(31, 31, 31));
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #5e7588;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(30px);
+    content: url(../images/moon.svg);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }  
+
+  
