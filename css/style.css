@@ -20,6 +20,7 @@ body,html{
     background-color: #f5f5f5;
     overflow-x: hidden;
     overflow-y: scroll;
+    position: relative;
 }
 
 body::-webkit-scrollbar{
@@ -27,9 +28,11 @@ body::-webkit-scrollbar{
 }
 
 #page1{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     font-family: gilyroy;
+    position: relative;
+    z-index: 1;
 }
 
 #show-div{
@@ -51,10 +54,9 @@ body::-webkit-scrollbar{
     line-height: 0.7;
     font-size: 5vw;
     font-weight: 900;
-    margin-top: 5vh;
+    margin-top: 20vh;
     position: relative;
-    z-index: 2;
-
+    z-index: 1;
 }
 
 #heading-txt h1{
@@ -64,4 +66,44 @@ body::-webkit-scrollbar{
 #heading-txt span{
     color: #32c1a0a1;
     font-family: areBar;
+}
+
+.page1-img{
+    height: 50%;
+    width: 20vw;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    filter: drop-shadow(10px 10px 60px #4ae1c381);
+    z-index: 1;
+    animation: moveImg1 5s linear infinite;
+}
+
+.page1-img1{
+    height: 50%;
+    width: 20vw;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right:1%; 
+    animation: moveImg 5s linear infinite;
+    filter: drop-shadow(10px 10px 60px #e1d94a81);
+}
+
+@keyframes moveImg {
+     0%{
+        top: 50%;
+     }
+     100%{
+        top: 52%;
+     }
+}
+
+@keyframes moveImg1 {
+    0%{
+       top: 18%;
+    }
+    100%{
+       top: 20%;
+    }
 }
