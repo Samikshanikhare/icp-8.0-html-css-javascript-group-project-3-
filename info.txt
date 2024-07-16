@@ -1,0 +1,14 @@
+
+background color  black theam : #0C0C0C
+dark green : #134B3E
+
+white color background : #f5f5f5
+
+pngs : https://www.pngwing.com/
+
+icon/svgs : https://remixicon.com/
+
+cdn of icons add this before your css file ;     <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
