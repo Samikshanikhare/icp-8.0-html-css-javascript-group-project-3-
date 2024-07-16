@@ -6,17 +6,18 @@
 
 .parent-holder{
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     /* border: 5px solid red; */
     padding: 2%;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
     /* align-items: center; */
 }
 
 .certificate-card{
-    width: 35%;
-    margin: 2%;
+    width: 300px;
+    margin: 1%;
     /* text-align: center; */
     height: fit-content;
     border: 1px solid gray;
@@ -26,7 +27,7 @@
 
 .img-card{
     width: 100%;
-    
+    margin: auto;
 }
 
 .first-txt{
