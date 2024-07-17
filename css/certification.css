@@ -64,4 +64,5 @@ button{
     background: rgb(31, 121, 100);
     border: none;
     color: white;
+    display: none;
 }
