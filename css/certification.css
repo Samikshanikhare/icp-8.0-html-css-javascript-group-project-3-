@@ -61,4 +61,7 @@ button{
     margin-top: 1.5vw;
     font-size: 1.4vw;
     font-weight: 500;
+    background: rgb(31, 121, 100);
+    border: none;
+    color: white;
 }
