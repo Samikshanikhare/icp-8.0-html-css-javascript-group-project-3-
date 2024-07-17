@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+.main{
+    /* border: 5px solid red; */
+}
+
+.main_title{
+   padding: 0.8vw 3vw;
+   font-size: 3.8vw;
+   margin-top: 5vw;
+}
+
+.parent-holder{
+    width: 100%;
+    height: fit-content;
+    /* border: 5px solid red; */
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* align-items: center; */
+}
+
+.certificate-card{
+    width: 300px;
+    margin: 1%;
+    /* text-align: center; */
+    height: fit-content;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.img-card{
+    width: 100%;
+    margin: auto;
+}
+
+.first-txt{
+    display: block;
+    font-size: 1.3vw;
+    color: gray;
+}
+
+.second-txt{
+    font-size: 1.9vw;
+}
+
+.title{
+    font-size: 1.7vw;
+}
+
+button{
+    padding: 1vw 2vw;
+    width: 100%;
+    margin-top: 1.5vw;
+    font-size: 1.4vw;
+    font-weight: 500;
+    background: rgb(31, 121, 100);
+    border: none;
+    color: white;
+}
