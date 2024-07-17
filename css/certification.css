@@ -79,6 +79,7 @@ button {
     }
     .certificate-card {
         width: 300px;
+        padding: 5vw;
         /* margin: 1vw; */
     }
 
@@ -106,6 +107,7 @@ button {
     
     .certificate-card {
         width: 230px;
+        padding: 3vw;
         /* margin: 1vw; */
     }
 
@@ -132,6 +134,7 @@ button {
 
     .certificate-card {
         width: 260px;
+        padding: 3vw;
         /* margin: 1vw; */
     }
 
@@ -153,6 +156,7 @@ button {
 @media screen and (min-width:993px) and (max-width:1250px) {
     .certificate-card {
         width: 260px;
+        padding: 2.3vw;
         /* margin: 1vw; */
     }
 
