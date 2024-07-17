@@ -5,10 +5,14 @@
     font-family: 'Gilroy';
 }
 
+.main{
+    /* border: 5px solid red; */
+}
+
 .main_title{
    padding: 0.8vw 3vw;
    font-size: 3.8vw;
-   
+   margin-top: 5vw;
 }
 
 .parent-holder{
