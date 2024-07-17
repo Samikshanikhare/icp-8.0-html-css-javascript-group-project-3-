@@ -21,3 +21,4 @@ page2.addEventListener("click",()=>{
             flag =0;
        }
 })
+
