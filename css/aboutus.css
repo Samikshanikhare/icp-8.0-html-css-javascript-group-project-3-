@@ -33,3 +33,22 @@ body::-webkit-scrollbar {
     margin: 20px 40px;
     border-radius: 20px;
 }
+h1 {
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    color: rgb(243, 247, 247);
+    font-size: 70px;
+    border: solid 1px rgb(47, 125, 143);
+    border-radius: 30px;
+    margin: 10px 500px;
+    padding: 10px;
+}
+
+h3 {
+    align-items: center;
+    text-align: center;
+    color: rgb(7, 94, 75);
+    font-size: 25px;
+    font-family: "areBar";
+}
