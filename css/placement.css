@@ -18,7 +18,7 @@
 
 
 #show-div
-{
+ {
         height:40vh;
         border-radius: 50%;
         width: 50vw;
@@ -29,8 +29,9 @@
         top: 4%;
         left: 20%;
         z-index:1;
-}
+    }
 #heading-txt{
+    position: relative;
     width: 100%;
     text-align: center;
     font-size: 45px;
@@ -39,6 +40,7 @@
     z-index: 1;
     margin-top: px;
 }
+
 
 
 #heading-txt h1{
@@ -74,6 +76,11 @@
     filter: drop-shadow(10px 10px 60px #4ae1c381);
     z-index: 1;
     animation: moveImg1 5s linear infinite;
+}
+.Student_img
+{
+    height: 100px;
+    width: 80px;
 }
 
 
