@@ -82,3 +82,60 @@ h3 {
     margin-top: 10px;
     margin-left: 10px;
 }
+.section-3 {
+    background-color: rgb(202, 224, 224);
+    border-color: rgb(47, 90, 90);
+    box-shadow: -2px -5px 2px rgb(195, 190, 190);
+    margin: 20px 40px;
+    border-radius: 20px;
+}
+
+.feature-img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.our-features {
+    font-size: 25px;
+    color: rgb(33, 148, 141);
+    font-style: oblique;
+    margin-left: 30px;
+    display: block;
+}
+
+.features {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(33, 148, 141);
+    display: flex;
+}
+.feature-cards
+{
+    display: flex;
+    align-items: center;
+    
+}
+.quality-img
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+}
+.card
+{
+   font-size: 20px;
+   text-align: center;
+   border: 1px rgb(10, 10, 9) solid;
+    border-radius: 30px;
+    width: 700px;
+    height: 300px;
+    background-color: azure;
+    box-shadow: 2px 2px 7px grey ;
+    padding: 10px;
+    
+}
