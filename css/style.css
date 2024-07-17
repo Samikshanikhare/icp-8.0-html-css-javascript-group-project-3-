@@ -12,6 +12,7 @@
 *{
      padding: 0;
      margin: 0;
+     font-family: gilyroy;
 }
 
 body,html{
@@ -89,21 +90,85 @@ body::-webkit-scrollbar{
     animation: moveImg 5s linear infinite;
     filter: drop-shadow(10px 10px 60px #e1d94a81);
 }
+/*
 
 @keyframes moveImg {
-     0%{
-        top: 50%;
-     }
-     100%{
-        top: 52%;
-     }
+    0%{
+       top: 50%;
+    }
+    100%{
+       top: 52%;
+    }
 }
 
 @keyframes moveImg1 {
-    0%{
-       top: 18%;
-    }
-    100%{
-       top: 20%;
-    }
+   0%{
+      top: 18%;
+   }
+   100%{
+      top: 20%;
+   }
+}
+
+*/
+
+#page2{
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 video{
+    height: 180%;
+    width: 200%;
+    cursor:none;
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:linear-gradient(to left,rgb(0, 0, 0),rgba(0, 0, 0, 0.735),transparent,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.735)) ;
+}
+
+#overlay h2{
+    height: 20vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 9vw;
+    border-radius: 50%;
+}
+
+
+#overlay h2 span{
+    font-family: areBar;    
+    color: #23dfb3a1;
+}
+
+#overlay h6{
+    font-size: 2vw;
+    text-align: center;
+    color: #e6dfdf;
+}
+
+#move-div{
+    height: 100px;
+    width: 100px;
+    background-color: #23dfb3d2;
+    filter: blur(4px);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
