@@ -368,3 +368,46 @@ body::-webkit-scrollbar{
     color: #32c1a0a1;
     font-family: areBar;
 }
+
+#more-container{
+    height: 70vh;
+    width: 100vw;
+    padding: 2vh 3vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#more-container a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.cover{
+    height: 25vh;
+    width: 15vw;
+    background: linear-gradient( to left ,rgb(162, 210, 194),#23dfb364);
+    background-color: gray;
+    border-radius: 9px;
+    position: relative;
+    box-shadow: 1px 1px 10px #23dfb319;
+    transition: all .2s linear;
+    margin-left:3vw ;
+}
+
+.cover:hover{
+ scale: 1.1;
+}
+
+.cover span{
+    font-size: 1.9vw;
+    font-weight: 900;
+}
+
+.cover i{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 7vw;
+}
