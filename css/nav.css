@@ -70,6 +70,7 @@ body{
    font-family: gilyroy;
    background-color: #1f7964;
    font-size: 1.5vw;
+   border-radius: 4px;
    color: white;
    font-weight:800;
    cursor: pointer;

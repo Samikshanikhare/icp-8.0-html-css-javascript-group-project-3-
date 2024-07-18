@@ -29,7 +29,7 @@ body::-webkit-scrollbar{
 }
 
 #page1{
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     font-family: gilyroy;
     position: relative;
@@ -53,9 +53,9 @@ body::-webkit-scrollbar{
     width: 100%;
     text-align: center;
     line-height: 0.7;
-    font-size: 5vw;
+    font-size: 4.9vw;
     font-weight: 900;
-    margin-top: 30vh;
+    margin-top: 10vh;
     position: relative;
     z-index: 1;
 }
@@ -70,10 +70,10 @@ body::-webkit-scrollbar{
 }
 
 .page1-img{
-    height: 50%;
+    height: 40%;
     width: 20vw;
     position: absolute;
-    top: 18%;
+    top: 38%;
     left: 10%;
     filter: drop-shadow(10px 10px 60px #4ae1c381);
     z-index: 1;
@@ -103,7 +103,7 @@ body::-webkit-scrollbar{
 
 @keyframes moveImg1 {
    0%{
-      top: 18%;
+      top: 38%;
    }
    100%{
       top: 20%;
@@ -113,7 +113,7 @@ body::-webkit-scrollbar{
 
 
 #page2{
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     overflow: hidden;
     position: relative;
