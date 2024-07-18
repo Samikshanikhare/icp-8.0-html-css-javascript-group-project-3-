@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: code;
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#container {
+    margin-top: 10vh;
+    height: 90vh;
+    width: 200vw;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+#container::-webkit-scrollbar {
+    display: none;
+}
+
+#code {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: code;
+    font-weight: 800;
+}
+
+
+#files{
+    height: 6vh;
+    width: 100%;
+    border-bottom: 1px solid #939090;
+    border-top: 1px solid #939090;
+    display: flex;
+    align-items: center;
+    gap: 6vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+
+
+#output {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(189, 163, 163);
+    position: relative;
+    top: 0;
+    transition: all .4s linear;
+    left: 100%;
+}
+
+textarea{
+    height:84vh;
+    width: 100%;
+    color:  #07e107;
+    font-size: 1.8vw;
+    outline: none;
+    letter-spacing: 2px;
+    padding: 1vh 2vw;
+    position: absolute;
+    top: 6vh;
+    left: 0;
+}
+
+#output iframe{
+    height: 100%;
+    border: none;
+    width: 100%;
+}

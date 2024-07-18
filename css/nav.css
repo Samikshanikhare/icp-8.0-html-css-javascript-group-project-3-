@@ -299,3 +299,68 @@ footer{
 
 
   
+
+
+@media screen and (max-width:480px) {
+    
+   
+
+#nav{
+  height: 6vh;
+  width: 100vw;
+}
+
+#nav #left{
+  font-size: 4vw;
+  margin-left: 2vw;
+}
+
+
+
+#nav #right{
+  height: 100%;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#right a{
+ padding: 0.9vh 6vw;
+ font-size: 3.4vw;
+ 
+
+}
+
+
+
+
+
+
+#menu-bar{
+  height: 100vh;
+  width: 70vw;
+}
+
+#menu-bar ul{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 100%;
+
+}
+
+#menu-bar ul li{
+  list-style: none;
+  width: 100%;
+  margin-left: 4vw;
+}
+
+#menu-bar ul li a {
+  width: 70vw;
+  font-size: 6.9vw;
+}
+
+}
