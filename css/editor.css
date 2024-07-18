@@ -19,7 +19,7 @@ html {
     width: 100%;
     background-color: #f5f5f5;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -28,14 +28,13 @@ body::-webkit-scrollbar {
 
 #container {
     margin-top: 10vh;
-    height: 90vh;
+    height: 100vh;
     width: 200vw;
-    white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 #container::-webkit-scrollbar {
@@ -44,7 +43,7 @@ body::-webkit-scrollbar {
 
 #code {
     height: 100%;
-    width: 50%;
+    width: 100%;
     position: relative;
     top: 0;
     left: 0;
@@ -66,15 +65,27 @@ body::-webkit-scrollbar {
 }
 
 
+#opBtn{
+    padding: 0.8vh 2vw;
+    background-color: #258a65;
+    border: 1px solid gray;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 3vw;
+    color: #f5f5f5;
+    font-weight: 800;
+}
+
 
 #output {
     height: 100%;
-    width: 50%;
-    background-color: rgb(189, 163, 163);
+    width: 100%;
+    background: white;
     position: relative;
     top: 0;
     transition: all .4s linear;
-    left: 100%;
+    left: 100vw;
 }
 
 textarea{
@@ -88,6 +99,7 @@ textarea{
     position: absolute;
     top: 6vh;
     left: 0;
+    resize: none;
 }
 
 #output iframe{
@@ -95,3 +107,12 @@ textarea{
     border: none;
     width: 100%;
 }
+
+#output i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
