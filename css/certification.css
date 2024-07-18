@@ -36,7 +36,7 @@
     border-radius: 5px;
     padding: 2%;
     /* background-color: #ECFFE6; */
-    box-shadow: 5px 3px 3px 1px #DFD3C3;
+    box-shadow: 5px 3px 3px 1px gray;
 }
 
 .img-card {
