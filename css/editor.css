@@ -100,6 +100,7 @@ textarea{
     top: 6vh;
     left: 0;
     resize: none;
+    border: none;
 }
 
 #output iframe{
@@ -116,3 +117,63 @@ textarea{
     cursor: pointer;
 }
 
+
+@media screen and (max-width:480px) {
+    
+  
+
+#container {
+    margin-top: 7vh;
+}
+
+#container::-webkit-scrollbar {
+    display: none;
+}
+
+#code {
+    height: 100%;
+    width: 100%;
+    font-weight: 800;
+}
+
+
+#files{
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    font-size: 3.8vw;
+}
+
+
+#opBtn{
+    padding: 0.8vh 2vw;
+    font-size: 3.2vw;
+    margin-left: auto;
+    margin-right: 3vw;
+}
+
+
+#output {
+    height: 100%;
+    width: 100%;
+    left: 100vw;
+    top: 0;
+}
+
+textarea{
+    font-size: 4.9vw;
+    outline: none;
+}
+
+#output iframe{
+    height: 100%;
+    border: none;
+    width: 100%;
+}
+
+#output i{
+    font-size: 10vw;
+}
+}
