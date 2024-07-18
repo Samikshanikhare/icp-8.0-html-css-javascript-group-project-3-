@@ -333,10 +333,6 @@ footer{
 }
 
 
-
-
-
-
 #menu-bar{
   height: 100vh;
   width: 70vw;
@@ -362,5 +358,71 @@ footer{
   width: 70vw;
   font-size: 6.9vw;
 }
+
+
+/*fooer responsivee code...*/
+
+
+  
+footer{
+  display: block;
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#social{
+  height: 15%;
+  width: 100%;
+  font-size: 5vw;
+}
+#pages,#social h2{
+  margin-bottom: 1vh;
+}
+
+#social a{
+  font-size: 7.5vw;
+  margin-left: 5vw;
+}
+
+#social a:hover{
+  color: #266356;
+}
+
+#pages{
+  height: 43%;
+  width: 100vw;
+}
+
+#pages h2{
+  font-size: 6vw;
+}
+
+#pages a{
+  font-size: 4.6vw;
+  margin-left: 6vw;
+}
+
+
+
+#mob{
+  height: 30%;
+  width: 100vw;
+}
+
+#mob h2{
+  font-size: 6vw;
+}
+
+#mob a{
+  font-size: 4.6vw;
+  margin-top: 2vh;
+  margin-left: 6vw;
+}
+
+
 
 }

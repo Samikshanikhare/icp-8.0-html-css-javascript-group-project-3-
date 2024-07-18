@@ -2,29 +2,37 @@
 let codeArea =  document.querySelector("#code")
 let outPutArea = document.querySelector("#output")
 let container = document.querySelector("#container")
-
-
 let htmltxt =  document.querySelector(".HTML")
 let cssTXt = document.querySelector(".CSS")
 let jstxt = document.querySelector(".JS")
 let outputScreen = document.querySelector("#outputScreen")
+let  backbtn = document.querySelector("#output i")
+let Ouputbtn = document.querySelector("#opBtn")
+
+
 
  let flag=0;
 
 codeArea.addEventListener("dblclick",()=>{
      if(flag==0){
          outPutArea.style.left=`${-100}vw`
-         flag++
+         flag=1
      }else if(flag==1){
         outPutArea.style.left=`${100}vw`
-         flag=0
+         flag=0;
      }
   })
 
+ Ouputbtn.addEventListener("click",()=>{
+  outPutArea.style.left=`${-100}vw`
+})
+
+  backbtn.addEventListener("click",()=>{
+        outPutArea.style.left=`${100}vw`
+  })
 
 
 htmltxt.addEventListener("click",()=>{
- 
     textarea.style.display='block'
     textarea2.style.display="none"
     textarea3.style.display="none"
@@ -45,13 +53,37 @@ jstxt.addEventListener("click",()=>{
 
 // adding output in iframe...
 
-outputScreen.contentDocument.body.innerHTML=`<h1>hello</h1>`
+
+textarea.addEventListener("keyup",()=>{ 
+  outputScreen.contentDocument.body.innerHTML=`${textarea.value}`
+})
+
+textarea2.addEventListener("keyup",()=>{ 
+  outputScreen.contentDocument.head.innerHTML=`<style>${textarea2.value}</style>`
+})
 
 
-outputScreen.contentDocument.head.innerHTML=`<style>h1{color:red;}</style>`
 
-outputScreen.contentWindow.eval('let a=10 let b = 10 alert(a+b)')
 
+
+textarea3.addEventListener("keyup",()=>{ 
+let word = textarea3.value
+outputScreen.contentWindow.eval(word)
+
+})
+
+
+// clearing script adding erros...
+
+setInterval(() => {
+  console.clear()
+}, 500);
+
+
+
+window.addEventListener("beforeunload",(e)=>{
+    e.preventDefault()
+})
 
 
 
