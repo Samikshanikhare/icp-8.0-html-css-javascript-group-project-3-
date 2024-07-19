@@ -11,6 +11,12 @@ let body = document.getElementById("body")
   let textarea2 = document.querySelector("#txt2")
   let textarea3 = document.querySelector("#txt3")
 
+// footer element acces... 
+let pages = document.querySelectorAll("#pages a")
+let mobNo = document.querySelectorAll("#mob a")
+
+
+
 
 openBtn.addEventListener('click',()=>{
  menuPage.style.right=`0px`
@@ -26,14 +32,27 @@ checkBtn.addEventListener('click',function(e){
     if(checkBtn.checked){
        body.classList.remove("white-theam")
        body.classList.add("black-theam")
+      
+       pages.forEach(page=>{page.style.color='white'})
+       mobNo.forEach(no=>{no.style.color='white'})
+       //editor elements...
        textarea.style.backgroundColor='black'
        textarea2.style.backgroundColor="black"
        textarea3.style.backgroundColor="black"
+
+       // footer elements
+
     }else{
        body.classList.remove("black-theam")
        body.classList.add("white-theam")
+ 
+       pages.forEach(page=>{page.style.color='black'})
+       mobNo.forEach(no=>{no.style.color='black'})
+
+
        textarea.style.backgroundColor='white'
        textarea2.style.backgroundColor="white"
        textarea3.style.backgroundColor="white"
+
     }
 })
