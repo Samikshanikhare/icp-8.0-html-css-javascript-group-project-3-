@@ -15,6 +15,8 @@ let body = document.getElementById("body")
 let pages = document.querySelectorAll("#pages a")
 let mobNo = document.querySelectorAll("#mob a")
 
+    pages.forEach(page=>{page.style.color='black'})
+    mobNo.forEach(no=>{no.style.color='black'})
 
 
 
