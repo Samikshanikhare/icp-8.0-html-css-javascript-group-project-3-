@@ -9,13 +9,14 @@
 }
 
 
-*{
-     padding: 0;
-     margin: 0;
-     font-family: gilyroy;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: gilyroy;
 }
 
-body,html{
+body,
+html {
     height: 100%;
     width: 100%;
     background-color: #f5f5f5;
@@ -24,11 +25,11 @@ body,html{
     position: relative;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
-#page1{
+#page1 {
     height: 100vh;
     width: 100vw;
     font-family: gilyroy;
@@ -36,20 +37,20 @@ body::-webkit-scrollbar{
     z-index: 1;
 }
 
-#show-div{
-    height:40vh;
+#show-div {
+    height: 40vh;
     border-radius: 50%;
     width: 50vw;
     background-color: #309b82a1;
     filter: blur(100px);
-    box-shadow:40px 40px 100px #309b82a1;
+    box-shadow: 40px 40px 100px #309b82a1;
     position: absolute;
     top: 4%;
     left: 20%;
-    z-index:1;
+    z-index: 1;
 }
 
-#heading-txt{
+#heading-txt {
     width: 100%;
     text-align: center;
     line-height: 0.7;
@@ -60,16 +61,16 @@ body::-webkit-scrollbar{
     z-index: 1;
 }
 
-#heading-txt h1{
+#heading-txt h1 {
     font-weight: bolder;
 }
 
-#heading-txt span{
+#heading-txt span {
     color: #32c1a0a1;
     font-family: areBar;
 }
 
-.page1-img{
+.page1-img {
     height: 40%;
     width: 20vw;
     position: absolute;
@@ -80,39 +81,41 @@ body::-webkit-scrollbar{
     animation: moveImg1 5s linear infinite;
 }
 
-.page1-img1{
+.page1-img1 {
     height: 50%;
     width: 20vw;
     position: absolute;
     z-index: 1;
     top: 50%;
-    right:1%; 
+    right: 1%;
     animation: moveImg 5s linear infinite;
     filter: drop-shadow(10px 10px 60px #e1d94a81);
 }
 
 
 @keyframes moveImg {
-    0%{
-       top: 50%;
+    0% {
+        top: 50%;
     }
-    100%{
-       top: 52%;
+
+    100% {
+        top: 52%;
     }
 }
 
 @keyframes moveImg1 {
-   0%{
-      top: 38%;
-   }
-   100%{
-      top: 20%;
-   }
+    0% {
+        top: 38%;
+    }
+
+    100% {
+        top: 20%;
+    }
 }
 
 
 
-#page2{
+#page2 {
     height: 80vh;
     width: 100vw;
     overflow: hidden;
@@ -122,13 +125,13 @@ body::-webkit-scrollbar{
     justify-content: center;
 }
 
-#page2 video{
+#page2 video {
     height: 180%;
     width: 200%;
-    cursor:none;
+    cursor: none;
 }
 
-#overlay{
+#overlay {
     position: absolute;
     top: 0;
     height: 100%;
@@ -139,10 +142,10 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background:linear-gradient(to left,rgb(0, 0, 0),rgba(0, 0, 0, 0.735),transparent,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.735)) ;
+    background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.735), transparent, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.735));
 }
 
-#overlay h2{
+#overlay h2 {
     height: 20vh;
     width: 100vw;
     text-align: center;
@@ -151,18 +154,18 @@ body::-webkit-scrollbar{
 }
 
 
-#overlay h2 span{
-    font-family: areBar;    
+#overlay h2 span {
+    font-family: areBar;
     color: #23dfb3a1;
 }
 
-#overlay h6{
+#overlay h6 {
     font-size: 2vw;
     text-align: center;
     color: #e6dfdf;
 }
 
-#move-div{
+#move-div {
     height: 100px;
     width: 100px;
     background-color: #23dfb3d2;
@@ -173,26 +176,27 @@ body::-webkit-scrollbar{
     left: 0;
 }
 
-#page3{
+#page3 {
     height: 100vh;
     width: 100vw;
 }
-#page3 h2{
+
+#page3 h2 {
     text-align: center;
     font-size: 9vw;
 }
 
-#page3 h2 span{
+#page3 h2 span {
     color: #32c1a0a1;
     font-family: areBar;
 }
 
-#page3 h6{
+#page3 h6 {
     text-align: center;
     font-size: 2vw;
 }
 
-#course-container{
+#course-container {
     height: 70vh;
     width: 100vw;
     white-space: nowrap;
@@ -201,17 +205,17 @@ body::-webkit-scrollbar{
     overflow-x: scroll;
 }
 
-#course-container::-webkit-scrollbar{
+#course-container::-webkit-scrollbar {
     display: none;
 }
 
-.course{
+.course {
     height: 90%;
     width: 25vw;
     border-radius: 9px;
     background: #8f8d8d3c;
-    box-shadow:  20px 20px 20px #0cffc60f,
-             -20px -20px 20px #e4fd060e;
+    box-shadow: 20px 20px 20px #0cffc60f,
+        -20px -20px 20px #e4fd060e;
     margin: auto;
     margin-left: 5vw;
     display: inline-block;
@@ -219,7 +223,7 @@ body::-webkit-scrollbar{
 
 }
 
-.img-section{
+.img-section {
     height: 40%;
     width: 100%;
     display: flex;
@@ -227,15 +231,15 @@ body::-webkit-scrollbar{
     justify-content: center;
 }
 
-.img-section img{
+.img-section img {
     height: 100%;
 }
 
-.img-section .splimg{
+.img-section .splimg {
     height: 115%;
 }
 
-.course span{
+.course span {
     text-wrap: wrap;
     font-weight: 300;
     font-size: 1.5vw;
@@ -244,19 +248,19 @@ body::-webkit-scrollbar{
     display: block;
 }
 
-.course a{
-     font-size: 2vw;
-     padding: 1vh 2vw;
-     background-color: #309b82a1;
-     color: #f5f5f5;
-     text-decoration: none;
-     display: block;
-     margin: 4vh auto;
-     width: 15vw;
+.course a {
+    font-size: 2vw;
+    padding: 1vh 2vw;
+    background-color: #309b82a1;
+    color: #f5f5f5;
+    text-decoration: none;
+    display: block;
+    margin: 4vh auto;
+    width: 15vw;
 }
 
 
-.last{
+.last {
     height: 20vh;
     width: 10vw;
     background-color: #429b86ce;
@@ -269,12 +273,12 @@ body::-webkit-scrollbar{
     overflow: hidden;
 }
 
-.last a{
+.last a {
     background-color: none;
     font-size: 5vw;
 }
 
-#page4{
+#page4 {
     height: 100vh;
     width: 100vw;
 }
@@ -284,21 +288,21 @@ body::-webkit-scrollbar{
     text-align: center;
 }
 
-#page4 h2 span{
+#page4 h2 span {
     color: #32c1a0a1;
     font-family: areBar;
 }
 
-#info-container{
+#info-container {
     height: 70vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top:7vh ;
+    margin-top: 7vh;
 }
 
-#info{
+#info {
     height: 100%;
     width: 30vw;
     font-size: 2vw;
@@ -309,13 +313,13 @@ body::-webkit-scrollbar{
     gap: 4vh;
 }
 
-#info p{
+#info p {
     font-size: 1.5vw;
 }
 
 
 
-#info a{
+#info a {
     font-size: 2vw;
     padding: 1vh 2vw;
     background-color: #309b82a1;
@@ -327,7 +331,7 @@ body::-webkit-scrollbar{
 }
 
 
-#editor-design{
+#editor-design {
     height: 100%;
     width: 50vw;
     display: flex;
@@ -344,32 +348,32 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: center;
     background-color: #2c2b2b;
-    box-shadow:  10px 10px 100px #23dfb3a1,
-                 -10px -10px 100px #23dfb3d2;
+    box-shadow: 10px 10px 100px #23dfb3a1,
+        -10px -10px 100px #23dfb3d2;
 }
 
-#code img{
+#code img {
     height: 100%;
     width: 100%;
 }
 
-#page5{
+#page5 {
     height: 100vh;
     width: 100vw;
 }
 
 
-#page5 h2{
+#page5 h2 {
     font-size: 7vw;
     text-align: center;
 }
 
-#page5 h2 span{
+#page5 h2 span {
     color: #32c1a0a1;
     font-family: areBar;
 }
 
-#more-container{
+#more-container {
     height: 70vh;
     width: 100vw;
     padding: 2vh 3vw;
@@ -378,34 +382,34 @@ body::-webkit-scrollbar{
     flex-wrap: wrap;
 }
 
-#more-container a{
+#more-container a {
     text-decoration: none;
     color: #000000;
 }
 
 
-.cover{
+.cover {
     height: 25vh;
     width: 15vw;
-    background: linear-gradient( to left ,rgb(162, 210, 194),#23dfb364);
+    background: linear-gradient(to left, rgb(162, 210, 194), #23dfb364);
     background-color: gray;
     border-radius: 9px;
     position: relative;
     box-shadow: 1px 1px 10px #23dfb319;
     transition: all .2s linear;
-    margin-left:3vw ;
+    margin-left: 3vw;
 }
 
-.cover:hover{
- scale: 1.1;
+.cover:hover {
+    scale: 1.1;
 }
 
-.cover span{
+.cover span {
     font-size: 1.9vw;
     font-weight: 900;
 }
 
-.cover i{
+.cover i {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -418,228 +422,466 @@ body::-webkit-scrollbar{
 /* responsive code start....*/
 
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:420px) {
+
+
+    #page1 {
+        height: 50vh;
+        width: 100vw;
+    }
+
+
+    #heading-txt {
+        width: 100%;
+        text-align: center;
+        line-height: 0.7;
+        font-size: 7vw;
+        font-weight: 900;
+        margin-top: 20vh;
+        position: relative;
+        z-index: 1;
+    }
+
+    .page1-img1 {
+        right: 0%;
+        top: 95%;
+    }
+
+
+    @keyframes moveImg {
+        0% {
+            top: 95%;
+        }
+
+        100% {
+            top: 97%;
+        }
+    }
+
+
+    #page2 {
+        height: 30vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page2 video {
+        height: 200%;
+        width: 100%;
+        cursor: none;
+    }
+
+    #overlay h2 {
+        height: 20vh;
+        width: 100vw;
+        text-align: center;
+        font-size: 14vw;
+        border-radius: 50%;
+    }
+
+
+    #overlay h2 span {
+        font-family: areBar;
+        color: #23dfb3a1;
+    }
+
+    #overlay h6 {
+        font-size: 6vw;
+    }
+
+    #move-div {
+        height: 1px;
+        width: 1px;
+    }
+
+
+    #page3 {
+        height: 70vh;
+        width: 100vw;
+    }
+
+    #page3 h2 {
+        text-align: center;
+        font-size: 16vw;
+    }
+
+    #page3 h2 span {
+        color: #32c1a0a1;
+        font-family: areBar;
+    }
+
+    #page3 h6 {
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    #course-container {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .course {
+        height: 90%;
+        width: 50vw;
+
+    }
+
+    .img-section {
+        height: 30%;
+        margin-bottom: 2vh;
+    }
+
+    .course span {
+        font-size: 3.5vw;
+    }
+
+    .course a {
+        font-size: 4vw;
+        width: 25vw;
+    }
+
+    .last {
+        height: 20vh;
+        width: 20vw;
+    }
+
+    .last a {
+        font-size: 14vw;
+    }
+
+
+    #page4 {
+        height: 110vh;
+        width: 100vw;
+    }
+
+    #page4 {
+        font-size: 11vw;
+        text-align: center;
+    }
+
+    #page4 h2 span {
+        color: #32c1a0a1;
+        font-family: areBar;
+    }
+
+    #info-container {
+        height: 90vh;
+        width: 100%;
+        margin-top: 7vh;
+        flex-direction: column-reverse;
+    }
+
+    #info {
+        height: 50%;
+        width: 90vw;
+        font-size: 5vw;
+        gap: 4vh;
+    }
+
+    #info p {
+        font-size: 4.5vw;
+    }
+
+
+
+    #info a {
+        font-size: 4vw;
+        margin: 1vh auto;
+        width: 25vw;
+    }
+
+
+    #editor-design {
+        height: 35%;
+        width: 95vw;
+    }
+
+    #code {
+        height: 90%;
+        width: 90%;
+    }
+
+    #page5 {
+        height: 110vh;
+        width: 100vw;
+    }
+
+
+    #page5 h2 {
+        font-size: 16vw;
+    }
+
+    #page5 h2 span {
+        color: #32c1a0a1;
+        font-family: areBar;
+    }
+
+    #more-container {
+        height: 70vh;
+        width: 100vw;
+    }
+
+    .cover {
+        height: 20vh;
+        width: 40vw;
+        margin-left: 5vw;
+        margin-bottom: 4vh;
+    }
+
+
+    .cover span {
+        font-size: 5.9vw;
+        font-weight: 900;
+    }
+
+    .cover i {
+        font-size: 14vw;
+    }
+
+}
+
+
+@media screen and (min-width:421px) and (max-width:610px) {
+
+    #page1 {
+        height: 65vh;
+        width: 100vw;
+    }
+
+    #heading-txt {
+        font-size: 5.9vw;
+    }
+
+    .page1-img {
+        top: 48%;
+    }
+
+    .page1-img1 {
+        top: 100%;
+
+    }
+
+
+    @keyframes moveImg {
+        0% {
+            top: 100%;
+        }
+
+        100% {
+            top: 98%;
+        }
+    }
+
+    @keyframes moveImg1 {
+        0% {
+            top: 48%;
+        }
+
+        100% {
+            top: 20%;
+        }
+    }
+
+
+
+
+    #page2 {
+        height: 60vh;
+        width: 100vw;
+    }
+
+    #overlay h2 {
+        font-size: 12vw;
+    }
+
+    #overlay h6 {
+        font-size: 4vw;
+    }
+
+    #move-div {
+        height: 50px;
+        width: 50px;
+    }
+
+
+
+    #page3 {
+        height: 80vh;
+        width: 100vw;
+    }
+
+    #page3 h2 {
+        text-align: center;
+        font-size: 12vw;
+    }
+
+    #page2 video {
+        height: 200%;
+    }
+
+
+    #page3 h6 {
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    #course-container {
+        height: 50vh;
+        width: 100vw;
+    }
+
+
+
+    .course {
+        height: 90%;
+        width: 45vw;
+
+    }
+
+    .img-section {
+        height: 40%;
+        width: 100%;
+    }
+
+    .img-section img {
+        height: 100%;
+    }
+
+    .img-section .splimg {
+        height: 115%;
+    }
+
+    .course span {
+        font-size: 2.5vw;
+    }
+
+    .course a {
+        font-size: 2.5vw;
+        width: 25vw;
+        text-align: center;
+    }
+
+
+    .last {
+        height: 20vh;
+        width: 15vw;
+    }
+
+    .last a {
+        font-size: 10vw;
+    }
+
+    #page4 {
+        height: 120vh;
+        width: 100vw;
+    }
+
+    #page4 {
+        font-size: 9vw;
+        text-align: center;
+    }
+
+    #page4 h2 span {
+        color: #32c1a0a1;
+        font-family: areBar;
+    }
+
+    #info-container {
+        height: 90vh;
+        width: 100%;
+        margin-top: 7vh;
+        flex-direction: column-reverse;
+    }
+
+    #info {
+        height: 50%;
+        width: 90vw;
+        font-size: 5vw;
+        gap: 4vh;
+    }
+
+    #info p {
+        font-size: 3.8vw;
+    }
+
+
+
+    #info a {
+        font-size: 4vw;
+        margin: 1vh auto;
+        width: 35vw;
+    }
+
+
+    #editor-design {
+        height: 35%;
+        width: 95vw;
+    }
+
+    #code {
+        height: 90%;
+        width: 90%;
+    }
+
+
+    #page5 {
+        height: 100vh;
+        width: 100vw;
+    }
     
-   
-#page1{
-    height: 50vh;
-    width: 100vw;
-}
-
-
-#heading-txt{
-    width: 100%;
-    text-align: center;
-    line-height: 0.7;
-    font-size: 7vw;
-    font-weight: 900;
-    margin-top: 20vh;
-    position: relative;
-    z-index: 1;
-}
-
-.page1-img1{
-    right:0%; 
-    top: 95%;
-}
-
-
-@keyframes moveImg {
-    0%{
-       top: 95%;
+    
+    #page5 h2 {
+        font-size: 10vw;
+        text-align: center;
     }
-    100%{
-       top: 97%;
+    
+    #page5 h2 span {
+        color: #32c1a0a1;
+        font-family: areBar;
     }
-}
+    
+    #more-container {
+        height: 70vh;
+        width: 100vw;
+        padding: 3vh 1vw;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    #more-container a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    
+    .cover {
+        height: 25vh;
+        width: 29vw;
+        margin-left: 2.5vw;
+        margin-bottom:3vh ;
+    }
+    
+    .cover:hover {
+        scale: 1.1;
+    }
+    
+    .cover span {
+        font-size: 4.9vw;
+        font-weight: 900;
+    }
+    
+    .cover i {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 10vw;
+    }
 
-
-#page2{
-    height: 30vh;
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#page2 video{
-    height: 200%;
-    width: 100%;
-    cursor:none;
-}
-
-#overlay h2{
-    height: 20vh;
-    width: 100vw;
-    text-align: center;
-    font-size: 14vw;
-    border-radius: 50%;
-}
-
-
-#overlay h2 span{
-    font-family: areBar;    
-    color: #23dfb3a1;
-}
-
-#overlay h6{
-    font-size: 6vw;
-}
-
-#move-div{
-    height: 1px;
-    width: 1px;
-}
-
-
-#page3{
-    height: 70vh;
-    width: 100vw;
-}
-#page3 h2{
-    text-align: center;
-    font-size: 16vw;
-}
-
-#page3 h2 span{
-    color: #32c1a0a1;
-    font-family: areBar;
-}
-
-#page3 h6{
-    text-align: center;
-    font-size: 4vw;
-}
-
-#course-container{
-    height: 50vh;
-    width: 100vw;
-}
-
-.course{
-    height: 90%;
-    width: 50vw;
-
-}
-
-.img-section{
-    height: 30%;
-    margin-bottom: 2vh;
-}
-
-.course span{
-    font-size: 3.5vw;
-}
-
-.course a{
-     font-size: 4vw;
-     width: 25vw;
-}
-
-.last{
-    height: 20vh;
-    width: 20vw;
-}
-
-.last a{
-    font-size: 14vw;
-}
-
-
-#page4{
-    height: 110vh;
-    width: 100vw;
-}
-
-#page4 {
-    font-size: 11vw;
-    text-align: center;
-}
-
-#page4 h2 span{
-    color: #32c1a0a1;
-    font-family: areBar;
-}
-
-#info-container{
-    height: 90vh;
-    width: 100%;
-    margin-top:7vh ;
-    flex-direction:column-reverse;
-}
-
-#info{
-    height: 50%;
-    width: 90vw;
-    font-size: 5vw;
-    gap: 4vh;
-}
-
-#info p{
-    font-size: 4.5vw;
-}
-
-
-
-#info a{
-    font-size: 4vw;
-    margin: 1vh auto;
-    width: 25vw;
-}
-
-
-#editor-design{
-    height: 35%;
-    width: 95vw;
-}
-
-#code {
-    height: 90%;
-    width: 90%;
-}
-
-
-
-#page5{
-    height: 110vh;
-    width: 100vw;
-}
-
-
-#page5 h2{
-    font-size: 16vw;
-}
-
-#page5 h2 span{
-    color: #32c1a0a1;
-    font-family: areBar;
-}
-
-#more-container{
-    height: 70vh;
-    width: 100vw;
-}
-
-
-
-
-.cover{
-    height: 20vh;
-    width: 40vw;
-    margin-left:5vw;
-    margin-bottom: 4vh;
-}
-
-
-.cover span{
-    font-size: 5.9vw;
-    font-weight: 900;
-}
-
-.cover i{
-    font-size: 14vw;
-}
 
 }
