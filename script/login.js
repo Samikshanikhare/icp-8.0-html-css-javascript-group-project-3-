@@ -1,15 +1,9 @@
-function loginUser(login) {
-    login.preventDefault();
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    const storedEmail = 'user@gmail.com';
-    const storedPassword = 'user';
-
-    if (email === storedEmail && password === storedPassword) {
-        document.getElementById('message').innerText = 'Login successful';
-        window.location.href = 'index.html';
-    } else {
-        document.getElementById('message').innerText = 'Invalid email or password';
-    }
-}
+const loginsec=document.querySelector('.login-section')
+const loginlink=document.querySelector('.login-link')
+const registerlink=document.querySelector('.register-link')
+registerlink.addEventListener('click',()=>{
+    loginsec.classList.add('active')
+})
+loginlink.addEventListener('click',()=>{
+    loginsec.classList.remove('active')
+})
