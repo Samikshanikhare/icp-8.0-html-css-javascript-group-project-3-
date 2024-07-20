@@ -121,7 +121,7 @@ h1 {
     margin: 10px 5px;
     cursor: pointer;
     text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.5s, transform 0.5s;
 }
 
 .card-buttons a:hover {
