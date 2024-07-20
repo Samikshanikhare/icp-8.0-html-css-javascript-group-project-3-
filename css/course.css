@@ -120,3 +120,9 @@ h1 {
      text-decoration: none;
      transition: background-color 0.3s, transform 0.3s;
  }
+
+ .card-buttons a:hover {
+     background-color: #267a68;
+     transform: scale(1.05);
+ }
+ 
