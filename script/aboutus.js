@@ -20,7 +20,7 @@ function fun(action)
         }
         else if(action== '2023')
         {
-            result.innerText="500+ students learning through our course. Connected witj 10+ IT companies for placement of our sttudent . So please enroll now to our course";
+            result.innerText="500+ students learning through our course. Connected with 10+ IT companies for placement of our sttudent . So please enroll now to our course";
             image.src="./../images/course-img4.PNG"
         }
     }
