@@ -40,3 +40,27 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
+.container {
+    width: 90vw;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'areBar', sans-serif;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.highlight-our {
+    color: #000;
+}
+
+.highlight-special {
+    color: #309b82;
+}
+
+.highlight-courses {
+    color: #000;
+}
