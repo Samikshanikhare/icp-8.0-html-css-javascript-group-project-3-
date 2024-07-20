@@ -70,6 +70,7 @@ body{
    font-family: gilyroy;
    background-color: #1f7964;
    font-size: 1.5vw;
+   border-radius: 4px;
    color: white;
    font-weight:800;
    cursor: pointer;
@@ -227,7 +228,7 @@ body{
   
 footer{
   display: block;
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -243,7 +244,6 @@ footer{
 }
 #pages,#social h2{
   margin-bottom: 3vh;
-  color: rgb(0, 0, 0);
 }
 
 #social a{
@@ -254,7 +254,7 @@ footer{
 }
 
 #social a:hover{
-  color: #266356;
+  color: #33a189;
 }
 
 #pages{
@@ -269,10 +269,10 @@ footer{
 #pages a{
   display: block;
   text-decoration: none;
-  color: #000000;
   margin-top: 1vh;
   font-size: 1.6vw;
   font-weight: 900;
+  color: #0000;
 }
 
 #pages a:hover{
@@ -292,19 +292,14 @@ footer{
   display: block;
   text-decoration: none;
   font-size: 1.6vw;
-  color: rgb(0, 0, 0);
   font-weight: 900;
   margin-top: 2vh;
+  color: #0000;
 }
-
-
-  
 
 
 @media screen and (max-width:480px) {
     
-   
-
 #nav{
   height: 6vh;
   width: 100vw;

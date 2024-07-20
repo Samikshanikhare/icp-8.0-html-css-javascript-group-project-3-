@@ -35,6 +35,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     overflow-y: hidden;
     overflow-x: hidden;
+    position: fixed;
 }
 
 #container::-webkit-scrollbar {
@@ -120,7 +121,6 @@ textarea{
 
 @media screen and (max-width:480px) {
     
-  
 
 #container {
     margin-top: 7vh;
@@ -176,4 +176,64 @@ textarea{
 #output i{
     font-size: 10vw;
 }
+}
+
+
+@media screen and (min-width:481px) and (max-width:650px) {
+ 
+    #files{
+        font-size: 3.1vw;
+    }
+    
+    #opBtn{
+        font-size: 2.2vw;
+    }
+    
+    textarea{
+        font-size: 3.2vw;
+    }
+    #output i{
+        font-size: 6vw;
+    }
+      
+}
+
+
+
+
+@media screen and (min-width:651px) and (max-width:900px) {
+ 
+    #files{
+        font-size: 2.4vw;
+    }
+    
+    #opBtn{
+        font-size: 1.5vw;
+    }
+    textarea{
+        font-size: 2.5vw;
+    }
+    #output i{
+        font-size: 4vw;
+    }
+      
+}
+
+
+@media screen and (min-width:901px) and (max-width:1021px) {
+ 
+    #files{
+        font-size: 2vw;
+    }
+    
+    #opBtn{
+        font-size: 1.2vw;
+    }
+    textarea{
+        font-size: 2.2vw;
+    }
+    #output i{
+        font-size: 4vw;
+    }
+      
 }
