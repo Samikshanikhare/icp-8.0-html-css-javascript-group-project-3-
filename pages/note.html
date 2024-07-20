@@ -51,8 +51,8 @@
     <div class="menu">
         <div class="menu-item">
             <div class="container">
-                <img src="./../images/html-5.png" class="img" >
-                <span class="font"><b>HTML</b></span>
+                <img src="./../images/html-5.png" class="img" onclick="Func()" >
+                <span class="font" onclick="Func()"><b>HTML</b></span>
 
             </div>
             <div class="container">
@@ -177,6 +177,11 @@
             } else {
                 resultElement.innerText = "Notes not found";
             }
+        }
+
+        function Func(){
+            window.location.assign("htmlnote.html")
+
         }
 
     </script>
