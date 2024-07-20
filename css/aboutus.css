@@ -38,11 +38,10 @@ body::-webkit-scrollbar{
 }
 .section-1
 {
-    margin-left: 40px;
+    margin-left: 60px;
     width: 1450px;
     height: 600px;
     border: 1px solid black;
-    background-color: rgb(202, 224, 224);
     border-color: rgb(7, 7, 7);
     box-shadow: 10px 10px 1px rgb(195, 190, 190);
     border-radius: 20px;
@@ -51,15 +50,22 @@ body::-webkit-scrollbar{
 .section-1 p{
     margin-top: 20px;
     font-weight: bolder;
-    font-size: 50px;
-    color: rgb(33, 148, 141);
+    font-size: 70px;
     display: flex;
-}
+    margin-left: 550px;
+    font-family: "gilyroy";
+    box-shadow: 2px 2px 10px grey;
+    width: 300px;
 
+}
+.section-1 img{
+    width: 600px;
+    height: 300px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px grey;
+}
 .btn
 {
-    color: rgb(32, 106, 104);
-    background-color: #d2f4f1;
     width: 100px;
     height: 50px;
     margin-top: 20px;
@@ -68,6 +74,7 @@ body::-webkit-scrollbar{
     cursor: pointer;
     border-radius: 30px;
     border: 1px solid rgb(32, 106, 104);
+    box-shadow: 2px 2px 10px grey;
     
 }
 .information
@@ -90,15 +97,11 @@ body::-webkit-scrollbar{
 h1
 {
     text-align: justify;
-    color: rgb(17, 89, 89);
 }
 .section-3 {
-
-    border-color: rgb(47, 90, 90);
     box-shadow: 2px 2px 15px rgb(195, 190, 190);
     margin: 20px 40px;
     border-radius: 20px;
-    background-color: #f5f5f5;
 }
 
 .feature-img {
@@ -111,7 +114,6 @@ h1
 
 .our-features {
     font-size: 25px;
-    color: rgb(176, 205, 203);
     font-style: oblique;
     margin-left: 30px;
     display: block;
@@ -121,7 +123,14 @@ h1
     margin-top: 20px;
     font-weight: bolder;
     font-size: 50px;
-    color: rgb(17, 59, 31);
+    display: flex;
+}
+.vision-img
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
     display: flex;
 }
 .feature-cards
@@ -142,11 +151,9 @@ h1
 {
    font-size: 20px;
    text-align: center;
-   border: 1px rgb(10, 10, 9) solid;
     border-radius: 30px;
     width: 700px;
     height: 300px;
-    background-color: azure;
     box-shadow: 2px 2px 20px grey ;
     padding: 10px;
     margin: 10px 40px;
@@ -160,20 +167,16 @@ h1
 }
 h2{
     font-size: 40px;
-    color: #134B3E;
     font-weight:bold ;
     font-family: gilyroy;
 }
 h4{
     margin-top: 40px;
     text-align: center;
-    color: rgb(13, 53, 60);
     font-size: 22px;
 }
 .section-2 {
-    border-color: rgb(47, 90, 90);
     box-shadow: 2px 2px 15px rgb(195, 190, 190);
     margin: 20px 40px;
     border-radius: 20px;
-    background-color: #f5f5f5;
 }
