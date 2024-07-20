@@ -1,3 +1,4 @@
+
 function fun(action)
         {
             const inputText=document.getElementById("btn1")
@@ -9,17 +10,17 @@ function fun(action)
         }
         else if(action== '2021')
         {
-            result.innerText="1000+ students enroll to our course ";
+            result.innerText="100+ students enroll to our course.  ";
             image.src="./../images/course-img-2.PNG"
         }
         else if(action== '2022')
         {
-            result.innerText="100+ students got placement in IT companies";
+            result.innerText="100+ students enroll and  got placement in IT companies";
             image.src="./../images/course-img3.PNG"
         }
         else if(action== '2023')
         {
-            result.innerText="1000+ students got placement in IT companies";
+            result.innerText="500+ students learning through our course. Connected witj 10+ IT companies for placement of our sttudent . So please enroll now to our course";
             image.src="./../images/course-img4.PNG"
         }
     }
