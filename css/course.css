@@ -88,3 +88,35 @@ h1 {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
+
+ .card img {
+     width: 100px;
+     height: 100px;
+     object-fit: cover;
+     margin-top: 10px;
+     padding: 10px;
+     border-radius: 40%;
+     border-bottom: 3px solid #309b82;
+ }
+
+ .card h2,
+ .card p {
+     margin: 15px;
+ }
+
+ .card-buttons {
+     display: flex;
+     justify-content: space-around;
+     padding: 10px;
+ }
+
+ .card-buttons a {
+     background-color: #309b82;
+     color: #f5f5f5;
+     border: none;
+     padding: 10px 20px;
+     margin: 10px 5px;
+     cursor: pointer;
+     text-decoration: none;
+     transition: background-color 0.3s, transform 0.3s;
+ }
