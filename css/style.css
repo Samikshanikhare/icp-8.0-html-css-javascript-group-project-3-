@@ -370,7 +370,7 @@ body::-webkit-scrollbar {
 }
 
 #page5 {
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
 }
 
@@ -386,50 +386,105 @@ body::-webkit-scrollbar {
 }
 
 #more-container {
-    height: 70vh;
+    height: 90vh;
     width: 100vw;
     padding: 2vh 3vw;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-#more-container a {
-    text-decoration: none;
-    color: #000000;
-}
-
-
-.cover {
-    height: 25vh;
-    width: 15vw;
-    background: linear-gradient(to left, rgb(162, 210, 194), #23dfb364);
-    background-color: gray;
-    border-radius: 9px;
+     justify-content: center;
     position: relative;
-    box-shadow: 4px 4px 10px #29987ee2;
-    transition: all .2s linear;
-    margin-left: 3vw;
 }
 
-.cover:hover {
-    scale: 1.1;
+#more-container img{
+    position: relative;
+    height: 90%;
+    filter: drop-shadow(10px 10px 50px gray);
+    top: 0;
+    left: 0;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) linear;
 }
 
-.cover span {
-    font-size: 1.9vw;
-    font-weight: 900;
-}
-
-.cover i {
+#more-fea{
+    height: 100%;
+    width: 100%;
     position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 7vw;
+    top: 0;
+    left: 0;
+}
+
+.img-container{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 
 
+.img-container img{
+    height: 110%;
+    width: 110%;
+    filter: drop-shadow(2px 2px 10px #fffeff);
+}
+
+.resume{
+    position: absolute;
+    top: 2%;
+    left: 10%;
+}
+
+.team{
+     position: absolute;
+     top: 30%;
+     left: 20%;
+}
+
+.demo{
+    position: absolute;
+    top: 40%;
+    left: 3%;
+}
+.certificate{
+     position:absolute;
+     top: 5%;
+     left: 35%;
+}
+
+.placement{
+    position: absolute;
+    top: 10%;
+    left: 60%;
+}
+
+.aboutus{
+    position: absolute;
+    top: 40%;
+    left: 65%;
+}
+
+.contactus{
+    position: absolute;
+    top: 20%;
+    left: 80%;
+}
+
+
+#more-fea span{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 4vh;
+    background-color: #27c090;
+    padding: 1vh 2vw;
+    border-radius: 14px;
+    font-size: 1.5vw;
+    font-weight: 700;
+    box-shadow: 2px 2px 20px #89f6d3;
+}
 
 
 /* responsive code start....*/
@@ -605,15 +660,12 @@ body::-webkit-scrollbar {
         font-size: 4vw;
     }
 
-
-
     #info a {
         font-size: 5vw;
         margin: 1vh auto;
         width: 35vw;
         font-weight: 900;
     }
-
 
     #editor-design {
         height: 35%;
@@ -625,41 +677,105 @@ body::-webkit-scrollbar {
         width: 90%;
     }
 
+
+
     #page5 {
         height: 110vh;
         width: 100vw;
     }
+    
 
-
-    #page5 h2 {
-        font-size: 16vw;
-    }
-
-    #page5 h2 span {
-        color: #32c1a0a1;
-        font-family: areBar;
+    #page5 h2{
+        font-size: 14vw;
     }
 
     #more-container {
-        height: 70vh;
+        height: 100vh;
         width: 100vw;
+        padding: 2vh 3vw;
+        display: flex;
+        align-items: center;
+         justify-content: center;
+        position: relative;
     }
-
-    .cover {
-        height: 20vh;
-        width: 40vw;
-        margin-left: 5vw;
-        margin-bottom: 4vh;
+    
+    #more-container img{
+        position: relative;
+        height: 40%;
     }
-
-
-    .cover span {
-        font-size: 5.9vw;
-        font-weight: 900;
+    
+    #more-fea{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-
-    .cover i {
-        font-size: 14vw;
+    
+    .img-container{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    
+    
+    .img-container img{
+        height: 100%;
+        width: 100%;
+        filter: drop-shadow(2px 2px 10px #fffeff);
+    }
+    
+    .resume{
+        position: absolute;
+        top: 15%;
+        left: 5%;
+    }
+    
+    .team{
+         position: absolute;
+         top: 30%;
+         left: 2%;
+    }
+    
+    .demo{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+    .certificate{
+         position:absolute;
+         top: 10%;
+         left: 35%;
+    }
+    
+    .placement{
+        position: absolute;
+        top: 30%;
+        left: 70%;
+    }
+    
+    .aboutus{
+        position: absolute;
+        top: 50%;
+        left: 65%;
+    }
+    
+    .contactus{
+        position: absolute;
+        top: 15%;
+        left: 70%;
+    }
+    
+    
+    #more-fea span{
+        height: 3vh;
+        font-size: 3.5vw;
+        white-space: nowrap;
     }
 
 }
@@ -841,58 +957,6 @@ body::-webkit-scrollbar {
     }
 
 
-    #page5 {
-        height: 100vh;
-        width: 100vw;
-    }
-    
-    
-    #page5 h2 {
-        font-size: 10vw;
-        text-align: center;
-    }
-    
-    #page5 h2 span {
-        color: #32c1a0a1;
-        font-family: areBar;
-    }
-    
-    #more-container {
-        height: 70vh;
-        width: 100vw;
-        padding: 3vh 1vw;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    
-    #more-container a {
-        text-decoration: none;
-        color: #000000;
-    }
-    
-    .cover {
-        height: 25vh;
-        width: 29vw;
-        margin-left: 2.5vw;
-        margin-bottom:3vh ;
-    }
-    
-    .cover:hover {
-        scale: 1.1;
-    }
-    
-    .cover span {
-        font-size: 3.9vw;
-        font-weight: 900;
-    }
-    
-    .cover i {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        font-size: 10vw;
-    }
 }
 
 @media screen and (min-width:611px) and (max-width:750px) {
@@ -1095,38 +1159,6 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-#page5 {
-    height: 100vh;
-    width: 110vw;
-    padding-bottom: 2vh;
-}
-
-
-#page5 h2 {
-    font-size: 9vw;
-}
-
-
-#more-container {
-    height: 70vh;
-    width: 100vw;
-}
-
-.cover {
-    height: 25vh;
-    width: 25vw;
-    margin-left: 5vw;
-    margin-top: 3vh;
-}
-
-.cover span {
-    font-size: 3.2vw;
-}
-
-.cover i {
-    font-size: 10vw;
-}
-
 }
 
 @media screen and (min-width:751px) and (max-width:1000px) {
@@ -1139,14 +1171,10 @@ body::-webkit-scrollbar {
         z-index: 1;
     }
     
-    
-    
+     
     #heading-txt {
         font-size: 5.7vw;
     }
-    
-
-    
     
     .page1-img1 {
         top: 20%;
@@ -1310,56 +1338,5 @@ body::-webkit-scrollbar {
     height: 100%;
     width: 95%;
 }
-
-
-
-#page5 {
-    height: 100vh;
-    width: 100vw;
-}
-
-
-#page5 h2 {
-    font-size: 7vw;
-    text-align: center;
-}
-
-#page5 h2 span {
-    color: #32c1a0a1;
-    font-family: areBar;
-}
-
-#more-container {
-    height: 70vh;
-    width: 100vw;
-    padding: 2vh 3vw;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#more-container a {
-    text-decoration: none;
-    color: #000000;
-}
-
-
-.cover {
-    height: 25vh;
-    width: 20vw;
-}
-
-.cover span {
-    font-size: 2.3vw;
-    font-weight: 900;
-}
-
-.cover i {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 7vw;
-}
-
 
 }
