@@ -60,3 +60,22 @@
     margin-top: 10px;
     display: block;
 }
+.about-card-icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 50px;
+   margin-top:  50px;
+}
+
+.card-icon {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(238, 230, 230);
+    border-radius: 5px;
+}
+
+.about-card-icons {
+    height: 20px;
+    margin-top: 6px;
+}
