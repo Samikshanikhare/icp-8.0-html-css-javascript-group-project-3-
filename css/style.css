@@ -710,7 +710,7 @@ body::-webkit-scrollbar {
     }
     
     .img-container{
-        height: 100px;
+        height: 150px;
         width: 100px;
         border-radius: 50%;
         display: flex;
@@ -774,7 +774,6 @@ body::-webkit-scrollbar {
     }
 
 }
-
 
 @media screen and (min-width:421px) and (max-width:610px) {
 

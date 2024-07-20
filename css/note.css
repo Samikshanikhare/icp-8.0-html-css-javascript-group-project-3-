@@ -37,7 +37,7 @@ body {
 .menu {
     background-color: tomato;
     display: flex;
-    position: fixed;
+    
 
 
 }
@@ -51,8 +51,8 @@ body {
 
 .menu-content {
     width: 100%;
-    background-color: #f5f5f5;
-    position: absolute;
+    background-color:#b7ede1;
+
 }
 
 .container {
@@ -73,10 +73,33 @@ body {
 
 .img {
     height: 30px;
-    width: 50px;
+    width: 20px;
 }
 
 .font {
     font-size: 25px;
     margin-left: 30px;
+}
+.content_body{
+    margin: 100px 200px;
+}
+.headingfont{
+    font-size: 80px;
+}
+.inputbox{
+    height: 50px;
+    width: 500px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.btnsearch{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.paragraph{
+    font-size: 30px;
 }
