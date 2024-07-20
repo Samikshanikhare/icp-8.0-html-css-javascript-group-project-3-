@@ -6,7 +6,7 @@ function fun(action)
             const image=document.getElementById("img")
             if(action == '2020')
         {
-            result.innerText="Codex, a renowned organization, has been influential in various sectors since its establishment.";
+            result.innerText="2020- Foundation of codeX . Codex, a renowned organization, has been influential in various sectors since its establishment.";
         }
         else if(action== '2021')
         {
@@ -20,7 +20,7 @@ function fun(action)
         }
         else if(action== '2023')
         {
-            result.innerText="500+ students learning through our course. Connected witj 10+ IT companies for placement of our sttudent . So please enroll now to our course";
+            result.innerText="500+ students learning through our course. Connected with 10+ IT companies for placement of our sttudent . So please enroll now to our course";
             image.src="./../images/course-img4.PNG"
         }
     }
