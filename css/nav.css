@@ -263,7 +263,7 @@ footer{
 }
 
 #pages h2{
-  font-size: 2vw;
+  font-size: 4vw;
 }
 
 #pages a{
@@ -285,7 +285,7 @@ footer{
 }
 
 #mob h2{
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 #mob a{
@@ -361,7 +361,7 @@ footer{
   
 footer{
   display: block;
-  height: 95vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -388,7 +388,7 @@ footer{
 }
 
 #pages{
-  height: 43%;
+  height: 40%;
   width: 100vw;
 }
 
@@ -397,8 +397,8 @@ footer{
 }
 
 #pages a{
-  font-size: 4.6vw;
-  margin-left: 6vw;
+  font-size: 3.9vw;
+  margin-left: 10vw;
 }
 
 
@@ -413,9 +413,9 @@ footer{
 }
 
 #mob a{
-  font-size: 4.6vw;
+  font-size: 3.9vw;
   margin-top: 2vh;
-  margin-left: 6vw;
+  margin-left: 10vw;
 }
 
 

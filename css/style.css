@@ -963,10 +963,6 @@ body::-webkit-scrollbar {
         text-align: center;
     }
     
-    #page5 h2 span {
-        color: #32c1a0a1;
-        font-family: areBar;
-    }
     
     #more-container {
         height: 90vh;
@@ -981,10 +977,6 @@ body::-webkit-scrollbar {
     #more-container img{
         position: relative;
         height: 60%;
-        filter: drop-shadow(10px 10px 50px gray);
-        top: 0;
-        left: 0;
-        transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) linear;
     }
     
     #more-fea{
@@ -998,18 +990,12 @@ body::-webkit-scrollbar {
     .img-container{
         height: 100px;
         width: 100px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
     }
     
      
     .img-container img{
         height: 110%;
         width: 110%;
-        filter: drop-shadow(2px 2px 10px #fffeff);
     }
     
     .resume{
@@ -1053,11 +1039,9 @@ body::-webkit-scrollbar {
         left: 70%;
     }
     
-    
     #more-fea span{
         font-size: 2.5vw;
     }
-
 
 }
 
@@ -1261,6 +1245,11 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
+
+#more-fea span{
+    font-size: 2.9vw;
+}
+
 }
 
 @media screen and (min-width:751px) and (max-width:1000px) {
@@ -1439,6 +1428,12 @@ body::-webkit-scrollbar {
 #code {
     height: 100%;
     width: 95%;
+}
+
+
+
+#more-fea span{
+    font-size: 2vw;
 }
 
 }
