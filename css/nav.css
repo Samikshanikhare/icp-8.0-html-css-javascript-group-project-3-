@@ -70,6 +70,7 @@ body{
    font-family: gilyroy;
    background-color: #1f7964;
    font-size: 1.5vw;
+   border-radius: 4px;
    color: white;
    font-weight:800;
    cursor: pointer;
@@ -217,4 +218,339 @@ body{
     border-radius: 50%;
   }  
 
+  /*
   
+   footer css.....
+   
+  */
+
+
+  
+footer{
+  display: block;
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: linear-gradient(to left,#308976,transparent);
+}
+
+#social{
+  height: 100%;
+  width: 20vw;
+  font-size: 2vw;
+}
+#pages,#social h2{
+  margin-bottom: 3vh;
+}
+
+#social a{
+  text-decoration: none;
+  color: #369481;
+  font-size: 3vw;
+  margin-left: 1vw;
+}
+
+#social a:hover{
+  color: #33a189;
+}
+
+#pages{
+  height: 100%;
+  width: 30vw;
+}
+
+#pages h2{
+  font-size: 4vw;
+}
+
+#pages a{
+  display: block;
+  text-decoration: none;
+  margin-top: 1vh;
+  font-size: 1.6vw;
+  font-weight: 900;
+  color: #0000;
+}
+
+#pages a:hover{
+  color: #1b453c;
+}
+
+#mob{
+  height: 100%;
+  width: 30vw;
+}
+
+#mob h2{
+  font-size: 2.5vw;
+}
+
+#mob a{
+  display: block;
+  text-decoration: none;
+  font-size: 1.6vw;
+  font-weight: 900;
+  margin-top: 2vh;
+  color: #0000;
+}
+
+
+@media screen and (max-width:480px) {
+    
+#nav{
+  height: 8vh;
+  width: 100vw;
+}
+
+#nav #left{
+  font-size: 4vw;
+  margin-left: 2vw;
+}
+
+
+
+#nav #right{
+  height: 100%;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#right a{
+ padding: 0.9vh 6vw;
+ font-size: 3.4vw;
+ 
+
+}
+
+
+#menu-bar{
+  height: 100vh;
+  width: 70vw;
+}
+
+#menu-bar ul{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 100%;
+
+}
+
+#menu-bar ul li{
+  list-style: none;
+  width: 100%;
+  margin-left: 4vw;
+}
+
+#menu-bar ul li a {
+  width: 70vw;
+  font-size: 6.9vw;
+}
+
+
+/*fooer responsivee code...*/
+
+
+  
+footer{
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#social{
+  height: 15%;
+  width: 100%;
+  font-size: 5vw;
+}
+#pages,#social h2{
+  margin-bottom: 1vh;
+}
+
+#social a{
+  font-size: 7.5vw;
+  margin-left: 5vw;
+}
+
+#social a:hover{
+  color: #266356;
+}
+
+#pages{
+  height: 40%;
+  width: 100vw;
+}
+
+#pages h2{
+  font-size: 6vw;
+}
+
+#pages a{
+  font-size: 3.9vw;
+  margin-left: 10vw;
+}
+
+
+
+#mob{
+  height: 30%;
+  width: 100vw;
+}
+
+#mob h2{
+  font-size: 6vw;
+}
+
+#mob a{
+  font-size: 3.9vw;
+  margin-top: 2vh;
+  margin-left: 10vw;
+}
+
+
+
+}
+
+
+@media screen and (min-width:481px) and (max-width:621px) {
+  
+  
+#nav{
+  height: 10vh;
+  width: 100vw;
+  background-color: #f5f5f584;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  font-family: arebar;
+}
+
+#nav #left{
+  height: 100%;
+  width: 30vw;
+  font-size: 2.9vw;
+  font-weight: 900;
+  margin-left: 4vw;
+}
+
+#left img{
+  height: 100%;
+}
+
+#nav #right{
+  height: 100%;
+  width: 60vw;
+}
+
+#right a{
+ font-size: 2.9vw;
+
+}
+
+#menu-bar{
+  height: 100vh;
+  width: 45vw;
+}
+
+#menu-bar ul{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 100%;
+
+}
+
+#menu-bar ul li{
+  list-style: none;
+  width: 100%;
+  margin-left: 1vw;
+}
+
+#menu-bar ul li a {
+  width: 35vw;
+  font-size: 2.9vw;
+  font-weight: 900;
+}
+
+
+}
+
+
+@media screen and (min-width:622px) and (max-width:950px) {
+  
+     
+#nav{
+  height: 10vh;
+  width: 100vw;
+}
+
+#nav #left{
+  height: 100%;
+  width: 30vw;
+  font-size: 2.5vw;
+  font-weight: 900;
+  margin-left: 4vw;
+}
+
+#left img{
+  height: 100%;
+}
+
+#nav #right{
+  height: 100%;
+  width: 60vw;
+}
+
+#right a{
+ font-size: 2.5vw;
+
+}
+
+#menu-bar{
+  height: 100vh;
+  width: 45vw;
+}
+
+#menu-bar ul{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 100%;
+
+}
+
+#menu-bar ul li{
+  list-style: none;
+  width: 100%;
+  margin-left: 1vw;
+}
+
+#menu-bar ul li a {
+  width: 35vw;
+  font-size: 2.9vw;
+  font-weight: 900;
+}
+
+
+
+}

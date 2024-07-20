@@ -1,0 +1,239 @@
+
+@font-face {
+    font-family: code;
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#container {
+    margin-top: 10vh;
+    height: 100vh;
+    width: 200vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+#container::-webkit-scrollbar {
+    display: none;
+}
+
+#code {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: code;
+    font-weight: 800;
+}
+
+
+#files{
+    height: 6vh;
+    width: 100%;
+    border-bottom: 1px solid #939090;
+    border-top: 1px solid #939090;
+    display: flex;
+    align-items: center;
+    gap: 6vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+
+#opBtn{
+    padding: 0.8vh 2vw;
+    background-color: #258a65;
+    border: 1px solid gray;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 3vw;
+    color: #f5f5f5;
+    font-weight: 800;
+}
+
+
+#output {
+    height: 100%;
+    width: 100%;
+    background: white;
+    position: relative;
+    top: 0;
+    transition: all .4s linear;
+    left: 100vw;
+}
+
+textarea{
+    height:84vh;
+    width: 100%;
+    color:  #07e107;
+    font-size: 1.8vw;
+    outline: none;
+    letter-spacing: 2px;
+    padding: 1vh 2vw;
+    position: absolute;
+    top: 6vh;
+    left: 0;
+    resize: none;
+    border: none;
+}
+
+#output iframe{
+    height: 100%;
+    border: none;
+    width: 100%;
+}
+
+#output i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:480px) {
+    
+
+#container {
+    margin-top: 7vh;
+}
+
+#container::-webkit-scrollbar {
+    display: none;
+}
+
+#code {
+    height: 100%;
+    width: 100%;
+    font-weight: 800;
+}
+
+
+#files{
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    font-size: 3.8vw;
+}
+
+
+#opBtn{
+    padding: 0.8vh 2vw;
+    font-size: 3.2vw;
+    margin-left: auto;
+    margin-right: 3vw;
+}
+
+
+#output {
+    height: 100%;
+    width: 100%;
+    left: 100vw;
+    top: 0;
+}
+
+textarea{
+    font-size: 4.9vw;
+    outline: none;
+}
+
+#output iframe{
+    height: 100%;
+    border: none;
+    width: 100%;
+}
+
+#output i{
+    font-size: 10vw;
+}
+}
+
+
+@media screen and (min-width:481px) and (max-width:650px) {
+ 
+    #files{
+        font-size: 3.1vw;
+    }
+    
+    #opBtn{
+        font-size: 2.2vw;
+    }
+    
+    textarea{
+        font-size: 3.2vw;
+    }
+    #output i{
+        font-size: 6vw;
+    }
+      
+}
+
+
+
+
+@media screen and (min-width:651px) and (max-width:900px) {
+ 
+    #files{
+        font-size: 2.4vw;
+    }
+    
+    #opBtn{
+        font-size: 1.5vw;
+    }
+    textarea{
+        font-size: 2.5vw;
+    }
+    #output i{
+        font-size: 4vw;
+    }
+      
+}
+
+
+@media screen and (min-width:901px) and (max-width:1021px) {
+ 
+    #files{
+        font-size: 2vw;
+    }
+    
+    #opBtn{
+        font-size: 1.2vw;
+    }
+    textarea{
+        font-size: 2.2vw;
+    }
+    #output i{
+        font-size: 4vw;
+    }
+      
+}
