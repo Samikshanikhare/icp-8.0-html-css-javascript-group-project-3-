@@ -1,18 +1,13 @@
 @font-face {
-    font-family: gilyroy;
-    src: url(../fonts/Gilroy-Regular.ttf);
-}
-
-@font-face {
     font-family: areBar;
-    src: url(../fonts/Aerovias\ Brasil\ NF.ttf);
+    src: url('../fonts/Aerovias Brasil NF.ttf');
 }
-
 
 * {
     padding: 0;
     margin: 0;
-    font-family: gilyroy;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
 }
 
 body,
@@ -35,129 +30,119 @@ body {
     font-family: 'Gilyroy', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .container {
-    width: 90vw;
+    width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 100px 20px;
+    margin: 0 auto;
 }
 
 h1 {
     font-family: 'areBar', sans-serif;
-    font-size: 3em;
-    margin-bottom: 50px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .highlight-our {
     color: #000;
+     font-family: 'areBar';
+     font-size: 70px;
+    
 }
 
 .highlight-special {
     color: #309b82;
+    font-family: 'areBar';
+    font-size: 70px;
 }
 
 .highlight-courses {
     color: #000;
+    font-family: 'areBar';
+    font-size: 70px;
 }
 
 .course-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-    }
-        
- .card {
-  background-color: #8f8d8d3c;
-  color: #000;
-  width: 300px;
-  border-radius: 15px;
-  overflow: hidden;
-  border: 1px solid #8f8d8d3c;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  position: relative;
- }
-        
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
 }
 
- .card img {
-     width: 100px;
-     height: 100px;
-     object-fit: cover;
-     margin-top: 10px;
-     padding: 10px;
-     border-radius: 40%;
-     border-bottom: 3px solid #309b82;
- }
+.card {
+    background-color: #8f8d8d3c;
+    color: #000;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #8f8d8d3c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px);
+    /* Adjust for spacing between cards */
+}
 
- .card h2,
- .card p {
-     margin: 15px;
- }
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
 
- .card-buttons {
-     display: flex;
-     justify-content: space-around;
-     padding: 10px;
- }
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 40%;
+    border-bottom: 3px solid #309b82;
+}
 
- .card-buttons a {
-     background-color: #309b82;
-     color: #f5f5f5;
-     border: none;
-     padding: 10px 20px;
-     margin: 10px 5px;
-     cursor: pointer;
-     text-decoration: none;
-     transition: background-color 0.3s, transform 0.3s;
- }
+.card h2,
+.card p {
+    margin: 15px;
+}
 
- .card-buttons a:hover {
-     background-color: #267a68;
-     transform: scale(1.05);
- }
+.card-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
 
+.card-buttons a {
+    background-color: #309b82;
+    color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
- @media (min-width: 1200px) {
-     .course-cards {
-         flex-wrap: wrap;
-         justify-content: space-around;
-     }
+.card-buttons a:hover {
+    background-color: #267a68;
+    transform: scale(1.05);
+}
 
-     .card {
-         width: 22%;
-     }
- }
+@media (min-width: 1200px) {
+    .card {
+        flex: 1 1 calc(25% - 20px);
+    }
+}
 
- @media (min-width: 768px) and (max-width: 1199px) {
-     .course-cards {
-         flex-wrap: wrap;
-         justify-content: space-around;
-     }
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
 
-     .card {
-         width: 45%;
-         margin: 10px;
-     }
- }
-
- @media (max-width: 767px) {
-     .course-cards {
-         flex-direction: column;
-         align-items: center;
-     }
-
-     .card {
-         width: 90%;
-         margin: 10px 0;
-     }
- }
+@media (max-width: 767px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
