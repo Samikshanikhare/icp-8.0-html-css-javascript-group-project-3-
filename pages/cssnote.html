@@ -144,7 +144,12 @@
             const resultElement = document.getElementById('result');
             const word = inputElement.value
             const information = dictionary[word]
-            resultElement.innerText = information
+            if (information){
+                resultElement.innerText = information
+            }
+            else{
+                resultElement.innerText="word not match"
+            }
         }
     </script>
     <script src="../script/nav-bar.js"></script>
