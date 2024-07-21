@@ -46,11 +46,11 @@ body{
 }
 
 #nav #left{
-    height: 100%;
-    width: 20vw;
-    font-size: 2vw;
-    font-weight: 900;
-    margin-left: 4vw;
+  height: 100%;
+  width: 20vw;
+  font-size: 2vw;
+  font-weight: 900;
+  margin-left: 4vw;
 }
 
 #left img{
