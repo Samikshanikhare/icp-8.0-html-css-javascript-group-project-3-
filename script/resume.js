@@ -60,4 +60,37 @@ for (let element of educationF) {
 }
 document.getElementById("edu").innerHTML = resEdu;
 
+// title field work experience
+let titleFF = document.getElementsByClassName("tiField");
+let titF = "";
+for (let element of titleFF) {
+  titF += `<h3> ${element.value} </h3>`;
+}
+document.getElementById("titleF").innerHTML = titF;
+
+// work experience 1
+let wes = document.getElementsByClassName("weField");
+let str = "";
+for (let element of wes) {
+  str += `<li class="squar"> <h4> ${element.value} </h4></li>`;
+}
+document.getElementById("weT").innerHTML = str;
+
+// title field work experience 2
+let titleFF2 = document.getElementsByClassName("tiField2");
+let titF2 = "";
+for (let element of titleFF2) {
+  titF2 += `<h3> ${element.value} </h3>`;
+}
+document.getElementById("titleF2").innerHTML = titF2;
+
+// work experience 2
+let wes2 = document.getElementsByClassName("weField2");
+let strw2 = "";
+for (let element of wes2) {
+  strw2 += `<li class="squar"> <h4> ${element.value} </h4></li>`;
+}
+document.getElementById("weT2").innerHTML = strw2 ;
+
+
 }
