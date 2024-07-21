@@ -274,7 +274,7 @@ input::placeholder {
 }
 
 
-    @media screen and (min-width: 950px) and (max-width: 1200px) {
+ @media screen and (min-width: 950px) and (max-width: 1200px) {
         .container {
 
             left: 50%;
