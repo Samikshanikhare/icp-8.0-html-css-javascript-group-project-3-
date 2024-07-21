@@ -224,3 +224,38 @@ h1 {
         padding: 10px;
     }
 }
+
+@media (max-width: 458px) {
+    .container h1 {
+        font-size: 1.5em;
+    }
+
+    .highlight-our,
+    .highlight-special,
+    .highlight-courses {
+        font-size: 1.2em;
+    }
+
+    .course-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex: 1 1 calc(100% - 20px);
+    }
+
+    .cart {
+        font-size: 25px;
+    }
+
+    .items {
+        width: 100%;
+    }
+
+    .items span {
+        font-size: small;
+        height: auto;
+        padding: 10px;
+    }
+}
