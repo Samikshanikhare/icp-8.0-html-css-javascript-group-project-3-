@@ -10,6 +10,11 @@
     margin-top: 110px;
    
 }
+body{
+    position: relative;
+    
+}
+
 .card-container {
     height: 300px;
     width: 95%;
@@ -78,8 +83,18 @@
     height: 35px;
     margin-top: 6px;
 }
-
-
+#moving{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #13b499;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer{
+    margin-top:1100px;
+}
 @media (max-width: 767px) {
     .teamcard {
         height: 200px;
