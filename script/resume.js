@@ -92,5 +92,52 @@ for (let element of wes2) {
 }
 document.getElementById("weT2").innerHTML = strw2 ;
 
+// title project 1 
+let titlePP = document.getElementsByClassName("protiField");
+let titP = "";
+for (let element of titlePP) {
+  titP += `<h3> ${element.value} </h3>`;
+}
+document.getElementById("titleP").innerHTML = titP;
+
+//project 1
+let pro = document.getElementsByClassName("proField");
+let prostr = "";
+for (let element of pro) {
+  prostr += `<li class="squar"> <h4> ${element.value} </h4></li>`;
+}
+document.getElementById("projectText").innerHTML = prostr;
+
+// title project 2
+let titlePP2 = document.getElementsByClassName("protiField2");
+let titP2 = "";
+for (let element of titlePP2) {
+  titP2 += `<h3> ${element.value} </h3>`;
+}
+document.getElementById("titleP2").innerHTML = titP2;
+
+//project 2
+let pro2 = document.getElementsByClassName("proField2");
+let prostr2 = "";
+for (let element of pro2) {
+  prostr2 += `<li class="squar"> <h4> ${element.value} </h4></li>`;
+}
+document.getElementById("projectText2").innerHTML = prostr2;
+
+// title project 3 
+let titlePP3 = document.getElementsByClassName("protiField3");
+let titP3 = "";
+for (let element of titlePP3) {
+  titP3 += `<h3> ${element.value} </h3>`;
+}
+document.getElementById("titleP3").innerHTML = titP3;
+
+//project 3
+let pro3 = document.getElementsByClassName("proField3");
+let prostr3 = "";
+for (let element of pro3) {
+  prostr3 += `<li class="squar"> <h4> ${element.value} </h4></li>`;
+}
+document.getElementById("projectText3").innerHTML = prostr3;
 
 }
