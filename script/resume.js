@@ -24,4 +24,12 @@ document.getElementById("addressField").value;
 document.getElementById("dateOfBirth").innerHTML =
 document.getElementById("dateofbirth").value;
 
+// languages
+let languages = document.getElementsByClassName("laField");
+let lanF = "";
+for (let element of languages) {
+  lanF += `<li> <span> ${element.value} </span></li>`;
+}
+document.getElementById("lan").innerHTML = lanF;
+
 }
