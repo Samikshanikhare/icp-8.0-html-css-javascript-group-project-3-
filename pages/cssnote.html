@@ -10,7 +10,8 @@
     <link href="../css/note.css" rel="stylesheet" />
     <style>
         .bodycontent {
-            margin: 80px 30px;
+            margin-left: 30px;
+            margin-top: -50px;
         }
     </style>
 
@@ -85,6 +86,21 @@
         </div>
         <br>
         <div class="menu-content">
+            <div class="menu-content">
+
+                <div class="content_body">
+                    <h1 class="headingfont">Dictionary</h1><br><br><br>
+                    <div>
+                        <input type="text" placeholder="search...." class="inputbox" id="inputword">
+                        <button type="button" onclick="Func1()" class="btnsearch"> search </button>
+                        <p id="result" class="paragraph"></p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        <div class="menu-content">
             <div class="bodycontent">
                 <h1>CSS (Cascading Style Sheets) </h1><br><br>
                 <b style="font-size: 35px;"> Introduction</b><br><br>
@@ -102,8 +118,8 @@
                 <b style="font-size: 35px;">Types of CSS</b><br><br>
                 <p style="font-size: 20px;">
                    <b> Inline CSS :</b> Applied directly to HTML elements using the style attribute.<br><br>
-                   <b>Internal CSS</b>Defined within the style tag in the HTML head.<br><br>
-                   <b> External CSS</b>Defined in a separate CSS file and linked to the HTML document using the link tag.<br><br>
+                   <b>Internal CSS:</b>Defined within the style tag in the HTML head.<br><br>
+                   <b> External CSS:</b>Defined in a separate CSS file and linked to the HTML document using the link tag.<br><br>
 
 
 
@@ -117,6 +133,20 @@
 
         </div>
     </div>
+    <script>
+        const dictionary = {
+            stylesheet:'define the presentation and layout of an HTML document. ',
+            layout :' layout refers to the arrangement of elements on a webpage ',
+            font :'Fonts are used to display text in various styles and sizes'
+        }
+        function Func1() {
+            const inputElement = document.getElementById('inputword');
+            const resultElement = document.getElementById('result');
+            const word = inputElement.value
+            const information = dictionary[word]
+            resultElement.innerText = information
+        }
+    </script>
     <script src="../script/nav-bar.js"></script>
     <script src="../script/note.js"></script>
 </body>
