@@ -45,6 +45,8 @@ input::placeholder {
     height: 550px;
     margin-top: 20px;
     background: url(./../images/logpage.jpg ) no-repeat;
+    filter: brightness(0.8);
+    
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -239,7 +241,32 @@ input::placeholder {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 757px) {
+@media only screen and (max-width: 400px){
+    .container {
+
+        left: 50%;
+        top: 50%;
+        width: 95%;
+        height: 450px;
+
+    }
+
+    .form-box .input-box {
+        width: 240px;
+        height: 50px;
+        border-bottom: 2px solid #fff;
+        margin: 20px;
+        position: relative;
+    }
+    .container .login-section {
+        width: 400px;
+        backdrop-filter: brightness(50%);
+        padding-left: 80px;
+    }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 757px) {
     .container {
 
         left: 50%;
@@ -274,7 +301,7 @@ input::placeholder {
 }
 
 
-    @media screen and (min-width: 950px) and (max-width: 1200px) {
+ @media screen and (min-width: 950px) and (max-width: 1200px) {
         .container {
 
             left: 50%;
