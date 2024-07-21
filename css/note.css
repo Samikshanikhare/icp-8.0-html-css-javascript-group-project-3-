@@ -74,7 +74,7 @@ body {
 }
 
 .font {
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 30px;
 }
 .content_body{
@@ -101,4 +101,22 @@ body {
 }
 .paragraph{
     font-size: 20px;
+}
+@media screen and (min-width:150px) and (max-width:600px){
+    .menu-item {
+        width: 100px;
+    }
+    .font{
+        visibility: hidden;
+    }
+    .img {
+        height: 30px;
+        width: 40px;
+    }
+    .menu-content {
+        width: 80%;
+        background-color:#f1f0f0;
+    
+    }
+
 }
