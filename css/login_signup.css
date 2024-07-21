@@ -31,6 +31,7 @@ input::placeholder {
     height: 100vh;
     width: 100%;
     filter: blur(10px);
+
 }
 
 
@@ -98,7 +99,7 @@ input::placeholder {
     width: calc(100% - 58%);
     height: 100%;
     color: #fff;
-    backdrop-filter: blur(60px);
+    backdrop-filter: brightness(50%);
 }
 
 .login-section .form-box {
@@ -238,22 +239,25 @@ input::placeholder {
     text-decoration: underline;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 757px) {
     .container {
 
         left: 50%;
         top: 50%;
-        width: 90%;
+        width: 95%;
         height: 450px;
+
     }
 
-.welcome, .codex {
-        font-size: 20px;
-   
+    .container .login-section {
+        width: 400px;
+        backdrop-filter: brightness(50%);
     }
+
 }
 
-@media screen and (min-width: 600px) and (max-width: 800px) {
+
+@media screen and (min-width: 757px) and (max-width: 950px) {
     .container {
 
         left: 50%;
@@ -262,31 +266,42 @@ input::placeholder {
         height: 500px;
     }
 
-.welcome, .codex {
-        font-size: 259px;
-   
+    .container .login-section {
+        width: 374px;
+        backdrop-filter: brightness(50%);
+
     }
 }
 
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-    .container {
+    @media screen and (min-width: 950px) and (max-width: 1200px) {
+        .container {
 
-        left: 50%;
-        top: 50%;
-        width: 80%;
-        height: 550px;
+            left: 50%;
+            top: 50%;
+            width: 80%;
+            height: 550px;
+        }
+
+        .container .login-section {
+            width: 390px;
+            backdrop-filter: brightness(50%);
+
+        }
     }
 
-}
+    @media screen and (min-width: 1201px) {
+        .container {
 
-@media screen and (min-width: 1201px) {
-    .container {
+            left: 50%;
+            top: 50%;
+            width: 80%;
+            height: 550px;
+        }
 
-        left: 50%;
-        top: 50%;
-        width: 80%;
-        height: 550px;
+        .container .login-section {
+            width: 500px;;
+            backdrop-filter: brightness(50%);
+
+        }
     }
-
-}
