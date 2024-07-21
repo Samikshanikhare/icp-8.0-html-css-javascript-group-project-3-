@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/bg4.png" type="image/x-icon">
     <title>codeX | Home </title>
 </head>
 <body id="body">
@@ -27,12 +28,12 @@
          <div id="menu-bar">
             <ul>
                 <li><a href="#"><i class="ri-home-fill"></i> Home</a></li>
-                <li><a href="#"><i class="ri-video-chat-fill"></i> Courses</a></li>
+                <li><a href="./pages/course.html"><i class="ri-video-chat-fill"></i> Courses</a></li>
                 <li><a href="#"><i class="ri-article-fill"></i> Resume</a></li>
                 <li><a href="./pages/editor.html"><i class="ri-code-box-fill"></i> Editor</a></li>
                 <li><a href="./pages/placement.html"><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
                 <li><a href="#"><i class="ri-team-fill"></i> Our Team</a></li>
-            
+                <li><a href="./pages/note.html"><i class="ri-team-fill"></i>Notes</a></li>
             </ul>
             <div id="close-menu">
                 <img src="./images/menu-close.svg" alt="">
@@ -76,7 +77,7 @@
                  <img src="./images/react.png" alt="react course" class="splimg">
               </div>
              <span>react is most popular frontend framework. You can start your react journy with codeX .We teach you that industry wants and at the end of course you master in react.</span>
-              <a href="">view details <i class="ri-arrow-right-up-fill"></i></a>
+              <a href="./pages/course.html">view details <i class="ri-arrow-right-up-fill"></i></a>
            </div>
 
            <div class="course">
@@ -84,7 +85,7 @@
                  <img src="./images/mongo.png" alt="react course">
              </div>
              <span>Mongodb is most popular non sql database. You can start your database journy with codeX .We teach you that industry wants and at the end of course you master in mongodb.</span>
-              <a href="">view details <i class="ri-arrow-right-up-fill"></i></a>
+              <a href="./pages/course.html">view details <i class="ri-arrow-right-up-fill"></i></a>
            </div>
 
            <div class="course">
@@ -92,13 +93,13 @@
                 <img src="./images/node.png" alt="react course">
              </div>
               <span>react is most popular backend technology. You can start your node js journy with codeX .We teach you that industry wants and at the end of course you master in node js.</span>
-              <a href="">view details <i class="ri-arrow-right-up-fill"></i></a>
+              <a href="./pages/course.html">view details <i class="ri-arrow-right-up-fill"></i></a>
            </div>
            
 
            <div class="course">
               <div class="last">
-                 <a href="#"><i class="ri-send-plane-fill"></i></a>
+                 <a href="./pages/course.html"><i class="ri-send-plane-fill"></i></a>
               </div>
               <span>view more</span>
            </div>
@@ -128,34 +129,35 @@
            <div id="more-container"> 
                   <img src="./images/bg4.png" alt="" id="pic">
                   <div id="more-fea">
-                            <div class="img-container resume">
+                         <a href=""><div class="img-container resume">
                                 <img src="./images/resume.png" alt="" onmouseover="changtxt('resume builder')">
-                            </div>
+                            </div></a>
 
-                            <div class="img-container team">
+                           <a href=""><div class="img-container team">
                               <img src="./images/team.png" alt="" onmouseover="changtxt('our team')">
-                           </div>
+                           </div></a>
 
-                           <div class="img-container demo">
+                          <a href=""><div class="img-container demo">
                               <img src="./images/demovid.png" alt="" onmouseover="changtxt('demo lectures')">
-                           </div>
-
-                           <div class="img-container certificate">
+                           </div></a>
+                           
+                         <a href="./pages/certification.html"><div class="img-container certificate">
                               <img src="./images/certicate.png" alt="" onmouseover="changtxt('certifications courses')">
-                           </div>
+                           </div></a>
 
-                         <a href=""><div class="img-container placement">
+
+                         <a href="./pages/placement.html"><div class="img-container placement">
                               <img src="./images/placement.png" alt="" onmouseover="changtxt('placements')">
                            </div> </a>
 
-                           <div class="img-container aboutus">
+                          <a href="./pages/aboutus.html"><div class="img-container aboutus">
                               <img src="./images/aboutus.png" alt="" onmouseover="changtxt('about us')">
-                           </div>
+                           </div></a>
 
                            
-                           <div class="img-container contactus">
+                          <a href="./pages/contact.html"><div class="img-container contactus">
                               <img src="./images/contact.png" alt="" onmouseover="changtxt('contact us')">
-                           </div>
+                           </div> </a>
                          
                         <span>click on icon to open page</span>
 
@@ -165,38 +167,42 @@
 
     </div>
 
-    <footer>
-      <div id="social">
-         <h2>codeX</h2>
-         <a href=" "><i class="ri-instagram-fill"></i></a>
-         <a href=""><i class="ri-linkedin-box-fill"></i></a>
-         <a href=""><i class="ri-whatsapp-fill"></i></a>
-         <a href=""><i class="ri-telegram-fill"></i></a>
-      </div>
+    <!-- footer start -->
 
-      <div id="pages">
-          <h2>Pages</h2>
-           <a  href="index.html">Home</a>
-           <a  href="./pages/course.html">Courses</a>
-           <a  href="">Demo lectures</a>
-           <a  href="">Build resume</a>
-           <a  href="./pages/certification.html">Certificates</a>
-           <a  href="./pages/placement.html">Our placements</a>
-           <a  href="">Our team</a>
-           <a  href="">Contact Us</a>
-           <a  href="./pages/aboutus.html">About Us</a>
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-codex">
+              <span class="footer-headding">codeX</span>
+              <p>Unlock the doors to your future by mastering the art of coding and technological problem-solving.</p>
+          </div>
+          <div class="footer-links">
+              <span class="footer-headding">Useful Links</span>
+              <ul>
+                  <li><a href="#">Notes</a></li>
+                  <li><a href="#">Page</a></li>
+                  <li><a href="#">Page</a></li>
+                  <li><a href="#">Page</a></li>
+                  <li><a href="#">Page</a></li>
+                  <li><a href="#">Page</a></li>
+              </ul>
+          </div>
+          <div class="footer-contact">
+              <span class="footer-headding">Contact Us</span><br>
+              <img src="./images/telephone.png" class="footer-img1" alt=""> <a href="tel:+918468954007"> +91 84689 54007</a><br>
+              <img src="./images/mail.png" class="footer-img1" alt=""> <a href="mailto:codeex0007@gmail.com">codeex0007@gmail.com</a>
+          </div>
       </div>
-     
-     <div id="mob">
-        <h2>Get in touch</h2>
-        <a href="https://wa.me/+918459360294" target="_blank">+91 8459360294</a>
-        <a href="https://wa.me/+918468954007" target="_blank">+91 8468954007</a>        
-        <a href="https://wa.me/+918983624247" target="_blank">+91  8983624247</a>
-        <a href="mailto:sartaknavale08@gmail.com">codexgmail.com</a>
-        
-     </div>
+      <hr>
+      <div class="footer-logo-container">
+          <a href="https://www.instagram.com/codex_401/" class="footer-anchor"><img src="./images/instagram.png" class="footer-img" alt=""></a>
+          <a href="https://x.com/thecodexnetwork" class="footer-anchor"><img src="./images/twitter .png" alt="" class="footer-img"></a>
+          <a href="mailto:codeex0007@gmail.com" class="footer-anchor"><img src="./images/gmail1.png" alt="" class="footer-img"></a>
+          <a href="https://github.com/codex-team" class="footer-anchor"><img src="./images/github.png" alt="" class="footer-img"></a>
+          <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fthecodexnetwork%2F" class="footer-anchor"><img src="facebook.png" alt="" class="footer-img"></a>
+      </div>
+      <p class="footer-copyright">&copy; 2024 All rights reserved Codex</p>
+  </footer>
 
-    </footer>
     
     <script src="./script/script.js"></script>
     <script src="./script/nav-bar.js"></script>
