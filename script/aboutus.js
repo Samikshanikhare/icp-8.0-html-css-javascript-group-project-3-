@@ -3,7 +3,7 @@ function fun(action)
         {
             const inputText=document.getElementById("btn1")
             const result=document.getElementById("info")
-            const image=document.getElementById("img")
+            const image=document.getElementById("imgage")
             if(action == '2020')
         {
             result.innerText="2020- Foundation of codeX . Codex, a renowned organization, has been influential in various sectors since its establishment.";

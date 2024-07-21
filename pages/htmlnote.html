@@ -10,7 +10,8 @@
     <link href="../css/note.css" rel="stylesheet" />
     <style>
         .bodycontent {
-            margin: 80px 30px;
+            margin-left: 30px;
+            margin-top: -80px;
         }
     </style>
 
@@ -62,12 +63,12 @@
             </div>
             <div class="container">
                 <img src="./../images/css-3.png" class="img" onclick="Cssnote()">
-                <span class="font"onclick="Cssnote()"><b>CSS</b></span>
+                <span class="font" onclick="Cssnote()"><b>CSS</b></span>
 
             </div>
             <div class="container">
-                <img src="./../images/js.png" class="img">
-                <span class="font"><b>JAVASCRIPT</b></span>
+                <img src="./../images/js.png" class="img" onclick="Jsnote()">
+                <span class="font" onclick="Jsnote()"><b>JS</b></span>
 
             </div>
             <div class="container">
@@ -85,12 +86,27 @@
         </div>
         <br>
         <div class="menu-content">
+            <div class="menu-content">
+
+                <div class="content_body">
+                    <h1 class="headingfont">Dictionary</h1><br><br><br>
+                    <div>
+                        <input type="text" placeholder="search...." class="inputbox" id="inputword">
+                        <button type="button" onclick="Func1()" class="btnsearch"> search </button>
+                        <p id="result" class="paragraph"></p>
+
+                    </div>
+                </div>
+
+
+            </div>
             <div class="bodycontent">
                 <h1>HTML (HyperText Markup Language)</h1><br>
                 <b style="font-size: 35px;"> Introduction</b><br><br>
-                <p style="font-size: 20px;"> HTML is the standard markup language used to create and design web pages.<br>
+                <p style="font-size: 20px;"> HTML is the standard markup language used to create and design web
+                    pages.<br>
                     It structures the content on the web, defining elements like headings, paragraphs, links, images,
-                    and more.</p>
+                    and more.</p><br>
                 <b style="font-size: 35px;"> Basic Structure of an HTML Document</b><br><br>
                 <p style="font-size: 20px;">
                     <b>!DOCTYPE html:</b> Declares the document type and version of HTML (HTML5 in this case).<br><br>
@@ -107,7 +123,7 @@
                 <p style="font-size: 20px;">
                     Uses HTML elements that convey the meaning of the content they contain.<br>
                     Examples include:<br><br>
-                   <b> header:</b> Represents introductory content or navigational links.<br>
+                    <b> header:</b> Represents introductory content or navigational links.<br>
                     <b>footer:</b> Contains footer content.<br>
                     <b>article:</b> Represents a self-contained composition.<br>
                     <b>section: </b>Defines a section in a document.<br>
@@ -119,6 +135,24 @@
 
         </div>
     </div>
+
+    <script>
+        const dictionary = {
+            markup:'It uses tags to organize text, control its formatting, and manage data. ',
+            content :'Content refers to the information and experiences that are directed toward an end-user or audience. ',
+            heading :'headings are used to define the titles or subtitles of sections on a webpage.',
+            paragraph:'Paragraphs are blocks of text that are separated from other blocks of text and elements',
+            title:'It is also used by search engines to identify the content of the page.'
+
+        }
+        function Func1() {
+            const inputElement = document.getElementById('inputword');
+            const resultElement = document.getElementById('result');
+            const word = inputElement.value
+            const information = dictionary[word]
+            resultElement.innerText = information
+        }
+    </script>
     <script src="../script/nav-bar.js"></script>
     <script src="../script/note.js"></script>
 </body>
