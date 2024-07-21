@@ -140,4 +140,13 @@ for (let element of pro3) {
 }
 document.getElementById("projectText3").innerHTML = prostr3;
 
+//code for setting image
+let file = document.getElementById("profileImageField").files[0];
+let reader = new FileReader();
+reader.readAsDataURL(file);
+console.log(reader);
+//set the image to template
+reader.onloadend = function () {
+  document.getElementById("imgTemplate").src = reader.result;
+}
 }
