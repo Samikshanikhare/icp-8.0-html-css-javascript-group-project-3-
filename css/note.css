@@ -154,6 +154,9 @@ body {
     .content_body {
         visibility: hidden;
     }
+    .bodycontent {
+        margin-top:20px
+    }
 
 }
 
