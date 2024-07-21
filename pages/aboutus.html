@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +9,12 @@
     rel="stylesheet"
 />
     <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/aboutus.css">
     <link rel="stylesheet" href="./../css/nav.css">
+    <script src="./../script/aboutus.js"></script>
     <title>About us</title>
 </head>
-<body>
+<body id="body">
     <div id="nav">
         <div id="left">
             <h1>code<span>X</span></h1>
@@ -29,11 +32,11 @@
         </div>
         <div id="menu-bar">
            <ul>
-               <li><a href="#"><i class="ri-home-fill"></i> Home</a></li>
-               <li><a href="#"><i class="ri-video-chat-fill"></i> Courses</a></li>
+               <li><a href="../index.html"><i class="ri-home-fill"></i> Home</a></li>
+               <li><a href=""><i class="ri-video-chat-fill"></i> Courses</a></li>
                <li><a href="#"><i class="ri-article-fill"></i> Resume</a></li>
-               <li><a href="#"><i class="ri-code-box-fill"></i> Editor</a></li>
-               <li><a href="#"><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
+               <li><a href="./../pages/editor.html"><i class="ri-code-box-fill"></i> Editor</a></li>
+               <li><a href=""><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
                <li><a href="#"><i class="ri-team-fill"></i> Our Team</a></li>
            
            </ul>
@@ -41,8 +44,29 @@
                <img src="./../images/menu-close.svg" alt="">
            </div>
         </div>
-        
+    </div>
+    <div class="container">
+        <p>Our<span class="heading-story">Story</span></p>
+        <div class="section-1">
+            <div class="btn-section">
+            <button type="button" class="btn" onclick="fun('2020')" id="btn1">2020</button>
+            <button type="button" class="btn" onclick="fun('2021')" id="btn2">2021</button>
+            <button type="button" class="btn" onclick="fun('2022')" id="btn3">2022</button>
+            <button type="button" class="btn" onclick="fun('2023')" id="btn4">2023</button>
+            </div>
+            <div class="information">
+                <div class="info">
+                   <h1 id="info"> 2020- Foundation of codeX .<br><br>Codex, a renowned organization, has been influential in various sectors since its establishment.</h1>
+                
+                </div>
+                <div class="imgage">
+                    <img src="https://www.emailvendorselection.com/wp-content/uploads/best-online-course-platforms-digital-courses-software-creators-2.png" id="imgage" class="imgage">
+                </div>
+            </div>
+        </div>
+        </div>
    </div>
+  
     <script src="./../script/nav-bar.js"></script>
 </body>
 </html>

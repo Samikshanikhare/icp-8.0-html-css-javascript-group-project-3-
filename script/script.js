@@ -22,3 +22,34 @@ page2.addEventListener("click",()=>{
        }
 })
 
+// page 4 animation...
+
+let maindiv = document.querySelector("#more-fea")
+let pic= document.querySelector("#pic")
+let windosize = window.innerWidth /2
+
+window.addEventListener("resize",()=>{
+       windosize = window.innerWidth /2
+})
+
+maindiv.addEventListener("mousemove",(e)=>{
+   
+ if(e.x<windosize){
+        pic.src= "../images/bg4.png"
+ }else{
+       pic.src= "../images/bg41.png"
+ }
+ 
+        pic.style.left=`${1-e.x*0.1}px`
+        pic.style.top=`${1-e.y*0.1}px`
+
+})
+
+
+//hndle span txt
+
+function changtxt(text){
+        let txtContainer = document.querySelector("#more-fea span")
+        txtContainer.innerText=`Know more about ${text} ...`
+}
+

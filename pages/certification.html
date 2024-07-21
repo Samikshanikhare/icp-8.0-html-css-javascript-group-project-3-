@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,7 @@
     <link rel="stylesheet" href="../css/certification.css" />
 </head>
 
-<body>
+<body id="body">
 
     <div class="main">
         <div id="nav">
@@ -45,10 +44,58 @@
         </div>
 
 
-        <p class="main_title">Certification Course</p>
+        <p class="main_title"><span>Certification</span> Course</p>
         <div class="parent-holder">
-            <div class="certificate-card">
+            <div class="certificate-card" onmouseover="visible()">
                 <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
+                <s class="first-txt">Rs 1000</s>
+                <p class="second-txt">Rs 500</p>
+                <p class="title">Full Access</p>
+                <button id="btn">Buy now</button>
+            </div>
+
+            <div class="certificate-card" onmouseover="visible()">
+                <img src="../images/certification_images/html_course" alt="img-2" class="img-card" />
+                <s class="first-txt">Rs 1000</s>
+                <p class="second-txt">Rs 500</p>
+                <p class="title">Learn HTML</p>
+                <button id="btn">Buy now</button>
+            </div>
+
+            <div class="certificate-card">
+                <img src="../images/certification_images/css_course" alt="img-3" class="img-card" />
+                <s class="first-txt">Rs 1000</s>
+                <p class="second-txt">Rs 500</p>
+                <p class="title">Learn CSS</p>
+                <button>Buy now</button>
+            </div>
+
+            <div class="certificate-card">
+                <img src="../images/certification_images/js_course" alt="img-4" class="img-card" />
+                <s class="first-txt">Rs 1000</s>
+                <p class="second-txt">Rs 500</p>
+                <p class="title">Learn JavaScript</p>
+                <button>Buy now</button>
+            </div>
+
+            <div class="certificate-card">
+                <img src="../images/certification_images/reactjs_course" alt="img-5" class="img-card" />
+                <s class="first-txt">Rs 1000</s>
+                <p class="second-txt">Rs 500</p>
+                <p class="title">Learn ReactJs</p>
+                <button>Buy now</button>
+            </div>
+
+            <div class="certificate-card">
+                <img src="../images/certification_images/bootstrap_course" alt="img-6" class="img-card" />
+                <s class="first-txt">Rs 1000</s>
+                <p class="second-txt">Rs 500</p>
+                <p class="title">Learn Bootstrap 3</p>
+                <button>Buy now</button>
+            </div>
+
+            <div class="certificate-card">
+                <img src="../images/certification_images/typescript_course" alt="img-7" class="img-card" />
                 <s class="first-txt">Rs 1000</s>
                 <p class="second-txt">Rs 500</p>
                 <p class="title">Full Access</p>
@@ -56,63 +103,62 @@
             </div>
 
             <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
+                <img src="../images/certification_images/python_course" alt="img-8" class="img-card" />
                 <s class="first-txt">Rs 1000</s>
                 <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
+                <p class="title">Learn Typescript</p>
                 <button>Buy now</button>
             </div>
 
             <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
+                <img src="../images/certification_images/web_design" alt="img-9" class="img-card" />
                 <s class="first-txt">Rs 1000</s>
                 <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
+                <p class="title">Learn Web Design</p>
                 <button>Buy now</button>
             </div>
 
             <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
+                <img src="../images/certification_images/back_end" alt="img-10" class="img-card" />
                 <s class="first-txt">Rs 1000</s>
                 <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
+                <p class="title">Learn Back End</p>
                 <button>Buy now</button>
             </div>
-
-            <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
-                <button>Buy now</button>
-            </div>
-
-            <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
-                <button>Buy now</button>
-            </div>
-
-            <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
-                <button>Buy now</button>
-            </div>
-
-            <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
-                <button>Buy now</button>
-            </div>
-
-
         </div>
+
+        <footer>
+            <div id="social">
+               <h2>codeX</h2>
+               <a href=""><i class="ri-instagram-fill"></i></a>
+               <a href=""><i class="ri-linkedin-box-fill"></i></a>
+               <a href=""><i class="ri-whatsapp-fill"></i></a>
+               <a href=""><i class="ri-telegram-fill"></i></a>
+            </div>
+      
+            <div id="pages">
+                <h2>Pages</h2>
+                 <a href="">Home</a>
+                 <a href="">Courses</a>
+                 <a href="">Demo lectures</a>
+                 <a href="">Build resume</a>
+                 <a href="">Certificates</a>
+                 <a href="">Our placements</a>
+                 <a href="">Our team</a>
+                 <a href="">Contact Us</a>
+                 <a href="">About Us</a>
+            </div>
+           
+           <div id="mob">
+              <h2>Get in touch</h2>
+              <a href="https://wa.me/+918459360294" target="_blank">+91 8459360294</a>
+              <a href="https://wa.me/+918468954007" target="_blank">+91 8468954007</a>        
+              <a href="https://wa.me/+918983624247" target="_blank">+91  8983624247</a>
+              <a href="mailto:sartaknavale08@gmail.com">codexgmail.com</a>
+              
+           </div>
+      
+        </footer>
     </div>
 
     <script src="../script/nav-bar.js"></script>

@@ -1,0 +1,81 @@
+#title h2{
+    text-align: center;
+    font-size: 9vw;
+    margin-top: 110px;
+}
+
+#title h2 span{
+    color: #32c1a0a1;
+    font-family: areBar;
+    margin-top: 110px;
+   
+}
+.card-container {
+    cursor: none;
+    height: 300px;
+    width: 95%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.teamcard {
+    width: 250px;
+    height:350px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    box-shadow:  10px 10px 100px #23dfb3a1;
+    border-radius:15px ;
+}
+
+.teamcard:hover {
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0.5px rgb(3, 29, 31);
+}
+.about-caed-img {
+    height: 130px;
+    width: 130px;
+    border-radius: 130px;
+    margin: 10px auto;
+    display: block;
+}
+
+.card-title-name {
+    font-weight: bold;
+    font-size: 23px;
+    display: block;
+}
+
+.card-sub-title-name {
+    color: rgb(99, 98, 98);
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    display: block;
+}
+.about-card-icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 50px;
+   margin-top:  50px;
+}
+
+.card-icon {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(238, 230, 230);
+    border-radius: 5px;
+}
+
+.about-card-icons {
+    height: 20px;
+    margin-top: 6px;
+}

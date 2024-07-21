@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+@font-face {
+    font-family: gilyroy;
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: areBar;
+    src: url(../fonts/Aerovias\ Brasil\ NF.ttf);
+}
+
+.icon-bar {
+    background-color: rgb(166, 159, 159);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: sticky;
+    top: 50px; /* Adjust as needed */
+    z-index: 999;
+    border-bottom: 1px solid #ccc;
+    margin-top: 80px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.icon-btn .icon {
+    font-size: 24px;
+    margin-right: 8px; /* Space between icon and text */
+    width: 20px;
+}
+
+.icon-btn .label {
+    font-size: 20px;
+}
+
+.icon-btn:hover {
+    color: #1a896f
+}
+
+
+video{
+    margin: 20px;
+    border-radius: 15px;
+}
+.notes_logo{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.notes_test{
+    color:black;
+    font-size: 30px;
+    margin: 10px;
+}
+.btn {
+    background-color:#1a896f;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .3s;
+    position: fixed;
+    
+    
+}
+.btn-container img{
+    padding: 10px;
+    width: 50px;
+}
+.btn_text{
+    font-size: 20px;
+}
+
+button:hover{
+   background-color: #166b57;
+   transform: scale(1.1);
+}
+.container{
+    margin-top: 100px;
+}
+#noteArea {
+    outline: none;
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+    text-align: top;
+    box-shadow: 0px 0px 20px 2px gray;
+    font-size: 19px;
+    padding: 5px;
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    z-index: 10;
+    
+}
+
+#notes button {
+    margin-top: 370px;
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+#saveNote{
+    position: fixed;
+    z-index: 20;
+    right: 24vh;
+}
+#downloadNotes{
+    position: fixed;
+    z-index: 20;
+    right: 10px;
+}
+#notes button:hover {
+    background-color: #45a049;
+}
+
+#savedNotes {
+    margin-top: 400px;
+    width: 300px;
+     
+}
+
+#notes {
+    background-color: #f9f9f9;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+ 
+
+.input-container {
+    margin-top: 0px;
+    display: flex;
+    float: right;
+    background-color:none;   
+    padding: 20px;
+     box-sizing: border-box; 
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    margin-top: 5px; /* Optional: Add some margin for spacing */
+}
+.btn-container {
+    margin: 10px;
+}
+.nav-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.video-card {
+    background-color: #8f8d8d3c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0px gray;
+    margin: 10px;
+    width: 400px;
+    overflow: hidden;
+    transition: transform 0.2s;
+
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 13px 2px gray;
+}
+
+.thumbnail {
+    overflow: hidden;
+}
+
+.thumbnail video, .thumbnail img {
+    display: block;
+    border-radius: 8px;
+
+    
+}
+
+
+.video-info {
+    padding: 15px;
+}
+
+.video-title {
+    font-size: 18px;
+    margin: 0;
+    
+}
+
+.video-channel, .video-views {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+.input-container {
+    display: none; /* Hide the notes section initially */
+
+}
+@media (max-width: 600px){
+    .btn-container{
+        display: none;
+    }
+}
+
+@media (min-width: 601px) and (max-width:800px)
+{
+    .btn-container{
+        display: none;
+    }
+    .icon-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-btn {
+        margin-bottom:10px;
+    }
+   
+}
+
+
+
+@media (min-width: 768px) and (max-width: 769px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #right a {
+        display: none;
+    }
+    #right img {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
