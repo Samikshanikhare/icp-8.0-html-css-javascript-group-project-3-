@@ -32,4 +32,13 @@ for (let element of languages) {
 }
 document.getElementById("lan").innerHTML = lanF;
 
+// skills
+let s = document.getElementsByClassName("skField");
+let str1 = "";
+for (let element of s) {
+  str1 += `<li> <span> ${element.value} </span></li>`;
+}
+if (str1.length) document.getElementById("skills").innerHTML = str1;
+
+
 }
