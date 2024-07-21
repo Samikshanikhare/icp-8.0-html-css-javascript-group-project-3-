@@ -36,12 +36,11 @@
 .teamcard:hover {
     width: 350px;
     text-align: center;
-    
     transform: translateY(-10px);
 }
 .about-caed-img {
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 150px;
     border-radius: 130px;
     margin: 10px auto;
     display: block;
@@ -70,8 +69,8 @@
 
 .card-icon {
     height: 50px;
-    width: 30px;
- 
+    width: 40px;
+    background-color: aliceblue;
     border-radius: 5px;
 }
 
