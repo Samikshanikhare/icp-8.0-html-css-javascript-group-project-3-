@@ -52,3 +52,4 @@ function changtxt(text){
         let txtContainer = document.querySelector("#more-fea span")
         txtContainer.innerText=`Know more about ${text} ...`
 }
+
