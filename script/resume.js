@@ -40,5 +40,12 @@ for (let element of s) {
 }
 if (str1.length) document.getElementById("skills").innerHTML = str1;
 
+// certificate
+let crf = document.getElementsByClassName("crField");
+let str2 = "";
+for (let element of crf) {
+  str2 += `<li> <span> ${element.value} </span></li>`;
+}
+if (str2.length) document.getElementById("certificate").innerHTML = str2;
 
 }
