@@ -5,3 +5,6 @@ function Func(){
 function Cssnote(){
     window.location.assign("cssnote.html")
 }
+function Jsnote(){
+    window.location.assign("jsnote.html")
+}
