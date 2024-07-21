@@ -150,3 +150,24 @@ reader.onloadend = function () {
   document.getElementById("imgTemplate").src = reader.result;
 }
 }
+
+//print cv
+function printCV() {
+    document.getElementById("nav").style.display = "none";
+    document.getElementById("resume").style.marginTop = "0px";
+    document.getElementById("cv-form").style.display = "none";
+    document.getElementById("heading").style.display = "none";
+    document.getElementById("btnN").style.display = "none";
+    document.getElementById("cv-template").style.display = "block";
+    document.getElementById("resume").className = "col-12";
+    document.getElementById("footer").style.display = "none";
+    window.print();
+    document.getElementById("nav").style.display = "flex";
+  
+    document.getElementById("footer").style.display = "block";
+    document.getElementById("cv-form").style.display = "block";
+    document.getElementById("resume").style.marginTop = "100px";
+    document.getElementById("resume").className = "col-md-6";
+    document.getElementById("heading").style.display = "block";
+    document.getElementById("btnN").style.display = "block";
+  }
