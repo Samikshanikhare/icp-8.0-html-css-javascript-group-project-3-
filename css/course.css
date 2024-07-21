@@ -141,7 +141,6 @@ h1 {
     top: 20vh;
     right: 3vh;
     width: 400px;
-    height: 200px;
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -215,7 +214,7 @@ h1 {
 
     .items {
         width: 400px;
-        height: 200px;
+        
         
     }
 
