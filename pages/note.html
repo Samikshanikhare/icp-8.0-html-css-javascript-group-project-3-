@@ -51,7 +51,7 @@
     <div class="menu">
         <div class="menu-item">
             <div class="container">
-                <img src="./../images/html-5.png" class="img" onclick="Func()" >
+                <img src="./../images/html-5.png" class="img" onclick="Func()">
                 <span class="font" onclick="Func()"><b>HTML</b></span>
 
             </div>
@@ -61,8 +61,8 @@
 
             </div>
             <div class="container">
-                <img src="./../images/js.png" class="img">
-                <span class="font"><b>JAVASCRIPT</b></span>
+                <img src="./../images/js.png" class="img" onclick="Jsnote()">
+                <span class="font" onclick="Jsnote()"><b>JS</b></span>
 
             </div>
             <div class="container">
@@ -85,7 +85,6 @@
                 <h1 class="headingfont">Write and search.....</h1><br><br><br>
                 <div>
                     <input type="text" placeholder="search...." class="inputbox" id="inputword">
-
                     <button type="button" onclick="Search()" class="btnsearch">Search</button>
                     <p id="result" class="paragraph"></p>
 
@@ -96,101 +95,7 @@
         </div>
     </div>
     <script src="../script/nav-bar.js"></script>
-    <script>
-        const shortNotes = {
-            HTML: {
-                intro: "HTML is the standard language for creating web pages.",
-                structure: {
-                    doctype: "<!DOCTYPE html> - Defines the document type.",
-                    html: "<html> - Root element.",
-                    head: "<head> - Contains meta-information.",
-                    title: "<title> - Sets the title.",
-                    body: "<body> - Contains the page content."
-                },
-                elements: {
-                    headings: "<h1> to <h6> - Heading tags.",
-                    paragraph: "<p> - Paragraph tag.",
-                    link: "<a href='url'> - Hyperlink tag.",
-                    image: "<img src='url' alt='desc'> - Image tag.",
-                    list: {
-                        ul: "<ul> - Unordered list.",
-                        ol: "<ol> - Ordered list.",
-                        li: "<li> - List item."
-                    }
-                },
-                semantic: {
-                    header: "<header> - Header section.",
-                    nav: "<nav> - Navigation links.",
-                    section: "<section> - Document section.",
-                    article: "<article> - Independent content.",
-                    footer: "<footer> - Footer section."
-                }
-            },
-            CSS: {
-                intro: "CSS styles the presentation of web pages.",
-                syntax: "Selector { property: value; }",
-                selectors: {
-                    element: "Selects elements by tag name.",
-                    id: "#id - Selects by ID.",
-                    class: ".class - Selects by class."
-                },
-                boxModel: {
-                    content: "Content - Text and images.",
-                    padding: "Padding - Space around content.",
-                    border: "Border - Surrounds padding.",
-                    margin: "Margin - Space outside border."
-                },
-                display: {
-                    block: "Block-level elements.",
-                    inline: "Inline elements.",
-                    none: "Hide elements."
-                },
-                positioning: {
-                    static: "Default positioning.",
-                    relative: "Relative to normal position.",
-                    absolute: "Relative to nearest positioned ancestor.",
-                    fixed: "Relative to viewport."
-                }
-            }
-        };
-
-
-        function Search() {
-            const inputElement = document.getElementById('inputword');
-            const resultElement = document.getElementById('result');
-            const query = inputElement.value.trim();
-
-            const keys = query.split('.');
-            let information = shortNotes;
-
-            for (const key of keys) {
-                if (information[key] !== undefined) {
-                    information = information[key];
-                } else {
-                    information = null;
-                    break;
-                }
-            }
-
-            if (information) {
-                resultElement.innerText = typeof information === 'string' ? information : JSON.stringify(information, null, 2);
-            } else {
-                resultElement.innerText = "Notes not found";
-            }
-        }
-
-        function Func(){
-            window.location.assign("htmlnote.html")
-
-        }
-        function Cssnote(){
-            window.location.assign("cssnote.html")
-        }
-
-    </script>
-
-
-
+    <script src="../script/note.js"></script>
 
 </body>
 
