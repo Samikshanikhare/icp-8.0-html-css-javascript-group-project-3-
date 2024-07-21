@@ -46,11 +46,11 @@ body{
 }
 
 #nav #left{
-    height: 100%;
-    width: 20vw;
-    font-size: 2vw;
-    font-weight: 900;
-    margin-left: 4vw;
+  height: 100%;
+  width: 20vw;
+  font-size: 2vw;
+  font-weight: 900;
+  margin-left: 4vw;
 }
 
 #left img{
@@ -226,77 +226,84 @@ body{
 
 
   
-footer{
-  display: block;
-  height: 65vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  background: linear-gradient(to left,#308976,transparent);
+
+  .footer {
+    height: auto;
+    padding: 20px 0;
+    background-color: #ffffffa1;
+    filter: blur(1);
 }
 
-#social{
-  height: 100%;
-  width: 20vw;
-  font-size: 2vw;
-}
-#pages,#social h2{
-  margin-bottom: 3vh;
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-#social a{
-  text-decoration: none;
-  color: #369481;
-  font-size: 3vw;
-  margin-left: 1vw;
+.footer-codex,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    padding: 0 10px;
 }
 
-#social a:hover{
-  color: #33a189;
+.footer-headding {
+    font-size: 1.5em;
+    margin-bottom:15px;
+    font-weight: bolder;
+    display: block;
+    font-family: areBar;
+    letter-spacing: 1px;
 }
 
-#pages{
-  height: 100%;
-  width: 30vw;
+.footer-headding:hover{
+  color: #1f7964;
 }
 
-#pages h2{
-  font-size: 4vw;
+.footer-img1 {
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
 }
 
-#pages a{
-  display: block;
-  text-decoration: none;
-  margin-top: 1vh;
-  font-size: 1.6vw;
-  font-weight: 900;
-  color: #0000;
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.792);
+    font-weight: 700;
 }
 
-#pages a:hover{
-  color: #1b453c;
+a:hover{
+  color: #1f7964;
 }
 
-#mob{
-  height: 100%;
-  width: 30vw;
+
+
+
+
+.footer-logo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
-#mob h2{
-  font-size: 2.5vw;
+.footer-img {
+    height: 30px;
+    margin: 0 10px;
 }
 
-#mob a{
-  display: block;
-  text-decoration: none;
-  font-size: 1.6vw;
-  font-weight: 900;
-  margin-top: 2vh;
-  color: #0000;
+.footer-copyright {
+    text-align: center;
+    font-size: 1em;
 }
-
+ul{
+    list-style-type: none;
+}
 
 @media screen and (max-width:480px) {
     
@@ -553,4 +560,28 @@ footer{
 
 
 
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-codex,
+  .footer-links,
+  .footer-contact {
+      margin: 20px 0;
+      text-align: center;
+  }
+  
+a {
+  text-decoration: none;
+}
+
+
+  .footer-headding {
+      font-size: 1.6em;
+  }
 }

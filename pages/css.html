@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+</head>
+<body id="body">
+    <div id="nav">
+    <div id="left">
+        <h1>code<span>X</span></h1>
+    </div>
+    <div id="right">
+          <a href="#">LogIn</a>
+
+          <div id="theam-btn-container">
+           <label class="switch">
+               <input type="checkbox" id="checkValue">
+               <span class="slider round"></span>
+             </label>
+         </div>
+          <span><img src="../images/menu-open.svg" alt=""></span>
+    </div>
+    <div id="menu-bar">
+       <ul>
+           <li><a href="#"><i class="ri-home-fill"></i> Home</a></li>
+           <li><a href="#"><i class="ri-video-chat-fill"></i> Courses</a></li>
+           <li><a href="#"><i class="ri-article-fill"></i> Resume</a></li>
+           <li><a href="#"><i class="ri-code-box-fill"></i> Editor</a></li>
+           <li><a href="#"><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
+           <li><a href="#"><i class="ri-team-fill"></i> Our Team</a></li>
+       
+       </ul>
+       <div id="close-menu">
+           <img src="../images/menu-close.svg" alt="">
+       </div>
+    </div>
+    
+</div>
+
+<div>
+    <nav class="icon-bar">
+        <a href="video.html" class="icon-btn" id="html">
+            <span ><img src="../images/video_image/html.png"class="icon"></span>
+            <span class="label"><b>HTML</b></span>
+        </a>
+        <a href="css.html" class="icon-btn" id="css">
+            <span ><img src="../images/video_image/social.png" class="icon"></span>
+            <span class="label"><b>CSS</b></span>
+        </a>
+        <a href="javascript.html" class="icon-btn" id="javascript">
+            <span><img src="../images/video_image/js.png" class="icon"></span>
+            <span class="label"><b>JavaScript</b></span>
+        </a>
+    </nav>
+    </div>
+    <div class="btn-container">
+        <button onclick="toggleNotes()" class="btn">
+            <img src="../images/video_image/notes.png" >
+        </button>
+    </div>
+    <div class="input-container" id="inputContainer">
+        <section id="notes">
+            <textarea id="noteArea" placeholder="Write your notes here..."></textarea>
+            <button id="saveNote">Save Note</button>&nbsp;&nbsp;
+            <button id="downloadNotes">Download Notes</button>
+            <div id="savedNotes"></div>
+        </section>
+    </div>
+    
+   
+    <div class="video-section">
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/css_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/css/What is CSS (HTML and CSS tutorial 33)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">What is CSS ?(CSS tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">1M views • 1 week ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/css_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/css/Different Ways to Apply CSS (HTML and CSS tutorial 34)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Different Ways to Apply CSS (CSS tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">500K views • 2 weeks ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/css_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/css/CSS Fonts(HTML and CSS tutorial 35)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">CSS Fonts (CSS tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">2M views • 3 days ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/css_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/css/CSS Colors (HTML and CSS tutorial 36)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">CSS Colors (CSS tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">800K views • 5 days ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/css_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/css/Very Basic CSS Selectors(HTML and CSS tutorial 37)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Very Basic CSS Selectors (CSS tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">1.5M views • 1 month ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/css_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/css/CSS Utility Classes _ ID vs Classes(Tutorial 38)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">CSS Utility Classes _ ID vs Classes (CSS tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">900K views • 2 days ago</p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+ <script src="../script/video.js"></script>
+ <script src="../script/nav-bar.js"></script>
+</body>
+</html>
