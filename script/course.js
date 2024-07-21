@@ -1,34 +1,25 @@
-let cart = document.querySelector(".cart");
-let items = document.querySelector(".items");
+document.addEventListener('DOMContentLoaded', function () {
+    const cartIcon = document.querySelector('.cart');
+    const cartItemsContainer = document.querySelector('.items');
+    const cartItems = [];
 
-
-const buyCourses = []
-
-let flag = 0
-
-cart.addEventListener("click", () => {
-    if (flag == 0) {
-        items.style.display = "none"
-        flag = 1;
-    } else if (flag == 1) {
-        items.style.display = "flex"
-        flag = 0;
-        addtoitems(buyCourses)
-    }
-})
-
-
-function addtocart(data) {
-    buyCourses.push(data)
-    console.log(buyCourses)
-}
-
-let buyitems = ""
-
-function addtoitems(data) {
-    console.log(data)
-    data.forEach((element) => {
-        buyitems += <span>course ${element.name} prise : ${element.price}</span>
+    cartIcon.addEventListener('click', function () {
+        cartItemsContainer.style.display = cartItemsContainer.style.display === 'none' ? 'block' : 'none';
     });
-    items.innerHTML = buyitems
-}
+
+    window.addToCart = function (course) {
+        cartItems.push(course);
+        alert(`${course.name} has been added to the cart`);
+        updateCartDisplay();
+    }
+
+    function updateCartDisplay() {
+        if (cartItems.length === 0) {
+            cartItemsContainer.innerHTML = '<span>No items in the cart</span>';
+        } else {
+            cartItemsContainer.innerHTML = '<ul>' + cartItems.map(item => `<li>${item.name} - ${item.price}</li>`).join('') + '</ul>';
+        }
+    }
+
+    updateCartDisplay();
+});
