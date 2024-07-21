@@ -63,3 +63,126 @@ body::-webkit-scrollbar{
 
 
 
+
+  
+
+video{
+    margin: 20px;
+    border-radius: 15px;
+}
+.notes_logo{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.notes_test{
+    color:black;
+    font-size: 30px;
+    margin: 10px;
+}
+.btn {
+    background-color:#1a896f;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .3s;
+    position: fixed;
+    
+    
+}
+.btn-container img{
+    padding: 10px;
+    width: 50px;
+}
+.btn_text{
+    font-size: 20px;
+}
+
+button:hover{
+   background-color: #166b57;
+   transform: scale(1.1);
+}
+.container{
+    margin-top: 100px;
+}
+#noteArea {
+    outline: none;
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+    text-align: top;
+    box-shadow: 0px 0px 20px 2px gray;
+    font-size: 19px;
+    padding: 5px;
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    z-index: 10;
+    
+}
+
+#notes button {
+    margin-top: 370px;
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+#saveNote{
+    position: fixed;
+    z-index: 20;
+    right: 24vh;
+}
+#downloadNotes{
+    position: fixed;
+    z-index: 20;
+    right: 10px;
+}
+#notes button:hover {
+    background-color: #45a049;
+}
+
+#savedNotes {
+    margin-top: 400px;
+    width: 300px;
+     
+}
+
+#notes {
+    background-color: #f9f9f9;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+ 
+
+.input-container {
+    margin-top: 0px;
+    display: flex;
+    float: right;
+    background-color:none;   
+    padding: 20px;
+     box-sizing: border-box; 
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    margin-top: 5px; /* Optional: Add some margin for spacing */
+}
+.btn-container {
+    margin: 10px;
+}
