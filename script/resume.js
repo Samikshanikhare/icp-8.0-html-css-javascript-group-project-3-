@@ -16,4 +16,12 @@ document.getElementById("mobileNumberField").value;
 document.getElementById("emailAddress").innerHTML =
 document.getElementById("emailAddressFiled").value;
 
+// address
+document.getElementById("address").innerHTML =
+document.getElementById("addressField").value;
+
+// date of birth
+document.getElementById("dateOfBirth").innerHTML =
+document.getElementById("dateofbirth").value;
+
 }
