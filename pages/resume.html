@@ -199,6 +199,118 @@
           </div>
         </div>
 
+        <div class="container text-center verticalSpace">
+          <button onclick="generateCV()" class="printCV">
+            Generate Resume
+          </button>
+        </div>
+  
+      </div>
+      <div class="col-12 col-md-6 col-sm-12 resumeContainer" id="resume">
+        <div class="card-header" id="heading">
+          <h1 class="text-center my-2">Resume Preview</h1>
+        </div>
+  
+        <div class="cv " id="cv-template">
+          <div class="container" id="cv-template-container">
+            <div class="left">
+              <div class="text">
+                <div class="pic">
+                  <img id="imgTemplate" src="" alt="" class="img-fluid myimg" />
+                </div>
+                <h2 id="fullName"> </h2>
+                <span id="jobTitle" style="text-align: center;"> </span>
+              </div>
+              <div class="info">
+                <h3 class="title">contact info</h3>
+                <ul>
+                  <li>
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span id="mobileNumber"></p>
+                  </li>
+                  <li>
+                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <span id="emailAddress"></span>
+                  </li>
+                  <li>
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span id="address" href=""></span>
+                  </li>
+                  <li>
+                    <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                    <span id="dateOfBirth" href=""></span>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="lang">
+                <h3 class="title">languages</h3>
+                <ul id="lan">
+                </ul>
+              </div>
+  
+              <div class="skills">
+                <h2 class="title">skills</h2>
+                <ul id="skills">
+                </ul>
+              </div>
+  
+              <div class="certificate">
+                <h2 class="title">Certificate</h2>
+                <ul id="certificate">
+                </ul>
+              </div>
+  
+            </div>  
+            <div class="right">
+              <div class="about">
+                <h2>About</h2>
+                <p id="objectiveT">
+                </p>
+              </div>
+              <div class="edu">
+                <h2 class="title">Education</h2>
+                <ul id="edu">
+                </ul>
+              </div>
+              <div class="exp">
+                <h2>Work Experience</h2>
+                <div class="works">
+                  <h3 id="titleF"></h3>
+                  <ul id="weT">
+                  </ul>
+                  <h3 id="titleF2"></h3>
+                  <ul id="weT2">
+                  </ul>
+                  <h3 id="titleF3"></h3>
+                  <ul id="weT3">
+                  </ul>
+                </div>
+  
+                <h2>Projects</h2>
+                <div class="projects">
+                  <h3 id="titleP"></h3>
+                  <ul id="projectText">
+                  </ul>
+                  <h3 id="titleP2"></h3>
+                  <ul id="projectText2">
+                  </ul>
+                  <h3 id="titleP3"></h3>
+                  <ul id="projectText3">
+                  </ul>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <div id="btnN" class=" text-center  my-3">
+            <button onclick="printCV()" class="printCV">Print CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
         <!-- print as a pdf -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
