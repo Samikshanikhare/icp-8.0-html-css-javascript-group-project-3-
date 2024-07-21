@@ -78,67 +78,39 @@
     height: 35px;
     margin-top: 6px;
 }
-@media screen and (max-width:768px){
-.card-container {
-    height: fit-content;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 1px;
-}
 
-.team-card {
-    width: 350px;
-    text-align: center;
-    padding: 10px;
-    margin: 20px 10px;
-    box-shadow: 0 0 10px gray;
-}
-.about-caed-img {
-    height: 70px;
-    width: 70px;
-    border-radius: 70px;
-    margin: 5px auto;
-    display: block;
-}
 
-.card-title-name {
-    font-weight: bold;
-    font-size: 15px;
-    display: block;
+@media (max-width: 767px) {
+    .teamcard {
+        height: 200px;
+        width;100px
+    }
+    .about-caed-img{
+        height: 60px;
+        width: 70px;
+    }
+    .about-card-icons {
+        height: 20px;
+       
+    }
+    .about-card-icon-container{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .card-icon{
+        height: 40px;
+    }
+    .card-container {
+        height: 300px;
+        width: 95%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
-
-.card-sub-title-name {
-    color: rgb(99, 98, 98);
-    font-weight: 400;
-    font-size: 12px;
-    margin-top: 7px;
-    display: block;
-}
-
-.about-card-icon-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: 50px;
-    margin-top: 25px;
-}
-
-.card-icon {
-    height: 50px;
-    width: 40px;
-    background-color: rgb(246, 243, 243);
-    border-radius: 5px;
-}
-
-.about-card-icons {
-    height: 15px;
-    margin-top: 6px;
-}
-}
-    
