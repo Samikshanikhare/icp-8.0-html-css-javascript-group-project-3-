@@ -119,8 +119,8 @@ body {
     }
 
     .img {
-        height: 30px;
-        width: 40px;
+        height: 20px;
+        width: 30px;
     }
 
     .menu-content {
@@ -129,6 +129,10 @@ body {
 
     .content_body {
         visibility: hidden;
+    }
+    .menu-item {
+        width:80px
+    
     }
 
 }
