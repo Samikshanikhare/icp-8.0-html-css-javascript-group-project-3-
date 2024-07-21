@@ -48,4 +48,16 @@ for (let element of crf) {
 }
 if (str2.length) document.getElementById("certificate").innerHTML = str2;
 
+//objective (about)
+document.getElementById("objectiveT").innerHTML = 
+document.getElementById("objectiveField").value;
+
+// education 
+let educationF = document.getElementsByClassName("edField");
+let resEdu = "";
+for (let element of educationF) {
+    resEdu += `<li class="squar"> <h4> ${element.value} </h4></li>`;
+}
+document.getElementById("edu").innerHTML = resEdu;
+
 }
