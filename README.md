@@ -59,10 +59,5 @@ Each course includes:
 
 - Email : codeex0007@gmail.com
 - Phone:  +91 84689 54007
-- Website: https://codee-x.netlify.app/pages/editor
-- Social Media: Follow us on https://www.facebook.com/ (Facebook), 
- https://www.facebook.com/TwitterInc/(Twitter), 
- and 
- https://www.linkedin.com/feed/(LinkedIn) for updates and tips.
-
-
+- Website: https://codee-x.netlify.app/
+  
