@@ -1,16 +1,18 @@
 //generating cv
 function generateCV() {
+    // display the CV template
   document.getElementById("cv-template").style.display = "block";
-  document.getElementById("fullName").innerHTML = document.getElementById("fullNameField").value;
+  // full name
+  document.getElementById("fullName").innerHTML = 
+  document.getElementById("fullNameField").value;
 
   // job title 
-  document.getElementById("jobTitle").innerHTML = document.getElementById(
-    "jobFiled"
-  ).value;
+  document.getElementById("jobTitle").innerHTML = 
+  document.getElementById("jobFiled").value;
 
   // mobile number
-  document.getElementById("mobileNumber").innerHTML =
-    document.getElementById("mobileNumberField").value;
+  document.getElementById("mobileNumber").innerHTML = 
+  document.getElementById("mobileNumberField").value;
 
   //email address
   document.getElementById("emailAddress").innerHTML =
@@ -24,7 +26,7 @@ function generateCV() {
   document.getElementById("dateOfBirth").innerHTML =
     document.getElementById("dateofbirth").value;
 
-  // languages
+  // languages input fields
   let languages = document.getElementsByClassName("laField");
   let lanF = "";
   for (let element of languages) {
@@ -32,7 +34,7 @@ function generateCV() {
   }
   document.getElementById("lan").innerHTML = lanF;
 
-   // skills
+   // skills input fields
   let s = document.getElementsByClassName("skField");
   let str1 = "";
   for (let element of s) {
@@ -40,7 +42,7 @@ function generateCV() {
   }
   if (str1.length) document.getElementById("skills").innerHTML = str1;
 
-  // certificate
+  // certificate input fields
   let crf = document.getElementsByClassName("crField");
   let str2 = "";
   for (let element of crf) {
@@ -49,10 +51,11 @@ function generateCV() {
   if (str2.length) document.getElementById("certificate").innerHTML = str2;
 
   //objective (about)
-  document.getElementById("objectiveT").innerHTML = document.getElementById("objectiveField").value;
+  document.getElementById("objectiveT").innerHTML = 
+  document.getElementById("objectiveField").value;
 
 
-  // education 
+  // education input fields
   let educationF = document.getElementsByClassName("edField");
   let resEdu = "";
   for (let element of educationF) {
@@ -140,7 +143,7 @@ function generateCV() {
   }
   document.getElementById("projectText3").innerHTML = prostr3;
 
-  //code for setting image
+  //code for setting profile image
   let file = document.getElementById("profileImageField").files[0];
   let reader = new FileReader();
   reader.readAsDataURL(file);
@@ -153,6 +156,7 @@ function generateCV() {
 
 //print cv
 function printCV() {
+  // hide UI elements and prepare for printing
   document.getElementById("nav").style.display = "none";
   document.getElementById("resume").style.marginTop = "0px";
   document.getElementById("cv-form").style.display = "none";
@@ -162,8 +166,8 @@ function printCV() {
   document.getElementById("resume").className = "col-12";
   document.getElementById("footer").style.display = "none";
   window.print();
+  // restore UI elements after printing
   document.getElementById("nav").style.display = "flex";
-
   document.getElementById("footer").style.display = "block";
   document.getElementById("cv-form").style.display = "block";
   document.getElementById("resume").style.marginTop = "100px";
@@ -173,7 +177,7 @@ function printCV() {
 }
 
 
-// nav and footer
+// nav and footer theme toggle
 let closeBtn = document.querySelector("#close-menu img")
 let menuPage = document.querySelector("#menu-bar")
 let openBtn = document.querySelector("#right span img")
@@ -201,10 +205,11 @@ closeBtn.addEventListener('click',()=>{
     menuPage.style.right=`-100vw`
    })
 
-
+// Theme toggle functionality
 checkBtn.addEventListener('click',function(e){
 
     if(checkBtn.checked){
+      // switch to black theme
        body.classList.remove("white-theam")
        body.classList.add("black-theam")
        lable.classList.remove("black-theam")
@@ -221,6 +226,7 @@ checkBtn.addEventListener('click',function(e){
        // footer elements
 
     }else{
+      // switch to white theme
        body.classList.remove("black-theam")
        body.classList.add("white-theam")
        lable.classList.remove("white-theam")
