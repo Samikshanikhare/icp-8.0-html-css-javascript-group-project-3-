@@ -52,7 +52,7 @@
 
     </div>
 
-    <br><br> <br><br> <br><br>
+    <br><br> <br><br>
 
     <div class="menu">
         <div class="menu-item">
@@ -127,28 +127,6 @@
 
         </div>
     </div>
-    <script>
-        const dictionary = {
-            markup:'It uses tags to organize text, control its formatting, and manage data. ',
-            content :'Content refers to the information and experiences that are directed toward an end-user or audience. ',
-            heading :'headings are used to define the titles or subtitles of sections on a webpage.',
-            paragraph:'Paragraphs are blocks of text that are separated from other blocks of text and elements',
-            title:'It is also used by search engines to identify the content of the page.'
-
-        }
-        function Func1() {
-            const inputElement = document.getElementById('inputword');
-            const resultElement = document.getElementById('result');
-            const word = inputElement.value
-            const information = dictionary[word]
-            if (information){
-                resultElement.innerText = information
-            }
-            else{
-                resultElement.innerText="word not match"
-            }
-        }
-    </script>
     <script src="../script/nav-bar.js"></script>
     <script src="../script/note.js"></script>
 </body>
