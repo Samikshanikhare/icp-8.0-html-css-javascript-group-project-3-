@@ -10,25 +10,30 @@
   <!-- cdn css file -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/resumeNav.css">
+  <link rel="stylesheet" href="../css/resume.css" />
 
-  <link rel="stylesheet" href="./../css/resume.css" />
+
+  <link rel="shortcut icon" href="../images/bg4.png" type="image/x-icon">
 </head>
 
 <body>
   <!-- nav -->
 
   <body id="body">
+
     <div id="nav">
       <div id="left">
         <h1>code<span>X</span></h1>
       </div>
       <div id="right">
-        <a href="#">LogIn</a>
+        <a href="./pages/login.html">LogIn</a>
 
         <div id="theam-btn-container">
           <label class="switch">
@@ -36,31 +41,30 @@
             <span class="slider round"></span>
           </label>
         </div>
-        <span><img src="./../images/menu-open.svg" alt=""></span>
+        <span><img src="../images/menu-open.svg" alt=""></span>
       </div>
       <div id="menu-bar">
         <ul>
-          <li><a href=""><i class="ri-home-fill"></i> Home</a></li>
-          <li><a href="#"><i class="ri-video-chat-fill"></i> Courses</a></li>
-          <li><a href="#"><i class="ri-article-fill"></i> Resume</a></li>
-          <li><a href="#"><i class="ri-code-box-fill"></i> Editor</a></li>
-          <li><a href="#"><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
-          <li><a href="#"><i class="ri-team-fill"></i> Our Team</a></li>
-
+          <li><a href="../index.html"><i class="ri-home-fill"></i> Home</a></li>
+          <li><a href="../pages/course.html"><i class="ri-video-chat-fill"></i> Courses</a></li>
+          <li><a href="../pages/resume.html"><i class="ri-article-fill"></i> Resume</a></li>
+          <li><a href="../pages/editor.html"><i class="ri-code-box-fill"></i> Editor</a></li>
+          <li><a href="../pages/placement.html"><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
+          <li><a href="../pages/team.html"><i class="ri-team-fill"></i> Our Team</a></li>
+          <li><a href="../pages/note.html"><i class="ri-team-fill"></i>Notes</a></li>
         </ul>
         <div id="close-menu">
-          <img src="./../images/menu-close.svg" alt="">
+          <img src="../images/menu-close.svg" alt="">
         </div>
       </div>
 
     </div>
-    <!-- nav end -->
 
     <div class="row ">
-      <div class="col-md-6 resumeContainer" id="cv-form">
+      <div class="col-md-6 resumeContainer p-0" id="cv-form">
         <div class="container">
           <div class="card-header">
-            <h1 class="text-center my-2">Resume Maker</h1>
+            <h1 class="text-center my-2 headingText">Resume Maker</h1>
           </div>
           <div class=" card-body-bg">
             <div class="card-body">
@@ -68,7 +72,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group verticalSpace">
-                      <label class="lables" for="fullNameField">Full Name</label>
+                      <label id="lable" class="lables" for="fullNameField">Full Name</label>
                       <input type="text" id="fullNameField" placeholder="Enter full name" class="form-control" />
                     </div>
 
@@ -135,14 +139,14 @@
                       <textarea id="objectiveField" placeholder="Enter about yourself" class="form-control inputMargin"
                         rows="3"></textarea>
                     </div>
-  
+
                     <div class="form-group verticalSpace" id="ed">
                       <label class="lables" for="">Education</label>
                       <input placeholder="Enter education details" class="form-control edField inputMargin"></input>
                       <input placeholder="Enter education details" class="form-control edField inputMargin"></input>
                       <input placeholder="Enter education details" class="form-control edField inputMargin"></input>
                     </div>
-  
+
                     <div class="form-group verticalSpace" id="we">
                       <label class="lables " for="">Work Experience</label>
                       <div class="form-group " id="ti">
@@ -151,47 +155,49 @@
                       <div class="form-group ">
                         <input placeholder="Enter designation" class="form-control weField inputMargin"></input>
                       </div>
-  
+
                       <div class="form-group " id="ti">
                         <input placeholder="Enter company name" class="form-control tiField2 topSpace"></input>
                       </div>
-  
+
                       <div class="form-group ">
                         <input placeholder="Enter designation" class="form-control weField2 inputMargin"></input>
                       </div>
-  
+
                     </div>
-  
+
                     <div class="form-group verticalSpace" id="project">
                       <label class="lables" for="">Projects</label>
                       <div class="form-group  " id="ti">
                         <input placeholder="Enter project name" class="form-control protiField inputMargin"></input>
                       </div>
-  
+
                       <div class="form-group ">
                         <textarea placeholder="Enter project description"
                           class="form-control proField inputMargin"></textarea>
                       </div>
-  
+
                       <div class="form-group  " id="ti">
                         <input placeholder="Enter project name" class="form-control protiField2 topSpace"></input>
                       </div>
-  
+
                       <div class="form-group ">
                         <textarea placeholder="Enter project description"
                           class="form-control proField2 inputMargin"></textarea>
                       </div>
-  
+
                       <div class="form-group  " id="ti">
                         <input placeholder="Enter project name"
                           class="form-control protiField3 inputMargin topSpace"></input>
                       </div>
-  
+
                       <div class="form-group ">
                         <textarea placeholder="Enter project description"
                           class="form-control proField3 inputMargin"></textarea>
-                      </div>  
-                    </div> 
+                      </div>
+
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -204,13 +210,13 @@
             Generate Resume
           </button>
         </div>
-  
+
       </div>
       <div class="col-12 col-md-6 col-sm-12 resumeContainer" id="resume">
         <div class="card-header" id="heading">
-          <h1 class="text-center my-2">Resume Preview</h1>
+          <h1 class="text-center my-2 headingText">Resume Preview</h1>
         </div>
-  
+
         <div class="cv " id="cv-template">
           <div class="container" id="cv-template-container">
             <div class="left">
@@ -218,11 +224,11 @@
                 <div class="pic">
                   <img id="imgTemplate" src="" alt="" class="img-fluid myimg" />
                 </div>
-                <h2 id="fullName"> </h2>
+                <h2 id="fullName" class="textFont"> </h2>
                 <span id="jobTitle" style="text-align: center;"> </span>
               </div>
               <div class="info">
-                <h3 class="title">contact info</h3>
+                <h3 class="title textFont">contact info</h3>
                 <ul>
                   <li>
                     <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
@@ -242,65 +248,65 @@
                   </li>
                 </ul>
               </div>
-  
+
               <div class="lang">
-                <h3 class="title">languages</h3>
+                <h3 class="title textFont">languages</h3>
                 <ul id="lan">
                 </ul>
               </div>
-  
+
               <div class="skills">
-                <h2 class="title">skills</h2>
+                <h2 class="title textFont">skills</h2>
                 <ul id="skills">
                 </ul>
               </div>
-  
+
               <div class="certificate">
-                <h2 class="title">Certificate</h2>
+                <h2 class="title textFont">Certificate</h2>
                 <ul id="certificate">
                 </ul>
               </div>
-  
-            </div>  
+
+            </div>
             <div class="right">
               <div class="about">
-                <h2>About</h2>
+                <h2 class="textFont">About</h2>
                 <p id="objectiveT">
                 </p>
               </div>
               <div class="edu">
-                <h2 class="title">Education</h2>
+                <h2 class="title textFont">Education</h2>
                 <ul id="edu">
                 </ul>
               </div>
               <div class="exp">
-                <h2>Work Experience</h2>
+                <h2 class="textFont">Work Experience</h2>
                 <div class="works">
-                  <h3 id="titleF"></h3>
+                  <h3 class="textFont" id="titleF"></h3>
                   <ul id="weT">
                   </ul>
-                  <h3 id="titleF2"></h3>
+                  <h3 class="textFont" id="titleF2"></h3>
                   <ul id="weT2">
                   </ul>
-                  <h3 id="titleF3"></h3>
+                  <h3 class="textFont" id="titleF3"></h3>
                   <ul id="weT3">
                   </ul>
                 </div>
-  
-                <h2>Projects</h2>
+
+                <h2 class="textFont">Projects</h2>
                 <div class="projects">
-                  <h3 id="titleP"></h3>
+                  <h3 class="textFont" id="titleP"></h3>
                   <ul id="projectText">
                   </ul>
-                  <h3 id="titleP2"></h3>
+                  <h3 class="textFont" id="titleP2"></h3>
                   <ul id="projectText2">
                   </ul>
-                  <h3 id="titleP3"></h3>
+                  <h3 class="textFont" id="titleP3"></h3>
                   <ul id="projectText3">
                   </ul>
                 </div>
               </div>
-  
+
             </div>
           </div>
           <div id="btnN" class=" text-center  my-3">
@@ -310,47 +316,57 @@
       </div>
     </div>
 
-    
+
     <!-- footer content -->
-    <footer id="footer">
-      <div id="social">
-         <h2>codeX</h2>
-         <a href=" "><i class="ri-instagram-fill"></i></a>
-         <a href=""><i class="ri-linkedin-box-fill"></i></a>
-         <a href=""><i class="ri-whatsapp-fill"></i></a>
-         <a href=""><i class="ri-telegram-fill"></i></a>
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="footer-codex">
+          <span class="footer-headding">codeX</span>
+          <p>Unlock the doors to your future by mastering the art of coding and technological problem-solving.</p>
+        </div>
+        <div class="footer-links">
+          <span class="footer-headding">Useful Links</span>
+          <ul>
+            <li><a href="../pages/video.html">See demo lectures</a></li>
+            <li><a href="../pages/aboutus.html">About us</a></li>
+            <li><a href="../pages/placement.html">Placemets</a></li>
+            <li><a href="../pages/features.html">Our features</a></li>
+            <li><a href="../pages/note.html">Notes</a></li>
+            <li><a href="../pages/login.html">Log In</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <span class="footer-headding">Contact Us</span><br>
+          <img src="../images/telephone.png" class="footer-img1" alt=""> <a href="tel:+918468954007"> +91 84689
+            54007</a><br>
+          <img src="../images/mail.png" class="footer-img1" alt=""> <a
+            href="mailto:codeex0007@gmail.com">codeex0007@gmail.com</a>
+        </div>
       </div>
-
-      <div id="pages">
-          <h2>Pages</h2>
-           <a  href="index.html">Home</a>
-           <a  href="./pages/course.html">Courses</a>
-           <a  href="">Demo lectures</a>
-           <a  href="">Build resume</a>
-           <a  href="./pages/certification.html">Certificates</a>
-           <a  href="./pages/placement.html">Our placements</a>
-           <a  href="">Our team</a>
-           <a  href="">Contact Us</a>
-           <a  href="./pages/aboutus.html">About Us</a>
+      <hr>
+      <div class="footer-logo-container">
+        <a href="https://www.instagram.com/codex_401/" class="footer-anchor"><img src="../images/instagram.png"
+            class="footer-img" alt=""></a>
+        <a href="https://x.com/thecodexnetwork" class="footer-anchor"><img src="../images/twitter .png" alt=""
+            class="footer-img"></a>
+        <a href="mailto:codeex0007@gmail.com" class="footer-anchor"><img src="../images/gmail1.png" alt=""
+            class="footer-img"></a>
+        <a href="https://github.com/codex-team" class="footer-anchor"><img src="../images/github.png" alt=""
+            class="footer-img"></a>
+        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fthecodexnetwork%2F"
+          class="footer-anchor"><img src="./images/facebook.png" alt="" class="footer-img"></a>
       </div>
-     
-     <div id="mob">
-        <h2>Get in touch</h2>
-        <a href="https://wa.me/+918459360294" target="_blank">+91 8459360294</a>
-        <a href="https://wa.me/+918468954007" target="_blank">+91 8468954007</a>        
-        <a href="https://wa.me/+918983624247" target="_blank">+91  8983624247</a>
-        <a href="mailto:sartaknavale08@gmail.com">codexgmail.com</a>
-        
-     </div>
-
+      <p class="footer-copyright">&copy; 2024 All rights reserved Codex</p>
     </footer>
 
-        <!-- print as a pdf -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-          crossorigin="anonymous"></script>
-        <script src="./../script/resume.js"></script>
-        <script src="./../script/nav-bar.js"></script>
+    <!-- print as a pdf -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"></script>
+    <script src="./../script/resume.js"></script>
+
+    <script src="./../script/nav-bar.js"></script>
+    <script src="./../script/nav-bar.js"></script>
 
   </body>
 

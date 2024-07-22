@@ -46,31 +46,13 @@ input::placeholder {
     margin-top: 20px;
     background: url(./../images/logpage.jpg ) no-repeat;
     filter: brightness(0.8);
-    
-    background-position: center;
+      background-position: center;
     background-size: cover;
     border-radius: 20px;
     overflow: hidden;
 }
 
-.item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 58%;
-    height: 100%;
-    color: #fff;
-    background: transparent;
-    padding: 80px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
 
-.item .logo {
-    color: #fff;
-    font-size: 30px;
-}
 
 .text-item h2 {
     font-size: 40px;
@@ -82,17 +64,8 @@ input::placeholder {
     margin: 20px 0;
 }
 
-.social-icon a i {
-    color: #fff;
-    font-size: 24px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: .5s ease;
-}
 
-.social-icon a:hover i {
-    transform: scale(1.2);
-}
+
 
 .container .login-section {
     position: absolute;
@@ -200,7 +173,7 @@ input::placeholder {
     text-decoration: none;
 }
 
-.remember-password a:hover {
+.remember-password  {
     text-decoration: underline;
 }
 
@@ -220,6 +193,10 @@ input::placeholder {
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.4);
 }
+.btn:hover{
+    color: white;
+
+}
 
 .codex {
     font-size: 70px;
@@ -237,7 +214,7 @@ input::placeholder {
     text-decoration: none;
 }
 
-.create-account p a:hover {
+.create-account p  {
     text-decoration: underline;
 }
 
