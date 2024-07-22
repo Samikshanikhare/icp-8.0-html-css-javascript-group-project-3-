@@ -11,7 +11,7 @@
     <style>
         .bodycontent {
             margin-left: 30px;
-            margin-top: -80px;
+            margin-top: -120px;
         }
     </style>
 
@@ -97,8 +97,9 @@
                     <div class="btntext">
                         <input type="text" placeholder="search...." class="inputbox" id="inputword">
                         <button type="button" onclick="Func1()" class="btnsearch"> search </button>
+                        <p id="result" class="paragraph"></p>
                     </div>
-                    <p id="result" class="paragraph"></p>
+                 
 
                 </div>
 
@@ -188,7 +189,13 @@
             const resultElement = document.getElementById('result');
             const word = inputElement.value
             const information = dictionary[word]
-            resultElement.innerText = information
+            if (information){
+                resultElement.innerText = information
+            }
+            else{
+                resultElement.innerText="word not match"
+            }
+           
         }
     </script>
     <script src="../script/nav-bar.js"></script>
