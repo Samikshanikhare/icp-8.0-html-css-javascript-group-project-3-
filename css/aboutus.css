@@ -40,9 +40,9 @@ body::-webkit-scrollbar{
         left: 50%;
         transform: translate(-50%,-50%);
         height: 40vh;*/
-    margin-top: 100px;
-    margin-bottom: 200px;
-    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
         
 }
 .section-1
