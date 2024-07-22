@@ -10,7 +10,8 @@
     <link href="../css/note.css" rel="stylesheet" />
     <style>
         .bodycontent {
-            margin: 80px 30px;
+            margin-top: -70px;
+            margin-left: 30px;
         }
     </style>
 
@@ -85,6 +86,20 @@
         </div>
         <br>
         <div class="menu-content">
+            <div class="menu-content">
+
+                <div class="content_body">
+                    <h1 class="headingfont">Dictionary</h1><br><br><br>
+                    <div>
+                        <input type="text" placeholder="search...." class="inputbox" id="inputword">
+                        <button type="button" onclick="Func1()" class="btnsearch"> search </button>
+                        <p id="result" class="paragraph"></p>
+
+                    </div>
+                </div>
+
+
+            </div>
             <div class="bodycontent">
                 <h1>JS (JavaScript)</h1><br><br>
                 <b style="font-size: 35px;"> Introduction</b><br><br>
@@ -112,6 +127,28 @@
 
         </div>
     </div>
+    <script>
+        const dictionary = {
+            markup:'It uses tags to organize text, control its formatting, and manage data. ',
+            content :'Content refers to the information and experiences that are directed toward an end-user or audience. ',
+            heading :'headings are used to define the titles or subtitles of sections on a webpage.',
+            paragraph:'Paragraphs are blocks of text that are separated from other blocks of text and elements',
+            title:'It is also used by search engines to identify the content of the page.'
+
+        }
+        function Func1() {
+            const inputElement = document.getElementById('inputword');
+            const resultElement = document.getElementById('result');
+            const word = inputElement.value
+            const information = dictionary[word]
+            if (information){
+                resultElement.innerText = information
+            }
+            else{
+                resultElement.innerText="word not match"
+            }
+        }
+    </script>
     <script src="../script/nav-bar.js"></script>
     <script src="../script/note.js"></script>
 </body>
