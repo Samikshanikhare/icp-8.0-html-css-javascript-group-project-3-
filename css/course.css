@@ -177,79 +177,7 @@ h1 {
     border-bottom: none;
 }
 
-footer {
-    display: block;
-    height: 70vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background: linear-gradient(to left, #308976, transparent);
-}
 
-#social {
-    height: 100%;
-    width: 20vw;
-    font-size: 2vw;
-}
-
-#pages,
-#social h2 {
-    margin-bottom: 3vh;
-    color: rgb(0, 0, 0);
-}
-
-#social a {
-    text-decoration: none;
-    color: #369481;
-    font-size: 3vw;
-    margin-left: 1vw;
-}
-
-#social a:hover {
-    color: #266356;
-}
-
-#pages {
-    height: 100%;
-    width: 30vw;
-}
-
-#pages h2 {
-    font-size: 2vw;
-}
-
-#pages a {
-    display: block;
-    text-decoration: none;
-    color: #000000;
-    margin-top: 1vh;
-    font-size: 1.6vw;
-    font-weight: 900;
-}
-
-#pages a:hover {
-    color: #1b453c;
-}
-
-#mob {
-    height: 100%;
-    width: 30vw;
-}
-
-#mob h2 {
-    font-size: 2vw;
-}
-
-#mob a {
-    display: block;
-    text-decoration: none;
-    font-size: 1.6vw;
-    color: rgb(0, 0, 0);
-    font-weight: 900;
-    margin-top: 2vh;
-}
 
 @media (min-width: 1200px) {
     .card {
@@ -260,6 +188,7 @@ footer {
 @media (min-width: 768px) and (max-width: 1199px) {
     .card {
         flex: 1 1 calc(50% - 20px);
+        margin-right: auto;
     }
 
         .course-cards {
@@ -284,8 +213,10 @@ footer {
         align-items: center;
     }
 
-        .card {
+ .card {
             flex: 1 1 calc(50% - 20px);
+          
+           
         }
 
     .cart {
@@ -323,6 +254,7 @@ footer {
 
     .card {
         flex: 1 1 calc(100% - 20px);
+        margin-right: auto;
     }
 
     .cart {
