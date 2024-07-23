@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +9,12 @@
     rel="stylesheet"
 />
     <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/aboutus.css">
     <link rel="stylesheet" href="./../css/nav.css">
+    <script src="./../script/aboutus.js"></script>
     <title>About us</title>
 </head>
-<body>
+<body id="body">
     <div id="nav">
         <div id="left">
             <h1>code<span>X</span></h1>
@@ -29,11 +32,11 @@
         </div>
         <div id="menu-bar">
            <ul>
-               <li><a href="#"><i class="ri-home-fill"></i> Home</a></li>
-               <li><a href="#"><i class="ri-video-chat-fill"></i> Courses</a></li>
+               <li><a href="../index.html"><i class="ri-home-fill"></i> Home</a></li>
+               <li><a href=""><i class="ri-video-chat-fill"></i> Courses</a></li>
                <li><a href="#"><i class="ri-article-fill"></i> Resume</a></li>
-               <li><a href="#"><i class="ri-code-box-fill"></i> Editor</a></li>
-               <li><a href="#"><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
+               <li><a href="./../pages/editor.html"><i class="ri-code-box-fill"></i> Editor</a></li>
+               <li><a href=""><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
                <li><a href="#"><i class="ri-team-fill"></i> Our Team</a></li>
            
            </ul>
@@ -41,8 +44,61 @@
                <img src="./../images/menu-close.svg" alt="">
            </div>
         </div>
-        
+    </div>
+    <div class="container">
+        <div class="section-1">
+            <p><u>Our Story</u></p>
+            <div class="btn-section">
+            <button type="button" class="btn" onclick="fun('2020')" id="btn1">2020</button>
+            <button type="button" class="btn" onclick="fun('2021')" id="btn2">2021</button>
+            <button type="button" class="btn" onclick="fun('2022')" id="btn3">2022</button>
+            <button type="button" class="btn" onclick="fun('2023')" id="btn4">2023</button>
+            </div>
+            <div class="information">
+                <div class="info">
+                   <h1 id="info"> 2020- Foundation of codeX .<br><br>Codex, a renowned organization, has been influential in various sectors since its establishment.
+                
+                </div>
+                <div class="img">
+                    <img src="https://www.emailvendorselection.com/wp-content/uploads/best-online-course-platforms-digital-courses-software-creators-2.png" id="img">
+                </div>
+            </div>
+        </div>
+        </div>
    </div>
+   <footer>
+    <div id="social">
+       <h2>codeX</h2>
+       <a href=""><i class="ri-instagram-fill"></i></a>
+       <a href=""><i class="ri-linkedin-box-fill"></i></a>
+       <a href=""><i class="ri-whatsapp-fill"></i></a>
+       <a href=""><i class="ri-telegram-fill"></i></a>
+    </div>
+
+    <div id="pages">
+        <h2>Pages</h2>
+         <a href="../index.html">Home</a>
+         <a href="">Courses</a>
+         <a href="">Demo lectures</a>
+         <a href="">Build resume</a>
+         <a href="./../pages/certification.html">Certificates</a>
+         <a href="./../pages/placement.html">Our placements</a>
+         <a href="">Our team</a>
+         <a href="">Contact Us</a>
+         <a href="./../pages/aboutus.html">About Us</a>
+    </div>
+   
+   <div id="mob">
+      <h2>Get in touch</h2>
+      <a href="https://wa.me/+918459360294" target="_blank">+91 8459360294</a>
+      <a href="https://wa.me/+918468954007" target="_blank">+91 8468954007</a>        
+      <a href="https://wa.me/+918983624247" target="_blank">+91  8983624247</a>
+      <a href="mailto:sartaknavale08@gmail.com">codexgmail.com</a>
+      
+   </div>
+
+  </footer>
+  
     <script src="./../script/nav-bar.js"></script>
 </body>
 </html>

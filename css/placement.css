@@ -92,6 +92,8 @@
     gap:40px ;
     flex-direction: row;
     flex-wrap: wrap; 
+    margin-top: 80px;
+    /* margin-top: 200px; */
 }
 
 .placement_photo
@@ -170,7 +172,7 @@ text-decoration: wavy;
     flex-direction: column;
     height: 170px;
     width: 300px;
-    background-color:whitesmoke;
+    background-color: rgb(245, 249, 248);
     gap: 10px;
     align-items: center;
     color: aliceblue;
@@ -214,6 +216,7 @@ text-decoration: wavy;
 .requiter_headingspan{
     color: black;
 }
+
 /* fotter  */
 
 
