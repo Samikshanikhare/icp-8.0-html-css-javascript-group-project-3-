@@ -1,0 +1,150 @@
+#title h2{
+    text-align: center;
+    font-size: 7vw;
+    margin-top: 110px;
+}
+
+#title h2 span{
+    color: #32c1a0a1;
+    font-family: areBar;
+    margin-top: 110px;
+   
+}
+body{
+    position: relative;
+    
+}
+
+.card-container {
+    height: 300px;
+    width: 95%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.teamcard {
+    width: 350px;
+    height:400px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 100px #23dfb3a1;
+    border-radius:15px ;
+}
+
+.teamcard:hover {
+    width: 350px;
+    text-align: center;
+    transform: translateY(-10px);
+}
+.about-caed-img {
+    height: 180px;
+    width: 180px;
+    border-radius: 130px;
+    margin: 10px auto;
+    display: block;
+}
+
+.card-title-name {
+    font-weight: bold;
+    font-size: 23px;
+    display: block;
+}
+
+.card-sub-title-name {
+    color: rgb(99, 98, 98);
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    display: block;
+}
+.about-card-icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 50px;
+    margin-top:  50px;
+}
+
+.card-icon {
+    height: 50px;
+    width: 40px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.about-card-icons {
+    height: 35px;
+    margin-top: 6px;
+}
+#moving{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #13b499;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer{
+    margin-top:1100px;
+}
+@media (max-width: 767px) {
+    .teamcard {
+        height: 200px;
+        width;100px
+    }
+    .about-caed-img{
+        height: 60px;
+        width: 70px;
+    }
+    .about-card-icons {
+        height: 20px;
+       
+    }
+    .about-card-icon-container{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .card-icon{
+        height: 40px;
+    }
+    .card-container {
+        height: 300px;
+        width: 95%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #title h2{
+        margin-top: 90px;
+    }
+    #title h2 span{
+        margin-top: 90px;
+    }
+    .footer{
+        margin-top: 2200px;
+    }
+}
+@media screen  and (min-width:768px) and (max-width:1180px) {
+    .footer{
+        margin-top: 2000px;
+    }
+}
+@media screen and (min-width:1181px) and (max-width:1574px){
+    .footer{
+        margin-top:1500px ;
+    }
+}

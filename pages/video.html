@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Lectures</title>
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+
+</head>
+<body id="body">
+    <div id="nav">
+    <div id="left">
+        <h1>code<span>X</span></h1>
+    </div>
+    <div id="right">
+          <a href="../pages/login.html">LogIn</a>
+
+          <div id="theam-btn-container">
+           <label class="switch">
+               <input type="checkbox" id="checkValue">
+               <span class="slider round"></span>
+             </label>
+         </div>
+          <span><img src="../images/menu-open.svg" alt=""></span>
+    </div>
+    <div id="menu-bar">
+       <ul>
+           <li><a href="../index.html"><i class="ri-home-fill"></i> Home</a></li>
+           <li><a href="../pages/course.html"><i class="ri-video-chat-fill"></i> Courses</a></li>
+           <li><a href="../pages/resume.html"><i class="ri-article-fill"></i> Resume</a></li>
+           <li><a href="../pages/editor.html"><i class="ri-code-box-fill"></i> Editor</a></li>
+           <li><a href="../pages/placement.html"><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
+           <li><a href="../pages/team.html"><i class="ri-team-fill"></i> Our Team</a></li>
+           <li><a href="../pages/note.html"><i class="ri-team-fill"></i>Notes</a></li>
+       
+       </ul>
+       <div id="close-menu">
+           <img src="../images/menu-close.svg" alt="">
+       </div>
+    </div>
+    
+</div>
+<div>
+    <nav class="icon-bar">
+        <a href="video.html" class="icon-btn" id="html">
+            <span ><img src="../images/video_image/html.png"class="icon"></span>
+            <span class="label"><b>HTML</b></span>
+        </a>
+        <a href="css.html" class="icon-btn" id="css">
+            <span ><img src="../images/video_image/social.png" class="icon"></span>
+            <span class="label"><b>CSS</b></span>
+        </a>
+        <a href="javascript.html" class="icon-btn" id="javascript">
+            <span><img src="../images/video_image/js.png" class="icon"></span>
+            <span class="label"><b>JavaScript</b></span>
+        </a>
+    </nav>
+    </div>
+    <div class="btn-container">
+        <button onclick="toggleNotes()" class="btn">
+            <img src="../images/video_image/notes.png" >
+        </button>
+    </div>
+    <div class="input-container" id="inputContainer">
+        <section id="notes">
+            <textarea id="noteArea" placeholder="Write your notes here..."></textarea>
+            <button id="saveNote">Save Note</button>&nbsp;&nbsp;
+            <button id="downloadNotes">Download Notes</button>
+            <div id="savedNotes"></div>
+        </section>
+    </div>
+    <div class="video-section">
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/html_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/html/How to Follow this course (Complete HTML and CSS Course)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Complete HTML and CSS Course (HTML tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">1M views • 1 week ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/html_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/html/What is HTML and CSS (Tutorial 01)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">What is HTML ?(HTML tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">500K views • 2 weeks ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/html_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/html/Download and Install VsCode (HTML and CSS Tutorial 2)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Download and Install VsCode (HTML tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">2M views • 3 days ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/html_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/html/VsCode Brief Tour (HTML and CSS Tutorial 03)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">VsCode Brief Tour HTML (HTML tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">800K views • 5 days ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/html_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/html/Chapter 2 Objective (HTML and CSS tutorial 04)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Objective HTML (HTML tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">1.5M views • 1 month ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="thumbnail">
+                <video controls poster="../images/video_image/html_poster.jpg" height="250px" width="350px">
+                    <source src="../videos/html/Structure of HTML Page(HTML and CSS tutorial 5)(360P).mp4" type="video/mp4" style="border-radius:20px ;">
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Structure of HTML Page (HTML tutorial)</h3>
+                <p class="video-channel">CodeX</p>
+                <p class="video-views">900K views • 2 days ago</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-codex">
+                <span class="footer-headding">codeX</span>
+                <p>Unlock the doors to your future by mastering the art of coding and technological problem-solving.</p>
+            </div>
+            <div class="footer-links">
+                <span class="footer-headding">Useful Links</span>
+                <ul>
+                    <li><a href="../pages/video.html">See demo lectures</a></li>
+                    <li><a href="../pages/aboutus.html">About us</a></li>
+                    <li><a href="../pages/placement.html">Placemets</a></li>
+                    <li><a href="../pages/features.html">Our features</a></li>
+                    <li><a href="../pages/note.html">Notes</a></li>
+                    <li><a href="../pages/login.html">Log In</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <span class="footer-headding">Contact Us</span><br>
+                <img src="../images/telephone.png" class="footer-img1" alt=""> <a href="tel:+918468954007"> +91 84689 54007</a><br>
+                <img src="../images/mail.png" class="footer-img1" alt=""> <a href="mailto:codeex0007@gmail.com">codeex0007@gmail.com</a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-logo-container">
+            <a href="https://www.instagram.com/codex_401/" class="footer-anchor"><img src="../images/instagram.png" class="footer-img" alt=""></a>
+            <a href="https://x.com/thecodexnetwork" class="footer-anchor"><img src="../images/twitter .png" alt="" class="footer-img"></a>
+            <a href="mailto:codeex0007@gmail.com" class="footer-anchor"><img src="../images/gmail1.png" alt="" class="footer-img"></a>
+            <a href="https://github.com/codex-team" class="footer-anchor"><img src="../images/github.png" alt="" class="footer-img"></a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fthecodexnetwork%2F" class="footer-anchor"><img src="../images/facebook.png" alt="" class="footer-img"></a>
+        </div>
+        <p class="footer-copyright">&copy; 2024 All rights reserved Codex</p>
+    </footer>
+
+    <script src="../script/video.js"></script>
+    <script src="../script/nav-bar.js"></script>
+   
+  
+</body>
+</html>
