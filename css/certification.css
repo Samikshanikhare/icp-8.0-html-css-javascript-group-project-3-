@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
     width: 100%;
     height: fit-content;
     /* border: 5px solid red; */
-    padding: 1vw;
+    padding: 0.3vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
 
 .certificate-card {
     width: 260px;
-    margin: 0.4vw;
+    margin: 1vw;
     /* text-align: center; */
     height: fit-content;
     border: 1px solid gray;
