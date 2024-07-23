@@ -22,13 +22,13 @@
         height:40vh;
         border-radius: 50%;
         width: 50vw;
-        background-color: #309b82a1;
+        background-color: #309b82a1; 
         filter: blur(100px);
-        box-shadow:40px 40px 100px #309b82a1;
+        box-shadow:40px 40px 100px #309b82a1; 
         position: absolute;
         top: 4%;
         left: 20%;
-        z-index:1;
+        z-index:-1;
     }
 #heading-txt{
     position: relative;
