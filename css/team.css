@@ -99,7 +99,7 @@ body{
 @media (max-width: 767px) {
     .teamcard {
         height: 200px;
-        width:300px;
+        width;300px;
     }
     .about-caed-img{
         height: 60px;
