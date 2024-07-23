@@ -207,6 +207,7 @@ body{
     padding: 20px 0;
     background-color: #ffffffa1;
     filter: blur(1);
+    margin-top: 20px;
 }
 
 .footer-container {
