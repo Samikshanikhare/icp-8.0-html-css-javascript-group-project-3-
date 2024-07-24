@@ -22,13 +22,13 @@
         height:40vh;
         border-radius: 50%;
         width: 50vw;
-        background-color: #309b82a1;
+        background-color: #309b82a1; 
         filter: blur(100px);
-        box-shadow:40px 40px 100px #309b82a1;
+        box-shadow:40px 40px 100px #309b82a1; 
         position: absolute;
         top: 4%;
         left: 20%;
-        z-index:1;
+        z-index:-1;
     }
 #heading-txt{
     position: relative;
@@ -38,10 +38,9 @@
     margin-top: 10vh;
     position: relative;
     z-index: 1;
-    margin-top: px;
+    font-family: areBar;
+ 
 }
-
-
 
 #heading-txt h1{
     font-weight: bolder;
@@ -85,16 +84,16 @@
     border-radius: 50%;
 }
 
+
 .Placement_ceel_frame
 {
     display: flex;
+    justify-content: start; 
+    gap:40px ;
     flex-direction: row;
-    justify-content: start;
-    gap:50px;
-    flex-wrap: wrap-reverse;
-
-   
-    
+    flex-wrap: wrap; 
+    margin-top: 80px;
+    /* margin-top: 200px; */
 }
 
 .placement_photo
@@ -141,7 +140,7 @@
 .Placed_company
 {
  
-    font-size:16px;
+font-size:16px;
 color: rgba(12, 12, 12, 0.867);
 font-family: Georgia, 'Times New Roman', Times, serif;
 text-decoration: wavy;
@@ -155,4 +154,69 @@ text-decoration: wavy;
     font-weight: 700;
 
 }
+.requiter_container
+{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    
+}
+
+.requiter_box
+{
+    margin-left: 60px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 300px;
+    background-color: rgb(245, 249, 248);
+    gap: 10px;
+    align-items: center;
+    color: aliceblue;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px  #0fcaa493;
+}
+
+.requiter_box:hover
+{
+    margin-left: 60px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 300px;
+    gap: 10px;
+    align-items: center;
+    color: aliceblue;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px  #0fcaa493;
+}
+.requiter_heading
+{
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    color: #32c1a0a1;
+    font-family: areBar;
+    font-size: 45px;
+}
+
+.Requiter_logo
+{
+    margin-top: 50px;
+    height: 80px;
+    font-size: 30px;
+
+}
+.requiter_headingspan{
+    color: black;
+}
+
+/* fotter  */
+
 
