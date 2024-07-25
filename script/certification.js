@@ -86,7 +86,6 @@ function visible(card, img) {
     }
 }
 
-
 function chnageImg(img) {
     let state = false;
     if (state === false) {

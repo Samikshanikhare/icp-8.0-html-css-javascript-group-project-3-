@@ -69,6 +69,10 @@ body::-webkit-scrollbar {
 .inputMargin {
   margin: 5px 0;
 }
+.inputMargin:focus{
+  border: 3px solid #337b6b;
+  -webkit-box-shadow: none;
+}
 
 .verticalSpace {
   margin: 10px 0;
