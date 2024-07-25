@@ -1,117 +1,110 @@
-function visible(card , img) {
-    // alert(card)
-    switch (card && img) {
+function visible(card, img) {
 
+    switch (card && img) {
         case 'item1' && 'img-1':
-            // alert(img)
+            let image1 = document.getElementById('img-1')
+            chnageImg(image1)
+
             let btn1 = document.getElementById('btn')
-            document.getElementById('img-1').src = "../images/certification_images/certificate"
-            if (btn1.style.display === "none") {
-                btn1.style.display = "block"
-            }
-            else {
-                btn1.style.display = "none"
-            }
+            hidebtn(btn1)
             break;
 
         case 'item2' && 'img-2':
-            // alert(img)
+            let image2 = document.getElementById('img-2')
+            chnageImg(image2)
+
             let btn2 = document.getElementById('btn1')
-            document.getElementById('img-2').src = "../images/certification_images/certificate"
-            if (btn2.style.display === "none") {
-                btn2.style.display = "block"
-            }
-            else {
-                btn2.style.display = "none"
-            }
+            hidebtn(btn2)
             break;
 
         case 'item3' && 'img-3':
-            document.getElementById('img-3').src = "../images/certification_images/certificate"
+            let image3 = document.getElementById('img-3')
+            chnageImg(image3)
+
             let btn3 = document.getElementById('btn2')
-            if (btn3.style.display === "none") {
-                btn3.style.display = "block"
-            }
-            else {
-                btn3.style.display = "none"
-            }
+            hidebtn(btn3)
             break;
 
         case 'item4' && 'img-4':
-            document.getElementById('img-4').src = "../images/certification_images/certificate"
+            let image4 = document.getElementById('img-4')
+            chnageImg(image4)
+
             let btn4 = document.getElementById('btn3')
-            if (btn4.style.display === "none") {
-                btn4.style.display = "block"
-            }
-            else {
-                btn4.style.display = "none"
-            }
+            hidebtn(btn4)
             break;
 
         case 'item5' && 'img-5':
-            document.getElementById('img-5').src = "../images/certification_images/certificate"
+            let image5 = document.getElementById('img-5')
+            chnageImg(image5)
+
             let btn5 = document.getElementById('btn4')
-            if (btn5.style.display === "none") {
-                btn5.style.display = "block"
-            }
-            else {
-                btn5.style.display = "none"
-            }
-            break;
+            hidebtn(btn5)
+            break
 
         case 'item6' && 'img-6':
-            document.getElementById('img-6').src = "../images/certification_images/certificate"
+            let image6 = document.getElementById('img-6')
+            chnageImg(image6)
+
             let btn6 = document.getElementById('btn5')
-            if (btn6.style.display === "none") {
-                btn6.style.display = "block"
-            }
-            else {
-                btn6.style.display = "none"
-            }
+            hidebtn(btn6)
+
             break;
 
         case 'item7' && 'img-7':
-            document.getElementById('img-7').src = "../images/certification_images/certificate"
+            let image7 = document.getElementById('img-7')
+            chnageImg(image7)
+
             let btn7 = document.getElementById('btn6')
-            if (btn7.style.display === "none") {
-                btn7.style.display = "block"
-            }
-            else {
-                btn7.style.display = "none"
-            }
+            hidebtn(btn7)
             break;
 
         case 'item8' && 'img-8':
-            document.getElementById('img-8').src = "../images/certification_images/certificate"
+
+            let image8 = document.getElementById('img-8')
+            chnageImg(image8)
+
             let btn8 = document.getElementById('btn7')
-            if (btn8.style.display === "none") {
-                btn8.style.display = "block"
-            }
-            else {
-                btn8.style.display = "none"
-            }
+            hidebtn(btn8)
             break;
 
         case 'item9' && 'img-9':
-            document.getElementById('img-9').src = "../images/certification_images/certificate"
+            let image9 = document.getElementById('img-9')
+            chnageImg(image9)
+
             let btn9 = document.getElementById('btn8')
-            if (btn9.style.display === "none") {
-                btn9.style.display = "block"
-            }
-            else {
-                btn9.style.display = "none"
-            }
+            hidebtn(btn9)
             break;
 
         case 'item10' && 'img-10':
-            document.getElementById('img-10').src = "../images/certification_images/certificate"
+
+            let image10 = document.getElementById('img-10')
+            chnageImg(image10)
+
             let btn10 = document.getElementById('btn9')
-            if (btn10.style.display === "none") {
-                btn10.style.display = "block"
-            }
-            else {
-                btn10.style.display = "none"
-            }
+            hidebtn(btn10)
             break;
     }
 }
+
+
+function chnageImg(img) {
+    let state = false;
+    if (state === false) {
+        img.src = "../images/certification_images/certificate"
+    }
+    else {
+        img.src = "../images/certification_images/html_course"
+        state = false
+    }
+}
+
+function hidebtn(btn) {
+
+    if (btn.style.display === "none") {
+        btn.style.display = "block"
+    }
+    else {
+        btn.style.display = "none"
+    }
+
+} 
