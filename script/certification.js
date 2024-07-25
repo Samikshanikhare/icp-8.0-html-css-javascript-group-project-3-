@@ -99,12 +99,5 @@ function chnageImg(img) {
 }
 
 function hidebtn(btn) {
-
-    if (btn.style.display === "none") {
-        btn.style.display = "block"
-    }
-    else {
-        btn.style.display = "none"
-    }
-
+    (btn.style.display === "none") ? btn.style.display = "block":btn.style.display = "none"
 } 
