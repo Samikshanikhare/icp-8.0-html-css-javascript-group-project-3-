@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/quiz.css">
     <title>HTML QUIXzz | codeX</title>
 </head>
-<body>
-    
+
+<body id="body">
+    <span id="sound"><i class="ri-volume-up-fill"></i></span>
+    <div id="theam-btn-container">
+        <label class="switch">
+            <input type="checkbox" id="checkValue">
+            <span class="slider round"></span>
+        </label>
+    </div>
+ 
+    <div id="timeScore">
+         <span id="total"><i class="ri-arrow-right-up-fill"></i> 0/10</span>
+         <span class="time"><i class="ri-time-fill"></i>00:00</span>
+    </div>
+
+    <div id="quecontainer">
+          <span class="que"></span>
+          <span class="ans a1"></span>
+          <span class="ans a2"></span>
+          <span class="ans a3"></span>
+          <span class="ans a4"></span>
+    </div>
+
+    <button id="btn">next</button>
+   
+
+    <audio src="../audio/bg.mp3" controls id="bgMusice"></audio>
+    <div id="show"></div>
+    <div id="show1"></div>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/htmlQuiz.js"></script>
 </body>
+
 </html>
