@@ -1,0 +1,137 @@
+@font-face {
+    font-family: gilyroy;
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: areBar;
+    src: url(../fonts/Aerovias\ Brasil\ NF.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+
+
+#show-div
+ {
+   
+        height:40vh;
+        border-radius: 50%;
+        width: 50vw;
+        background-color: #309b82a1;
+        filter: blur(100px);
+        box-shadow:40px 40px 100px #309b82a1;
+        position: absolute;
+        top: 4%;
+        left: 20%;
+        z-index:-1;
+    }
+#heading-txt{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 10vh;
+    position: relative;
+    z-index: 1;
+   margin-top: 130px;
+}
+
+
+
+#heading-txt h1{
+    font-weight: bolder;
+}
+
+#heading-txt span{
+    color: #32c1a0a1;
+    font-family: areBar;
+}
+
+.quete
+{
+    
+    font-size: 30px;
+    font-family: gilyroy;
+    color: rgb(14, 13, 13);
+    font-weight: bold;
+
+}
+.quete span
+{
+    color: #27dbb1a1;
+    font-family: areBar;
+
+}
+
+
+.page1-img{
+    height: 50%;
+    width: 20vw;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    filter: drop-shadow(10px 10px 60px #4ae1c381);
+    z-index: 1;
+    animation: moveImg1 5s linear infinite;
+}
+
+.allfeatures_container
+{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    
+}
+
+.features
+{
+    margin-left: 60px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 300px;
+    background-color:whitesmoke;
+    gap: 10px;
+    align-items: center;
+    color: aliceblue;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px  #0fcaa493;
+}
+.new{
+   margin-top: 202px;
+   margin-left: 1235px;
+    line-height: 1;
+    padding: 8px 11px;
+    border-radius: 4px;
+    position: absolute;
+    pointer-events: none;
+    background-color: red;
+    color: var(--whiteColor);
+    font-size: 15px;
+}
+.features:hover
+{
+    border: 1px solid rgb(5, 247, 194);
+    margin-top: 5px;
+}
+.features_logo
+{
+    margin-top: 30px;
+    height: 70px;
+}
+.features_name{
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(18, 18, 18);
+
+}
