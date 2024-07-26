@@ -1,12 +1,16 @@
 //generating cv
+document.getElementById("btnN").style.display = "none";
 function generateCV() {
+  // display the CV template
   document.getElementById("cv-template").style.display = "block";
-  document.getElementById("fullName").innerHTML = document.getElementById("fullNameField").value;
+  document.getElementById("btnN").style.display = "block";
+  // full name
+  document.getElementById("fullName").innerHTML =
+    document.getElementById("fullNameField").value;
 
-  // job title 
-  document.getElementById("jobTitle").innerHTML = document.getElementById(
-    "jobFiled"
-  ).value;
+  // job title
+  document.getElementById("jobTitle").innerHTML =
+    document.getElementById("jobFiled").value;
 
   // mobile number
   document.getElementById("mobileNumber").innerHTML =
@@ -24,7 +28,7 @@ function generateCV() {
   document.getElementById("dateOfBirth").innerHTML =
     document.getElementById("dateofbirth").value;
 
-  // languages
+  // languages input fields
   let languages = document.getElementsByClassName("laField");
   let lanF = "";
   for (let element of languages) {
@@ -32,7 +36,7 @@ function generateCV() {
   }
   document.getElementById("lan").innerHTML = lanF;
 
-   // skills
+  // skills input fields
   let s = document.getElementsByClassName("skField");
   let str1 = "";
   for (let element of s) {
@@ -40,7 +44,7 @@ function generateCV() {
   }
   if (str1.length) document.getElementById("skills").innerHTML = str1;
 
-  // certificate
+  // certificate input fields
   let crf = document.getElementsByClassName("crField");
   let str2 = "";
   for (let element of crf) {
@@ -49,10 +53,10 @@ function generateCV() {
   if (str2.length) document.getElementById("certificate").innerHTML = str2;
 
   //objective (about)
-  document.getElementById("objectiveT").innerHTML = document.getElementById("objectiveField").value;
+  document.getElementById("objectiveT").innerHTML =
+    document.getElementById("objectiveField").value;
 
-
-  // education 
+  // education input fields
   let educationF = document.getElementsByClassName("edField");
   let resEdu = "";
   for (let element of educationF) {
@@ -90,9 +94,9 @@ function generateCV() {
   for (let element of wes2) {
     strw2 += `<li class="squar"> <h4 class="textFont"> ${element.value} </h4></li>`;
   }
-  document.getElementById("weT2").innerHTML = strw2 ;
+  document.getElementById("weT2").innerHTML = strw2;
 
-  // title project 1 
+  // title project 1
   let titlePP = document.getElementsByClassName("protiField");
   let titP = "";
   for (let element of titlePP) {
@@ -124,7 +128,7 @@ function generateCV() {
   }
   document.getElementById("projectText2").innerHTML = prostr2;
 
-  // title project 3 
+  // title project 3
   let titlePP3 = document.getElementsByClassName("protiField3");
   let titP3 = "";
   for (let element of titlePP3) {
@@ -140,7 +144,7 @@ function generateCV() {
   }
   document.getElementById("projectText3").innerHTML = prostr3;
 
-  //code for setting image
+  //code for setting profile image
   let file = document.getElementById("profileImageField").files[0];
   let reader = new FileReader();
   reader.readAsDataURL(file);
@@ -148,90 +152,149 @@ function generateCV() {
   //set the image to template
   reader.onloadend = function () {
     document.getElementById("imgTemplate").src = reader.result;
+  };
+}
+
+// download resume code
+function downloadPDF() {
+  const element = document.getElementById("cv-template");
+  html2pdf(element, {
+    margin: 0,
+    filename: "resume.pdf",
+    image: { type: "pdf", quality: 1 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "in", format: "A4", orientation: "portrait" },
+  });
+}
+
+// for print resume code
+function printCV() {
+  if (x.matches) {
+    // If media query matches
+
+    document.getElementById("nav").style.display = "none";
+    document.getElementById("resume").style.marginTop = "0px";
+    document.getElementById("cv-form").style.display = "none";
+    document.getElementById("heading").style.display = "none";
+    document.getElementById("btnN").style.display = "none";
+    document.getElementById("cv-template").style.display = "block";
+    document.getElementById("resume").className = "col-12";
+
+    document.getElementById("footer").style.display = "none";
+    var h2 = document.getElementsByTagName("h2").length;
+    for (var i = 0; i < h2; i++) {
+      document.getElementsByTagName("h2")[i].style["font-size"] = "16px";
+    }
+
+    var h3 = document.getElementsByTagName("h3").length;
+    for (var i = 0; i < h3; i++) {
+      document.getElementsByTagName("h3")[i].style["font-size"] = "16px";
+    }
+
+    var h4 = document.getElementsByTagName("h4").length;
+    for (var i = 0; i < h4; i++) {
+      document.getElementsByTagName("h4")[i].style["font-size"] = "16px";
+      document.getElementsByTagName("h4")[i].style["color"] = "#000";
+    }
+    window.print();
+    document.getElementById("nav").style.display = "flex";
+
+    document.getElementById("footer").style.display = "block";
+    document.getElementById("cv-form").style.display = "block";
+    document.getElementById("resume").style.marginTop = "100px";
+    document.getElementById("resume").className = "col-md-6";
+    document.getElementById("heading").style.display = "block";
+    document.getElementById("btnN").style.display = "block";
+  } else {
+    document.getElementById("nav").style.display = "none";
+    document.getElementById("resume").style.marginTop = "0px";
+    document.getElementById("cv-form").style.display = "none";
+    document.getElementById("heading").style.display = "none";
+    document.getElementById("btnN").style.display = "none";
+    document.getElementById("cv-template").style.display = "block";
+    document.getElementById("resume").className = "col-12";
+    document.getElementById("footer").style.display = "none";
+    window.print();
+    document.getElementById("nav").style.display = "flex";
+
+    document.getElementById("footer").style.display = "block";
+    document.getElementById("cv-form").style.display = "block";
+    document.getElementById("resume").style.marginTop = "100px";
+    document.getElementById("resume").className = "col-md-6";
+    document.getElementById("heading").style.display = "block";
+    document.getElementById("btnN").style.display = "block";
   }
 }
 
-//print cv
-function printCV() {
-  document.getElementById("nav").style.display = "none";
-  document.getElementById("resume").style.marginTop = "0px";
-  document.getElementById("cv-form").style.display = "none";
-  document.getElementById("heading").style.display = "none";
-  document.getElementById("btnN").style.display = "none";
-  document.getElementById("cv-template").style.display = "block";
-  document.getElementById("resume").className = "col-12";
-  document.getElementById("footer").style.display = "none";
-  window.print();
-  document.getElementById("nav").style.display = "flex";
-
-  document.getElementById("footer").style.display = "block";
-  document.getElementById("cv-form").style.display = "block";
-  document.getElementById("resume").style.marginTop = "100px";
-  document.getElementById("resume").className = "col-md-6";
-  document.getElementById("heading").style.display = "block";
-  document.getElementById("btnN").style.display = "block";
-}
-
-
-// nav and footer
-let closeBtn = document.querySelector("#close-menu img")
-let menuPage = document.querySelector("#menu-bar")
-let openBtn = document.querySelector("#right span img")
-let checkBtn= document.getElementById("checkValue")
-let body = document.getElementById("body")
+// nav and footer theme toggle
+let closeBtn = document.querySelector("#close-menu img");
+let menuPage = document.querySelector("#menu-bar");
+let openBtn = document.querySelector("#right span img");
+let checkBtn = document.getElementById("checkValue");
+let body = document.getElementById("body");
 let lable = document.getElementById("label");
 /// editor page elements
-  let textarea = document.querySelector("#txt1")
-  let textarea2 = document.querySelector("#txt2")
-  let textarea3 = document.querySelector("#txt3")
+let textarea = document.querySelector("#txt1");
+let textarea2 = document.querySelector("#txt2");
+let textarea3 = document.querySelector("#txt3");
 
-// footer element access.. 
-let pages = document.querySelectorAll("#pages a")
-let mobNo = document.querySelectorAll("#mob a")
+// footer element access..
+let pages = document.querySelectorAll("#pages a");
+let mobNo = document.querySelectorAll("#mob a");
 
-    pages.forEach(page=>{page.style.color='black'})
-    mobNo.forEach(no=>{no.style.color='black'})
+pages.forEach((page) => {
+  page.style.color = "black";
+});
+mobNo.forEach((no) => {
+  no.style.color = "black";
+});
 
+openBtn.addEventListener("click", () => {
+  menuPage.style.right = `0px`;
+});
 
-openBtn.addEventListener('click',()=>{
- menuPage.style.right=`0px`
-})
+closeBtn.addEventListener("click", () => {
+  menuPage.style.right = `-100vw`;
+});
 
-closeBtn.addEventListener('click',()=>{
-    menuPage.style.right=`-100vw`
-   })
+// Theme toggle functionality
+checkBtn.addEventListener("click", function (e) {
+  if (checkBtn.checked) {
+    // switch to black theme
+    body.classList.remove("white-theam");
+    body.classList.add("black-theam");
+    lable.classList.remove("black-theam");
+    lable.classList.add("white-theam");
 
+    pages.forEach((page) => {
+      page.style.color = "white";
+    });
+    mobNo.forEach((no) => {
+      no.style.color = "white";
+    });
 
-checkBtn.addEventListener('click',function(e){
+    //editor elements...
+    textarea.style.backgroundColor = "black";
+    textarea2.style.backgroundColor = "black";
+    textarea3.style.backgroundColor = "black";
 
-    if(checkBtn.checked){
-       body.classList.remove("white-theam")
-       body.classList.add("black-theam")
-       lable.classList.remove("black-theam")
-       lable.classList.add("white-theam")
-      
-       pages.forEach(page=>{page.style.color='white'})
-       mobNo.forEach(no=>{no.style.color='white'})
-      
-       //editor elements...
-       textarea.style.backgroundColor='black'
-       textarea2.style.backgroundColor="black"
-       textarea3.style.backgroundColor="black"
+    // footer elements
+  } else {
+    // switch to white theme
+    body.classList.remove("black-theam");
+    body.classList.add("white-theam");
+    lable.classList.remove("white-theam");
+    lable.classList.add("black-theam");
 
-       // footer elements
+    pages.forEach((page) => {
+      page.style.color = "black";
+    });
+    mobNo.forEach((no) => {
+      no.style.color = "black";
+    });
 
-    }else{
-       body.classList.remove("black-theam")
-       body.classList.add("white-theam")
-       lable.classList.remove("white-theam")
-       lable.classList.add("black-theam")
- 
-       pages.forEach(page=>{page.style.color='black'})
-       mobNo.forEach(no=>{no.style.color='black'})
-
-       textarea.style.backgroundColor='white'
-       textarea2.style.backgroundColor="white"
-       textarea3.style.backgroundColor="white"
-
-    }
-})
+    textarea.style.backgroundColor = "white";
+    textarea2.style.backgroundColor = "white";
+    textarea3.style.backgroundColor = "white";
+  }
+});

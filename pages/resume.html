@@ -9,31 +9,30 @@
 
   <!-- cdn css file -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="../css/resumeNav.css">
   <link rel="stylesheet" href="../css/resume.css" />
-
 
   <link rel="shortcut icon" href="../images/bg4.png" type="image/x-icon">
 </head>
 
 <body>
-  <!-- nav -->
-
+  <!-- nav content -->
   <body id="body">
-
     <div id="nav">
       <div id="left">
-        <h1>code<span>X</span></h1>
+        <h1 style="font-family: gilyroy; font-weight: 900;">
+          codeX
       </div>
       <div id="right">
-        <a href="./pages/login.html">LogIn</a>
+        <a href="../pages/login.html">LogIn</a>
 
         <div id="theam-btn-container">
           <label class="switch">
@@ -52,14 +51,15 @@
           <li><a href="../pages/placement.html"><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
           <li><a href="../pages/team.html"><i class="ri-team-fill"></i> Our Team</a></li>
           <li><a href="../pages/note.html"><i class="ri-team-fill"></i>Notes</a></li>
+          <li><a href="../quizs/pages/main.html"><i class="ri-quill-pen-fill"></i>Quiz</a></li>
         </ul>
         <div id="close-menu">
           <img src="../images/menu-close.svg" alt="">
         </div>
       </div>
-
     </div>
 
+    <!-- resume content -->
     <div class="row ">
       <div class="col-md-6 resumeContainer p-0" id="cv-form">
         <div class="container">
@@ -73,40 +73,40 @@
                   <div class="col-md-6">
                     <div class="form-group verticalSpace">
                       <label id="lable" class="lables" for="fullNameField">Full Name</label>
-                      <input type="text" id="fullNameField" placeholder="Enter full name" class="form-control" />
+                      <input type="text" id="fullNameField" placeholder="Enter full name" class="form-control inputMargin" />
                     </div>
 
                     <div class="form-group verticalSpace">
                       <label class="lables" for="jobFiled">Job Title </label>
-                      <input type="text" id="jobFiled" placeholder="Enter job title" class="form-control" />
+                      <input type="text" id="jobFiled" placeholder="Enter job title" class="form-control inputMargin" />
                     </div>
 
                     <div class="form-group verticalSpace">
                       <label class="lables" for="mobileNumberField">Mobile Number</label>
                       <input type="number" id="mobileNumberField" placeholder="Enter mobile number"
-                        class="form-control" />
+                        class="form-control inputMargin" />
                     </div>
 
                     <div class="form-group verticalSpace">
                       <label class="lables" for="emailAddressFiled">Email Address</label>
                       <input type="email" id="emailAddressFiled" placeholder="Enter email address"
-                        class="form-control"></input>
+                        class="form-control inputMargin"></input>
                     </div>
 
                     <div class="form-group verticalSpace">
                       <label class="lables" for="profileImageField">Profile</label>
-                      <input id="profileImageField" type="file" class="form-control" />
+                      <input id="profileImageField" type="file" class="form-control inputMargin" accept="image/png, image/jpeg" />
                     </div>
 
                     <div class="form-group verticalSpace" id="li">
                       <div class="form-group ">
                         <label class="lables" for="addressField">Address </label>
-                        <input type="text" id="addressField" placeholder="Enter address" class="form-control" />
+                        <input type="text" id="addressField" placeholder="Enter address" class="form-control inputMargin" />
                       </div>
 
                       <div class="form-group verticalSpace">
                         <label class="lables" for="dateofbirth">Date of Birth</label>
-                        <input type="date" id="dateofbirth" placeholder="Enter date of birth" class="form-control" />
+                        <input type="date" id="dateofbirth" placeholder="Enter date of birth" class="form-control inputMargin" />
                       </div>
 
                       <div class="form-group verticalSpace" id="la">
@@ -157,7 +157,7 @@
                       </div>
 
                       <div class="form-group " id="ti">
-                        <input placeholder="Enter company name" class="form-control tiField2 topSpace"></input>
+                        <input placeholder="Enter company name" class="form-control tiField2 topSpace inputMargin"></input>
                       </div>
 
                       <div class="form-group ">
@@ -178,7 +178,7 @@
                       </div>
 
                       <div class="form-group  " id="ti">
-                        <input placeholder="Enter project name" class="form-control protiField2 topSpace"></input>
+                        <input placeholder="Enter project name" class="form-control protiField2 topSpace inputMargin"></input>
                       </div>
 
                       <div class="form-group ">
@@ -195,9 +195,7 @@
                         <textarea placeholder="Enter project description"
                           class="form-control proField3 inputMargin"></textarea>
                       </div>
-
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -206,7 +204,7 @@
         </div>
 
         <div class="container text-center verticalSpace">
-          <button onclick="generateCV()" class="printCV">
+          <button onclick="generateCV()" class="generateCV">
             Generate Resume
           </button>
         </div>
@@ -216,106 +214,106 @@
         <div class="card-header" id="heading">
           <h1 class="text-center my-2 headingText">Resume Preview</h1>
         </div>
-
-        <div class="cv " id="cv-template">
-          <div class="container" id="cv-template-container">
-            <div class="left">
-              <div class="text">
-                <div class="pic">
-                  <img id="imgTemplate" src="" alt="" class="img-fluid myimg" />
+        <div>
+          <div class="cv " id="cv-template">
+            <div class="container" id="cv-template-container">
+              <div class="left">
+                <div class="text">
+                  <div class="pic">
+                    <img id="imgTemplate" src="" alt="" class="img-fluid myimg" />
+                  </div>
+                  <h2 id="fullName" class="textFont"> </h2>
+                  <span id="jobTitle" style="text-align: center;"> </span>
                 </div>
-                <h2 id="fullName" class="textFont"> </h2>
-                <span id="jobTitle" style="text-align: center;"> </span>
-              </div>
-              <div class="info">
-                <h3 class="title textFont">contact info</h3>
-                <ul>
-                  <li>
-                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                    <span id="mobileNumber"></p>
-                  </li>
-                  <li>
-                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                    <span id="emailAddress"></span>
-                  </li>
-                  <li>
-                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                    <span id="address" href=""></span>
-                  </li>
-                  <li>
-                    <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                    <span id="dateOfBirth" href=""></span>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="lang">
-                <h3 class="title textFont">languages</h3>
-                <ul id="lan">
-                </ul>
-              </div>
-
-              <div class="skills">
-                <h2 class="title textFont">skills</h2>
-                <ul id="skills">
-                </ul>
-              </div>
-
-              <div class="certificate">
-                <h2 class="title textFont">Certificate</h2>
-                <ul id="certificate">
-                </ul>
-              </div>
-
-            </div>
-            <div class="right">
-              <div class="about">
-                <h2 class="textFont">About</h2>
-                <p id="objectiveT">
-                </p>
-              </div>
-              <div class="edu">
-                <h2 class="title textFont">Education</h2>
-                <ul id="edu">
-                </ul>
-              </div>
-              <div class="exp">
-                <h2 class="textFont">Work Experience</h2>
-                <div class="works">
-                  <h3 class="textFont" id="titleF"></h3>
-                  <ul id="weT">
-                  </ul>
-                  <h3 class="textFont" id="titleF2"></h3>
-                  <ul id="weT2">
-                  </ul>
-                  <h3 class="textFont" id="titleF3"></h3>
-                  <ul id="weT3">
+                <div class="info">
+                  <h3 class="title textFont">contact info</h3>
+                  <ul>
+                    <li>
+                      <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                      <span id="mobileNumber"></p>
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                      <span id="emailAddress"></span>
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                      <span id="address" href=""></span>
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                      <span id="dateOfBirth" href=""></span>
+                    </li>
                   </ul>
                 </div>
 
-                <h2 class="textFont">Projects</h2>
-                <div class="projects">
-                  <h3 class="textFont" id="titleP"></h3>
-                  <ul id="projectText">
-                  </ul>
-                  <h3 class="textFont" id="titleP2"></h3>
-                  <ul id="projectText2">
-                  </ul>
-                  <h3 class="textFont" id="titleP3"></h3>
-                  <ul id="projectText3">
+                <div class="lang">
+                  <h3 class="title textFont">languages</h3>
+                  <ul id="lan">
                   </ul>
                 </div>
-              </div>
 
+                <div class="skills">
+                  <h2 class="title textFont">skills</h2>
+                  <ul id="skills">
+                  </ul>
+                </div>
+
+                <div class="certificate">
+                  <h2 class="title textFont">Certificate</h2>
+                  <ul id="certificate">
+                  </ul>
+                </div>
+
+              </div>
+              <div class="right">
+                <div class="about">
+                  <h2 class="textFont">About</h2>
+                  <p id="objectiveT">
+                  </p>
+                </div>
+                <div class="edu">
+                  <h2 class="title textFont">Education</h2>
+                  <ul id="edu">
+                  </ul>
+                </div>
+                <div class="exp">
+                  <h2 class="textFont">Work Experience</h2>
+                  <div class="works">
+                    <h3 class="textFont" id="titleF"></h3>
+                    <ul id="weT">
+                    </ul>
+                    <h3 class="textFont" id="titleF2"></h3>
+                    <ul id="weT2">
+                    </ul>
+                    <h3 class="textFont" id="titleF3"></h3>
+                    <ul id="weT3">
+                    </ul>
+                  </div>
+
+                  <h2 class="textFont">Projects</h2>
+                  <div class="projects">
+                    <h3 class="textFont" id="titleP"></h3>
+                    <ul id="projectText">
+                    </ul>
+                    <h3 class="textFont" id="titleP2"></h3>
+                    <ul id="projectText2">
+                    </ul>
+                    <h3 class="textFont" id="titleP3"></h3>
+                    <ul id="projectText3">
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
-          <div id="btnN" class=" text-center  my-3">
-            <button onclick="printCV()" class="printCV">Print CV</button>
+          <div id="btnN" class=" text-center my-2">
+            <button onclick="downloadPDF()" class="downloadCV">Download Resume</button>
           </div>
         </div>
       </div>
     </div>
-
 
     <!-- footer content -->
     <footer class="footer" id="footer">
@@ -354,7 +352,7 @@
         <a href="https://github.com/codex-team" class="footer-anchor"><img src="../images/github.png" alt=""
             class="footer-img"></a>
         <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fthecodexnetwork%2F"
-          class="footer-anchor"><img src="./images/facebook.png" alt="" class="footer-img"></a>
+          class="footer-anchor"><img src="../images/facebook.png" alt="" class="footer-img"></a>
       </div>
       <p class="footer-copyright">&copy; 2024 All rights reserved Codex</p>
     </footer>
