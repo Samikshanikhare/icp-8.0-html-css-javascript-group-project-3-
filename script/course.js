@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     window.addToCart = function (course) {
-        cartItems.push(course);
+        const dateAdded = new Date().toLocaleDateString();
+        cartItems.push({ ...course, dateAdded });
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
-        alert(`${course.name} has been added to the cart`);
+        alert(`${course.name} has been added to the cart on ${dateAdded}`);
         updateCartDisplay();
     }
 
@@ -18,10 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (cartItems.length === 0) {
             cartItemsContainer.innerHTML = '<span>No items in the cart</span>';
         } else {
-            cartItemsContainer.innerHTML = '<ul>' + cartItems.map(item => `<li> You Have Buy the Course ${item.name} - Price ${item.price} /- </li>`).join('') + '</ul>';
+            cartItemsContainer.innerHTML = '<ul>' + cartItems.map(item => `<li> You Have Buy the Course ${item.name} - Price ${item.price} /- on ${item.dateAdded}</li>`).join('') + '</ul>';
         }
     }
 
     updateCartDisplay();
 });
-
