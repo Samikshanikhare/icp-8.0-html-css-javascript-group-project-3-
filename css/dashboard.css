@@ -24,6 +24,7 @@ body{
 #container{
     height: 100vh;
     width: 100vw;
+
 }
 
 #user-info{
@@ -213,10 +214,57 @@ body{
     cursor: pointer;
     border-radius: 4px;
 }
+
+#settings{
+    height: 100%;
+    width: 70%;
+}
+
 #close{
     position: absolute;
-    top: 10vh;
+    top: 10%;
     right: 10%;
     font-size: 4vw;
+    cursor: pointer;
+}
+
+ #options #del{
+    background-color: #a82121;
+}
+
+#update{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 40vw;
+    height: 70%;
+    gap: 5vh;
+    background-color: #a7aeab72;
+    box-shadow: 1px 1px 10px #7daf96a8;
+    border-radius: 4px;
+    margin-top: 4vh;
+}
+
+#update input{
+    height: 8vh;
+    width: 65%;
+    outline: none;
+    border: none;
+    background-color: #a3f7dc75;
+    font-size: 1em;
+    border-bottom: 4px solid #34ac70;
+    padding-left: 2vw;
+    font-weight: 800;
+}
+
+#update button{
+    width: 65%;
+    height: 8vh;
+    font-weight: 800;
+    background-color: #208452;
+    border: none;
+    font-size: 1.5vw;
+    color: #f5f5f5;
     cursor: pointer;
 }

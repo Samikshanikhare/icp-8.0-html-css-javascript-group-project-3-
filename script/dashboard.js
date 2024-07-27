@@ -55,3 +55,7 @@ function createCards(courses) {
     document.querySelector("#course-container").innerHTML = createCouses
 
 }
+
+function chnaegInfo(action){
+   
+}
