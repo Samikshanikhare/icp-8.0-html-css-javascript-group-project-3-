@@ -150,5 +150,13 @@ body{
 }
 
 #setting-page{
-    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #6e6c6c9b;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    display: none;
 }
