@@ -1,50 +1,37 @@
-const loginsec=document.querySelector('.login-section')
-const loginlink=document.querySelector('.login-link')
-const registerlink=document.querySelector('.register-link')
-registerlink.addEventListener('click',()=>{
-    loginsec.classList.add('active')
-})
-loginlink.addEventListener('click',()=>{
-    loginsec.classList.remove('active')
-})
-
-let loginemail=document.getElementById('loginemail')
 
 
 
-//function
-const arr = [{
-    email: "user@gmail.com",
-    password: "user"
+let userdetails=[]
 
-}]
-function checkuser() {
 
-    const msg = document.getElementById('message')
-    const page = document.getElementById('page')
-    const email = document.getElementById('email').value
-    const password = document.getElementById('password').value
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].email == email && arr[i].password == password) {
-            page.setAttribute("href", "https://codee-x.netlify.app/")
-            msg.innerHTML = `login sucessful     `
 
-        }
-        else {
-            msg.innerHTML = `invalid email or pass please        <span onclick="User('signup')">signup</span>`
-        }
 
-    }
+function savee() {
+    let name = document.getElementById('_userName').value
+    let surname = document.getElementById('_userName1').value
+    let age = document.getElementById('_userAge').value
+    let phone = document.getElementById('_userPhone').value
+    let email = document.getElementById('_userEmail').value
+    let pass = document.getElementById('_userPass').value
+
+    let e = document.getElementById("_userGender");
+    let value = e.value;
+    let text = e.options[e.selectedIndex].text;
+    console.log(phone.length)
 }
+document.querySelector('form').addEventListener('submit', (e) => e.preventDefault())
 
-function data(){
-    const signemail = document.getElementById('signemail').value
-    const signpassword = document.getElementById('signpassword').value
 
-arr.push({
-    email:`${signemail}`,
-    password:`${signpassword}`
-})
-console.log(arr)
+function validate(error, time) {
+    let notification = document.querySelector('.notification')
+    notification.style.display = "block"
+    notification.innerText = error
+    setTimeout(function () {
+        notification.style.display = "none"
 
+
+    }, time)
 }
+validate('wrong name', 2000)
+
+

@@ -1,6 +1,7 @@
 function visible(card, img) {
 
     switch (card && img) {
+
         case 'item1' && 'img-1':
             let image1 = document.getElementById('img-1')
             chnageImg(image1)
@@ -98,5 +99,21 @@ function chnageImg(img) {
 }
 
 function hidebtn(btn) {
-    (btn.style.display === "none") ? btn.style.display = "block":btn.style.display = "none"
-} 
+    (btn.style.display === "none") ? btn.style.display = "block" : btn.style.display = "none"
+}
+
+let goTop = document.getElementById("go-top")
+
+window.addEventListener('scroll', () => {
+    (window.scrollY > 500)? goTop.style.display = "block":goTop.style.display = "none"
+});
+
+top.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+
+

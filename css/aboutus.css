@@ -245,7 +245,7 @@ h1
             height: 650px;
             border: 1px solid black;
             border-color: rgb(7, 7, 7);
-            box-shadow: 0px 0px 20px rgb(195, 190, 190);
+            box-shadow: 0px 0px 20px rgb(171, 163, 163);
             border-radius: 10px;
             text-align: center;
         }
@@ -338,7 +338,7 @@ h1
             height: 500px;
             border: 1px solid black;
             border-color: rgb(7, 7, 7);
-            box-shadow: 0px 0px 20px rgb(195, 190, 190);
+            box-shadow: 0px 0px 20px rgb(167, 160, 160);
             border-radius: 20px;
             text-align: center;
         }
