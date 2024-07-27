@@ -1,37 +1,38 @@
+let user = JSON.parse( localStorage.getItem('user'))
 
+let loginBtn = document.querySelector("#btn")
 
+  loginBtn.addEventListener("click",()=>{
+     let email = document.querySelector("#_userMobile").value
+     let pass = document.querySelector("#_userpass").value
+        if(email == user.email && pass== user.pass){
+             validate("login successfully..🎉",2000)
+              goTodashboard()
+        }else{
+           validate("please check details 😞",2000)
+        }
+  })
 
-let userdetails=[]
-
-
-
-
-function savee() {
-    let name = document.getElementById('_userName').value
-    let surname = document.getElementById('_userName1').value
-    let age = document.getElementById('_userAge').value
-    let phone = document.getElementById('_userPhone').value
-    let email = document.getElementById('_userEmail').value
-    let pass = document.getElementById('_userPass').value
-
-    let e = document.getElementById("_userGender");
-    let value = e.value;
-    let text = e.options[e.selectedIndex].text;
-    console.log(phone.length)
-}
+ 
 document.querySelector('form').addEventListener('submit', (e) => e.preventDefault())
 
 
+
+//send the validation notification
 function validate(error, time) {
     let notification = document.querySelector('.notification')
     notification.style.display = "block"
     notification.innerText = error
     setTimeout(function () {
         notification.style.display = "none"
-
-
     }, time)
 }
-validate('wrong name', 2000)
 
-
+function goTodashboard(){
+  
+    let btn = document.querySelector(".goTodashboard");
+    btn.addEventListener("click", () => {
+        window.location.assign("editor.html");
+})
+    
+}
