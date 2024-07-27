@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const cartIcon = document.querySelector('.cart');
     const cartItemsContainer = document.querySelector('.items');
-    const cartItems = [];
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
     cartIcon.addEventListener('click', function () {
         cartItemsContainer.style.display = cartItemsContainer.style.display === 'none' ? 'block' : 'none';
@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addToCart = function (course) {
         cartItems.push(course);
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
         alert(`${course.name} has been added to the cart`);
         updateCartDisplay();
     }
@@ -23,3 +24,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateCartDisplay();
 });
+
