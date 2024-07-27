@@ -34,7 +34,8 @@ body{
     margin-top: 5px;
     margin-bottom: 15px;
     border: 2px solid black;
-    box-shadow: 10px 10px 100px #23dfb3a1;
+    box-shadow: 7px 7px 50px hsla(166, 75%, 51%, 0.824),
+    -10px -10px 50px rgba(36, 222, 178, 0.824);
     border-radius:15px ;
 }
 
@@ -98,7 +99,7 @@ body{
 @media (max-width: 767px) {
     .teamcard {
         height: 200px;
-        width;100px
+        width;300px;
     }
     .about-caed-img{
         height: 60px;

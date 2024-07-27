@@ -15,17 +15,20 @@ body{
 .white-theam{
   background-color: #f5f5f5;
   color: black;
+
 }
 
 .black-theam{
   background-color:#0C0C0C;
   color: #f5f5f5;
+  
+
 }
 
 #nav{
     height: 10vh;
     width: 100vw;
-    background-color: #f5f5f584;
+    background-color: #e2e5e1b6;
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
@@ -43,6 +46,8 @@ body{
   font-size: 2vw;
   font-weight: 900;
   margin-left: 4vw;
+  display: flex;
+  align-items: center;
 }
 
 #left img{
