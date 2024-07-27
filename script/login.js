@@ -31,7 +31,7 @@ function validate(error, time) {
 function goTodashboard(){
   
     let btn = document.querySelector(".goTodashboard");
-    btn.addEventListener("click", () => {
+        btn.addEventListener("click", () => {
         window.location.assign("editor.html");
 })
     
