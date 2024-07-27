@@ -65,7 +65,9 @@ function saveUser(userInfo) {
         surname: userInfo.surname
     };
 
-    localStorage.setItem("user", JSON.stringify(user));
+    userdetails.push(user)
+
+    localStorage.setItem("user", JSON.stringify(userdetails));
 
         let btn = document.querySelector(".gotologin");
             btn.addEventListener("click", () => {
