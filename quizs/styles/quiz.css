@@ -41,6 +41,9 @@ body {
     border-radius: 5px;
     font-size: 20px;
 }
+#submit:hover {
+    background-color: #45a049;
+}
 
 
 
