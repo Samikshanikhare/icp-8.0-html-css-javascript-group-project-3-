@@ -38,7 +38,48 @@ const quizData = [
         c: "var",
         d: "constant",
         correct: "b",
-    }
+    },
+    {
+    question: "How can you add a comment in a JavaScript code?",
+        a: "<!-- This is a comment -->",
+        b: "// This is a comment",
+        c: "/* This is a comment */",
+        d: "Both b and c",
+        correct: "d",
+    },
+    {
+        question: "Which of the following is not a valid JavaScript variable name?",
+        a: "_variable",
+        b: "variable1",
+        c: "1variable",
+        d: "variable_1",
+        correct: "c",
+    },
+    {
+        question: "How do you create a function in JavaScript?",
+        a: "function myFunction() { }",
+        b: "def myFunction() { }",
+        c: "create myFunction() { }",
+        d: "function:myFunction() { }",
+        correct: "a",
+    },
+    {
+        question: "Which method is used to add an element at the end of an array in JavaScript?",
+        a: "push()",
+        b: "pop()",
+        c: "shift()",
+        d: "unshift()",
+        correct: "a",
+    },
+    {
+        question: "Which of the following is used to declare a constant in JavaScript??",
+        a: "let",
+        b: "const",
+        c: "var",
+        d: "constant",
+        correct: "b",
+    },
+
 ];
 
 
