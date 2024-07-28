@@ -169,3 +169,8 @@ function notification(error, time) {
         notification.style.display = "none"
     }, time)
 }
+
+
+//setuser name tittle.....
+
+ document.querySelector('title').innerText=`${user.name} | Dashboard |codeX `

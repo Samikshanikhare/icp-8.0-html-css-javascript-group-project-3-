@@ -460,3 +460,64 @@ body {
 
 
 }
+
+
+@media screen and (min-width:481px) and (max-width:850px) {
+    .course {
+        height: 90%;
+        width: 50vw;
+        font-size: 1.3em;
+    }
+     
+    .course a {
+        font-size: 1.1em;
+        padding: 1.2vh 3vw;
+        margin-left: 2vw;
+        background-color: #119581;
+        color: #f5f5f5;
+        margin-top: 3vh;
+        display: block;
+        width: 50%;
+        text-align: center;
+    }
+
+    #update {
+        width: 70vw;
+    }
+
+    
+#update input {
+    height: 8vh;
+    width: 70%;
+}
+
+#update button {
+    width: 65%;
+    height: 7vh;
+    font-size: 1.1em;
+}
+
+#options {
+    height: 30%;
+    width: 80vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#options button {
+    height: 8vh;
+    width: 40vw;
+    font-size: 1.1em;
+}
+
+
+#close {
+    position: absolute;
+    top:4%;
+    right: 10%;
+    font-size:2em;
+    cursor: pointer;
+}
+
+}
