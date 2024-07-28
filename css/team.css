@@ -98,7 +98,7 @@ body{
 }
 @media (max-width: 767px) {
     .teamcard {
-        height: 200px;
+        height: 250px;
         width;300px;
     }
     .about-caed-img{
@@ -106,7 +106,7 @@ body{
         width: 70px;
     }
     .about-card-icons {
-        height: 20px;
+        height: 24px;
        
     }
     .about-card-icon-container{
