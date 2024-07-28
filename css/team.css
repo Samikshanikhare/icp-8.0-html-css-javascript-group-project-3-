@@ -34,8 +34,8 @@ body{
     margin-top: 5px;
     margin-bottom: 15px;
     border: 2px solid black;
-    box-shadow: 10px 10px 100px #23dfb3a1,
-        -10px -10px 100px #23dfb3d2;
+    box-shadow: 7px 7px 80px hwb(165 40% 13% / 0.631),
+        -7px -7px 50px hwb(166 40% 21% / 0.824);
     border-radius:15px ;
 }
 
