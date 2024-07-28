@@ -93,3 +93,11 @@ const submitBtn = document.getElementById("submit");
 const scoreEl = document.getElementById("score");
 const timerEl = document.getElementById("timer");
 const feedbackEl = document.getElementById("feedback");
+
+
+let currentQuiz = 0;
+let score = 0;
+let time = 180; // 3 minutes in seconds
+
+loadQuiz();
+startTimer();
