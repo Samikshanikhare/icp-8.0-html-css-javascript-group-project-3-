@@ -146,7 +146,6 @@ let checkdel = document.querySelector("#chk").checked
       notification("please check the details...",2000)
    }
     
-
 }
 
 
