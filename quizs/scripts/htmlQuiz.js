@@ -127,3 +127,47 @@ function getSelected() {
     });
     return answer;
 }
+
+
+submitBtn.addEventListener("click", () => {
+    const answer = getSelected();
+    if (answer) {
+        if (answer === quizData[currentQuiz].correct) {
+            score++;
+            feedbackEl.innerText = 'Correct!';
+            feedbackEl.style.color = 'green';
+        } else {
+            feedbackEl.innerText = `Wrong! The correct answer was ${quizData[currentQuiz].correct.toUpperCase()}.`;
+            feedbackEl.style.color = 'red';
+        }
+        scoreEl.innerText =` Score: ${score}`;
+        currentQuiz++;
+        setTimeout(() => {
+            if (currentQuiz < quizData.length) {
+                loadQuiz();
+            } else {
+                clearInterval(timerInterval);
+                quiz.innerHTML = `
+                    <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+                    <button onclick="location.reload()">Reload</button>
+                `;
+            }
+        }, 1000); // Delay to show feedback for a second
+    }
+});
+
+function startTimer() {
+    timerInterval = setInterval(() => {
+        time--;
+        const minutes = Math.floor(time / 60);
+        const seconds = time % 60;
+        timerEl.innerText = `Time: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        if (time <= 0) {
+            clearInterval(timerInterval);
+            quiz.innerHTML = `
+                <h2>Time's up! You answered ${score}/${quizData.length} questions correctly</h2>
+                <button onclick="location.reload()">Reload</button>
+            `;
+        }
+    }, 1000);
+}
