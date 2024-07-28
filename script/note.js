@@ -1,11 +1,11 @@
-function Func(){
+function Func() {
     window.location.assign("htmlnote.html")
 
 }
-function Cssnote(){
+function Cssnote() {
     window.location.assign("cssnote.html")
 }
-function Jsnote(){
+function Jsnote() {
     window.location.assign("jsnote.html")
 }
 const dictionary = {
@@ -50,7 +50,31 @@ const dictionary = {
     webStandards: "Web standards are specifications and guidelines for websites and web applications to ensure consistency, interoperability, and accessibility.",
     versionControl: "Version control systems (like Git) track changes to files and coordinate work on those files among multiple people.",
     deployment: "Deployment refers to the process of making a website or application available for use, typically on a server or hosting platform.",
-    responsiveTypography: "Responsive typography adjusts the size, spacing, and layout of text to enhance readability and visual appeal on different devices and screen sizes."
+    responsiveTypography: "Responsive typography adjusts the size, spacing, and layout of text to enhance readability and visual appeal on different devices and screen sizes.",
+    Element: 'An individual component of an HTML document' ,
+    Tag:  'The markup used to define an HTML element ' ,
+    Attribute: 'Additional information about an element' ,
+    Head: 'The section of an HTML document containing meta-information', 
+    Comment: ' Non-displayed notes within HTML' ,
+    Body: 'The section of an HTML document containing the content ',
+    Anchor: 'An element used to create hyperlinks' ,
+    Image: 'An element to display images' ,
+    Form: 'A container for input elements ' ,
+    List: ' Elements to create lists ' ,
+    Selector: 'A pattern used to select the elements to style' ,
+    Property: ' The aspect of an element to be styled ' ,
+    Value: 'The setting for a property' ,
+    Class: 'A reusable style definition ', 
+    ID: 'A unique identifier for a single element' ,
+    Pseudoclass: 'A keyword added to selectors that specifies a special state of the selected elements ' ,
+    MediaQuery: 'A CSS technique used to apply styles based on device characteristics' ,
+    ResponsiveDesign: 'Designing web pages to look good on all devices.' ,
+    Array: ' A data structure used to store multiple values ', 
+    Object: 'A collection of properties and methods' ,
+    Event: 'ctions that occur in the browser ' ,
+    EventListener: 'A procedure that waits for an event to occurAn individual component of an HTML document' ,
+    Callback: 'A function passed as an argument to another function' ,
+    Async: 'Syntax for handling asynchronous operations.' 
 };
 
 function Func1() {
