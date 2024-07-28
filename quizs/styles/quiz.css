@@ -44,6 +44,11 @@ body {
 #submit:hover {
     background-color: #45a049;
 }
+#feedback{
+    position: fixed;
+    display: flex;
+    margin-top: 40vh;
+}
 
 
 
