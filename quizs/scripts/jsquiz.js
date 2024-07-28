@@ -48,12 +48,12 @@ const quizData = [
         correct: "d",
     },
     {
-        question: "Which of the following is not a valid JavaScript variable name?",
-        a: "_variable",
-        b: "variable1",
-        c: "1variable",
-        d: "variable_1",
-        correct: "c",
+        question: "Which built-in method returns the length of a string?",
+        a: "length()",
+        b: "size()",
+        c: "index()",
+        d: "length",
+        correct: "d",
     },
     {
         question: "How do you create a function in JavaScript?",
