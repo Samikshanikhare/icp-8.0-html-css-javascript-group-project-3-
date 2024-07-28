@@ -64,12 +64,12 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "Which method is used to add an element at the end of an array in JavaScript?",
-        a: "push()",
-        b: "pop()",
-        c: "shift()",
-        d: "unshift()",
-        correct: "a",
+        question: "Which of the following is used to loop through the properties of an object in JavaScript?",
+        a: "for",
+        b: "forEach",
+        c: "for...in",
+        d: "for...of",
+        correct: "c",
     },
     {
         question: "Which of the following is used to declare a constant in JavaScript??",
