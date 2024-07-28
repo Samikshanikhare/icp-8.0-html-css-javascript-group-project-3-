@@ -8,32 +8,27 @@
     src: url(../fonts/Aerovias\ Brasil\ NF.ttf);
 }
 
-
 body{
     position: relative;
 }
 
-
-
 .white-theam{
   background-color: #f5f5f5;
   color: black;
-}
 
+}
 
 .black-theam{
   background-color:#0C0C0C;
   color: #f5f5f5;
+  
+
 }
-
-
-
-
 
 #nav{
     height: 10vh;
     width: 100vw;
-    background-color: #f5f5f584;
+    background-color: #e2e5e1b6;
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
@@ -51,6 +46,8 @@ body{
   font-size: 2vw;
   font-weight: 900;
   margin-left: 4vw;
+  display: flex;
+  align-items: center;
 }
 
 #left img{
@@ -86,7 +83,6 @@ body{
     height: 100%;
     cursor: pointer;
 }
-
 
 #menu-bar{
     height: 100vh;
@@ -151,14 +147,7 @@ body{
 }
 
 
-/* 
- 
- theam button css ....
- 
-*/
-
-
-
+/* theam button css */
 .switch {
     position: relative;
     display: inline-block;
@@ -166,13 +155,11 @@ body{
     height: 30px;
   }
   
-  
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
+  } 
   
   .slider {
     position: absolute;
@@ -218,14 +205,7 @@ body{
     border-radius: 50%;
   }  
 
-  /*
-  
-   footer css.....
-   
-  */
-
-
-  
+  /* footer css */
 
   .footer {
     height: auto;
@@ -233,7 +213,6 @@ body{
     background-color: #ffffffa1;
     filter: blur(1);
 }
-
 
 .footer-container {
     display: flex;
@@ -280,10 +259,6 @@ a{
 a:hover{
   color: #1f7964;
 }
-
-
-
-
 
 .footer-logo-container {
     display: flex;

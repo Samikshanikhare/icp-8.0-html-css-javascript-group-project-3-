@@ -262,3 +262,38 @@ h1 {
         padding: 10px;
     }
 }
+
+@media (max-width: 280px) {
+    .container {
+        padding: 70px 10px;
+    }
+
+    .course-cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        width: calc(100% - 20px);
+    }
+
+    .cart {
+        font-size: 20px;
+    }
+
+    .items {
+        width: auto;
+        padding: 5px;
+    }
+
+    .items span {
+        font-size: small;
+        padding: 5px;
+    }
+}
+
