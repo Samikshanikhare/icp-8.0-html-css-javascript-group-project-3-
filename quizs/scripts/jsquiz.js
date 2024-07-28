@@ -56,12 +56,12 @@ const quizData = [
         correct: "d",
     },
     {
-        question: "How do you create a function in JavaScript?",
-        a: "function myFunction() { }",
-        b: "def myFunction() { }",
-        c: "create myFunction() { }",
-        d: "function:myFunction() { }",
-        correct: "a",
+        question: "How can you convert a string to an integer in JavaScript?",
+        a: "Integer.parse()",
+        b: "parseInt()",
+        c: "toInteger()",
+        d: "parseInteger()",
+        correct: "b",
     },
     {
         question: "Which method is used to add an element at the end of an array in JavaScript?",
