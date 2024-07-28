@@ -15,7 +15,7 @@ function savee() {
     let pass = document.getElementById('_userPass').value
     let e = document.getElementById("_userGender");
     let gender = e.options[e.selectedIndex].text;
-    console.log(phone.length)
+
        if(phone.length < 10 || phone.length >10){
           validate("please enter valid number 😞",2000)
 
@@ -38,6 +38,12 @@ function savee() {
        }else{
         validate("yehh! signup successfully 🎉 now you are login",7000) 
         saveUser({name,surname,age,phone,email,pass,gender})
+         name=""
+         surname=""
+         age=""
+         phone=""
+         email=""
+         pass=""
        }
        
 }
@@ -72,7 +78,6 @@ function saveUser(userInfo) {
         let btn = document.querySelector(".gotologin");
             btn.addEventListener("click", () => {
                 window.location.assign("login.html");
-
         })
 }
 
