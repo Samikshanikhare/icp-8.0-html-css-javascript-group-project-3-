@@ -49,6 +49,15 @@ body {
     display: flex;
     margin-top: 40vh;
 }
+.header {
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
 
 
 
