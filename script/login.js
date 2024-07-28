@@ -6,7 +6,7 @@ let loginBtn = document.querySelector("#btn")
     
 
     
-    if(users==null){
+    if(users==null || users.length==0){
       validate("can't find your account ,please signup 😞",2000)
       return
     }
