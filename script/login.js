@@ -1,16 +1,21 @@
-let user = JSON.parse( localStorage.getItem('user'))
+let users = JSON.parse( localStorage.getItem('user'))
 
 let loginBtn = document.querySelector("#btn")
 
   loginBtn.addEventListener("click",()=>{
-     let email = document.querySelector("#_userMobile").value
-     let pass = document.querySelector("#_userpass").value
-        if(email == user.email && pass== user.pass){
-             validate("login successfully..🎉",2000)
-              goTodashboard()
-        }else{
-           validate("please check details 😞",2000)
-        }
+    
+    let email = document.querySelector("#_userMobile").value
+    let pass = document.querySelector("#_userpass").value
+
+      users.forEach((user)=> {
+           if(email == user.email && pass== user.pass){
+                 validate("login successfully..🎉",2000)
+                 localStorage.setItem("logedInUser",JSON.stringify(user))
+                 goTodashboard()
+           }else{
+              validate("please check details 😞",2000)
+           }
+      });
   })
 
  
@@ -31,8 +36,8 @@ function validate(error, time) {
 function goTodashboard(){
   
     let btn = document.querySelector(".goTodashboard");
-    btn.addEventListener("click", () => {
-        window.location.assign("editor.html");
+        btn.addEventListener("click", () => {
+        window.location.assign("dashboard.html");
 })
     
 }
