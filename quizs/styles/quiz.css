@@ -7,3 +7,14 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+.quiz-container {
+    background: #fff;
+    padding: 20px;
+    box-shadow:  20px 20px 60px #176f5c69,
+    -20px -20px 60px #1783736b;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    
+}
