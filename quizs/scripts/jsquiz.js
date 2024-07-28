@@ -72,13 +72,13 @@ const quizData = [
         correct: "c",
     },
     {
-        question: "Which of the following is used to declare a constant in JavaScript??",
-        a: "let",
-        b: "const",
-        c: "var",
-        d: "constant",
-        correct: "b",
-    },
+        question: "How do you declare a JavaScript variable?",
+        a: "variable myVar",
+        b: "v myVar",
+        c: "var myVar",
+        d: "variable:myVar",
+        correct: "c",
+    }
 
 ];
 
